@@ -710,7 +710,7 @@ function renderModel(){
  DAYS=duplicate(DATA.days);
  if(!includeCachi){
   DAYS[5]=duplicate(DATA.alternatives[0]);DAYS[6]=duplicate(DATA.alternatives[1]);
-  const museum=DAYS[11].stops.find(s=>s.query==='MAAM Salta');
+  const museum=DAYS[11].stops.find(s=>s.refs?.includes('maam'));
   if(museum){museum.title='Salta: última tarde libre';museum.body='El MAAM ya tuvo su visita el día 7. Dejar esta tarde para descansar, recorrer el centro sin agenda o hacer una compra breve antes de las dos jornadas de regreso.';museum.kind='walk';museum.mode='A pie o descanso';museum.priority='Opcional';museum.tag='Opcional';museum.todo=['No repetir el museo salvo que realmente tengan ganas.','Volver temprano para preparar equipaje, combustible y descanso.'];museum.booking='Sin reserva ni visita contratada.';museum.query='Plaza 9 de Julio Salta';museum.refs=['saltacentro'];}
  }
 
