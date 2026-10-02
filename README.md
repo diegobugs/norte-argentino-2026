@@ -1,51 +1,43 @@
 # Norte, sin apuro
 
-Sitio del itinerario Hohenau–Salta–Jujuy. El archivo `index.html` es una copia exacta de la última versión del HTML de la conversación, renombrada para servir como entrada del sitio.
+Sitio del itinerario Hohenau–Salta–Jujuy: 14 días en un solo scroll, con mapa, paradas, fichas de actividades y preparativos.
 
 ## Archivos
 
-- `index.html`: sitio completo.
+- `index.html`: sitio completo en un único archivo. Las imágenes van embebidas y la página no hace llamadas de red.
+- `.nojekyll`: hace que GitHub Pages publique los archivos tal cual, sin procesarlos con Jekyll.
 - `.gitignore`: excluye archivos locales y variables de entorno.
-- `README.md`: instrucciones para abrirlo y subirlo.
+- `README.md`: instrucciones para abrirlo y publicarlo.
 
 ## Abrir el sitio
 
-Abrí `index.html` en tu navegador. Este paquete no necesita un paso de compilación.
+Abrí `index.html` en tu navegador. No necesita compilación ni servidor.
 
-## Crear un repositorio privado en GitHub
+## Publicar con GitHub Pages
 
-No se ha creado ningún repositorio ni subido ningún archivo desde ChatGPT. Los siguientes comandos se ejecutan en tu computadora, dentro de esta carpeta.
+1. En el repositorio, entrá a **Settings → Pages**.
+2. En **Build and deployment**, elegí **Deploy from a branch**, la rama `main` y la carpeta `/ (root)`.
+3. Guardá. En uno o dos minutos el sitio queda en `https://diegobugs.github.io/norte-argentino-2026/`.
 
-Requisitos: Git, GitHub CLI (`gh`) y una identidad de autor configurada en Git. Si `gh` no está instalado, seguí las instrucciones oficiales de https://cli.github.com/.
-
-Autenticación, si todavía no iniciaste sesión en GitHub CLI:
-
-```bash
-gh auth login --hostname github.com --web --git-protocol https
-```
-
-Iniciá sesión como `diegobugs`. Después, desde esta carpeta:
+Lo mismo desde la terminal, con GitHub CLI:
 
 ```bash
-git init -b main &&
-git add index.html README.md .gitignore &&
-git commit -m "Add interactive northern Argentina itinerary" &&
-gh repo create diegobugs/norte-argentino-2026   --private   --source=.   --remote=origin   --push
+gh api -X POST repos/diegobugs/norte-argentino-2026/pages -f "source[branch]=main" -f "source[path]=/"
 ```
 
-Si el nombre ya existe, elegí otro nombre para el nuevo repositorio. No uses opciones de sobrescritura ni `--force` para resolver un conflicto.
+Con el plan gratuito de GitHub, Pages solo funciona en repositorios públicos. Con GitHub Pro el repositorio puede seguir privado, pero el sitio publicado es público igual: cualquiera con el enlace puede verlo.
 
-Si Git pide nombre y correo de autor, configurá tu identidad en este repositorio con `git config user.name` y `git config user.email`, usando tus propios datos; después volvé a ejecutar el commit y el comando de creación del repositorio.
-
-Esta secuencia sube el código a un repositorio privado; no activa GitHub Pages ni publica una web abierta.
+Cada `git push` a `main` vuelve a publicar el sitio.
 
 ## Privacidad y alcance
 
-El itinerario contiene fechas de viaje y alojamientos. La configuración propuesta es privada. Revisá el contenido antes de hacerlo público.
+El itinerario no muestra fechas: los días se nombran de "Día 1" a "Día 14" y el margen para el regreso es un "día extra". Sí incluye el punto de partida, el alojamiento confirmado y los horarios propuestos. Revisá el contenido antes de compartir el enlace.
+
+La página les pide a los buscadores que no la indexen (`noindex`), pero eso no la vuelve privada.
 
 Las imágenes son ilustraciones generadas con IA, no fotografías documentales. La cartografía es orientativa, no navegación ni un track de senderismo. Los horarios y las actividades propuestos no equivalen a reservas confirmadas.
 
-## Documentación de los comandos
+## Documentación
 
-- Creación del repositorio y subida del commit: https://cli.github.com/manual/gh_repo_create
-- Inicio de sesión: https://cli.github.com/manual/gh_auth_login
+- Configurar la publicación de GitHub Pages: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+- `gh api`: https://cli.github.com/manual/gh_api
