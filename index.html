@@ -538,6 +538,21 @@ html.explorer-open{overflow:hidden}
 }
 @media print{.map-open,.explorer{display:none!important}}
 </style>
+
+<style id="autoplay-control">
+/* Play/pause leads the step card. Auto margins keep the hint and counter where space-between had them. */
+.footer-meta{justify-content:flex-start}
+.scroll-hint,#stepCounter{margin-left:auto}
+.autoplay-toggle{flex:none;display:grid;place-items:center;width:30px;height:30px;padding:0;border:0;border-radius:50%;background:var(--accent);color:var(--surface);box-shadow:0 4px 12px color-mix(in srgb,var(--accent) 28%,transparent);transition:background .15s,transform .15s}
+.autoplay-toggle .icon{width:14px;height:14px;stroke-width:2.2}
+.autoplay-toggle:not(.is-playing) .icon{fill:currentColor}
+.autoplay-toggle:hover{background:color-mix(in srgb,var(--accent) 84%,var(--text))}
+.autoplay-toggle:active{transform:scale(.92)}
+.autoplay-toggle:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media(max-width:760px){.autoplay-toggle{width:26px;height:26px}.autoplay-toggle .icon{width:12px;height:12px}}
+@media(orientation:landscape) and (max-height:520px){.autoplay-toggle{width:24px;height:24px}.autoplay-toggle .icon{width:11px;height:11px}}
+@media print{.autoplay-toggle{display:none}}
+</style>
 </head>
 <body>
 <a class="skip" href="#transcript">Leer el itinerario completo</a>
@@ -607,7 +622,7 @@ html.explorer-open{overflow:hidden}
    <div class="scene-follow" id="sceneFollow"></div>
   </div>
   <div class="journey-footer">
-   <div class="footer-meta"><div id="dayDescription">Hohenau → Salta → Cafayate → Jujuy</div><span class="scroll-hint"><svg class="icon"><use href="#i-down"/></svg><span id="scrollHintText">Deslizá para empezar</span></span><span id="stepCounter">EL VIAJE COMPLETO</span></div>
+   <div class="footer-meta"><button class="autoplay-toggle" id="autoplayToggle" type="button" aria-label="Reproducir el recorrido" title="Reproducir el recorrido"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg></button><div id="dayDescription">Hohenau → Salta → Cafayate → Jujuy</div><span class="scroll-hint"><svg class="icon"><use href="#i-down"/></svg><span id="scrollHintText">Deslizá para empezar</span></span><span id="stepCounter">EL VIAJE COMPLETO</span></div>
    <nav class="day-track" id="dayTrack" aria-label="Ir a un día: desplaza esta misma página"></nav>
    <div class="footer-bottom"><a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener noreferrer">Natural Earth</a><span>Mapa orientativo · no es navegación</span><span class="route-legend"><i></i>Trayecto del día</span></div>
   </div>
@@ -1181,6 +1196,57 @@ window.addEventListener('resize',()=>{
 const motionQuery=matchMedia('(prefers-reduced-motion: reduce)');
 if(motionQuery.addEventListener)motionQuery.addEventListener('change',e=>{reduceMotion=e.matches;queueUpdate();});
 window.addEventListener('pageshow',queueUpdate);
+// Autoplay moves the same document scroll a reader would: it holds each scene
+// long enough to read it, then glides to the next one. It starts paused, and any
+// manual scroll, gesture or in-page link hands control back to the reader.
+const autoplay={on:false,frame:0,mode:'hold',index:0,from:0,to:0,start:0,until:0,y:0};
+const AUTOPLAY_GLIDE=1800;
+const readingTime=s=>clamp(1500+`${s.title} ${s.body||''}`.split(/\s+/).length*150,3500,7000);
+function setAutoplayButton(){
+ const button=$('autoplayToggle'),label=autoplay.on?'Pausar el recorrido':'Reproducir el recorrido';
+ button.setAttribute('aria-label',label);button.title=label;
+ button.classList.toggle('is-playing',autoplay.on);
+ button.querySelector('use').setAttribute('href',autoplay.on?'#i-pause':'#i-play');
+}
+function holdAutoplay(index,now){autoplay.mode='hold';autoplay.index=index;autoplay.until=now+readingTime(scenes[index]);}
+function glideAutoplay(index,now){autoplay.mode='glide';autoplay.index=index;autoplay.from=scrollY;autoplay.to=index*unit;autoplay.start=now;}
+function autoplayFrame(now){
+ autoplay.frame=0;
+ // A scroll that autoplay did not make means the reader took over.
+ if(Math.abs(scrollY-autoplay.y)>2){pauseAutoplay();return;}
+ if(autoplay.mode==='hold'&&now>=autoplay.until){
+  if(autoplay.index>=scenes.length-1){pauseAutoplay('Fin del recorrido.');return;}
+  glideAutoplay(autoplay.index+1,now);
+ }
+ if(autoplay.mode==='glide'){
+  const p=reduceMotion?1:clamp((now-autoplay.start)/AUTOPLAY_GLIDE,0,1);
+  window.scrollTo({top:lerp(autoplay.from,autoplay.to,p),behavior:'instant'});
+  autoplay.y=scrollY;
+  if(p>=1)holdAutoplay(autoplay.index,now);
+ }
+ autoplay.frame=requestAnimationFrame(autoplayFrame);
+}
+function playAutoplay(){
+ if(autoplay.on||!scenes.length)return;
+ const now=performance.now(),pos=scrollY/unit;
+ // From the last scene, or past it, the trip starts over.
+ if(pos>=scenes.length-1.02){window.scrollTo({top:0,behavior:'instant'});holdAutoplay(0,now);}
+ else glideAutoplay(Math.floor(pos+.02)+1,now);
+ autoplay.on=true;autoplay.y=scrollY;
+ setAutoplayButton();$('status').textContent='Recorrido en reproducción.';
+ autoplay.frame=requestAnimationFrame(autoplayFrame);
+}
+function pauseAutoplay(message='Recorrido en pausa.'){
+ if(!autoplay.on)return;
+ autoplay.on=false;cancelAnimationFrame(autoplay.frame);autoplay.frame=0;
+ setAutoplayButton();$('status').textContent=message;
+}
+$('autoplayToggle').addEventListener('click',()=>autoplay.on?pauseAutoplay():playAutoplay());
+const readerTakesOver=e=>{if(autoplay.on&&!e.target.closest?.('#autoplayToggle'))pauseAutoplay();};
+window.addEventListener('wheel',readerTakesOver,{passive:true});
+window.addEventListener('touchstart',readerTakesOver,{passive:true});
+window.addEventListener('keydown',e=>{if(['ArrowUp','ArrowDown','PageUp','PageDown','Home','End',' '].includes(e.key))readerTakesOver(e);});
+document.addEventListener('click',e=>{if(e.target.closest('a[href^="#"]'))readerTakesOver(e);},true);
 // Full-screen map explorer. The scroll map stays narrated and gesture-free;
 // this view is the only place where the map pans and zooms.
 const explorer={open:false,pushed:false,built:false,cam:null,fit:null,limits:null,bounds:null,info:null,nodes:[],routes:[],labels:[],selected:'',pointers:new Map(),gesture:null,tap:null,lastTap:null,frame:false,anim:0,W:0,H:0,returnFocus:null,hinted:false};
@@ -1349,6 +1415,7 @@ function closeExplorerCard(){
 }
 function openExplorer(push=true){
  if(explorer.open)return;
+ pauseAutoplay();
  buildExplorer();
  explorer.returnFocus=document.activeElement;
  explorer.open=true;

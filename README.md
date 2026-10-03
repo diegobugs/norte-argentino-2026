@@ -15,6 +15,8 @@ Abrí `index.html` en tu navegador. No necesita compilación ni servidor.
 
 El botón con el ícono de mapa, arriba a la izquierda, abre el mapa a pantalla completa: se puede mover, acercar y tocar cada lugar para ver sus actividades. Para compartirlo abierto, agregá `#mapa` al final del enlace.
 
+El botón de reproducir, primero en la tarjeta de pasos de abajo, recorre el viaje solo: se queda en cada momento el tiempo justo para leerlo y pasa al siguiente. Arranca en pausa y se detiene al llegar al final, al tocar pausa o al desplazarse a mano.
+
 ## Publicar con GitHub Pages
 
 1. En el repositorio, entrá a **Settings → Pages**.
