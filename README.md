@@ -4,18 +4,47 @@ Sitio del itinerario Hohenau–Salta–Jujuy: 14 días en un solo scroll, con ma
 
 ## Archivos
 
-- `index.html`: sitio completo en un único archivo. Las imágenes van embebidas y la página no hace llamadas de red.
+- `index.html`: el renderer. Tiene el HTML, los estilos y el código del mapa y del recorrido, pero ningún dato del viaje.
+- `itinerario.json`: el viaje completo. Lugares, días, paradas, fichas por ciudad, pendientes, fuentes e imágenes.
+- `public/attractions/<imagen>/image.webp`: las ilustraciones. Cada lugar del JSON elige la suya.
+- `public/map/countries.json`: el contorno de los países para el mapa base (Natural Earth).
 - `.nojekyll`: hace que GitHub Pages publique los archivos tal cual, sin procesarlos con Jekyll.
 - `.gitignore`: excluye archivos locales y variables de entorno.
 - `README.md`: instrucciones para abrirlo y publicarlo.
 
 ## Abrir el sitio
 
-Abrí `index.html` en tu navegador. No necesita compilación ni servidor.
+El sitio lee `itinerario.json` al cargar, así que necesita un servidor. Abrir `index.html` con doble clic no alcanza, porque el navegador no deja leer archivos locales desde `file://`. Desde la carpeta del proyecto:
+
+```bash
+python3 -m http.server
+```
+
+Después entrá a `http://localhost:8000`. No hace falta compilar nada. En GitHub Pages funciona tal cual.
 
 El botón con el ícono de mapa, arriba a la izquierda, abre el mapa a pantalla completa: se puede mover, acercar y tocar cada lugar para ver sus actividades. Para compartirlo abierto, agregá `#mapa` al final del enlace.
 
 El botón de reproducir, primero en la tarjeta de pasos de abajo, recorre el viaje solo: se queda en cada momento el tiempo justo para leerlo y pasa al siguiente. Arranca en pausa y se detiene al llegar al final, al tocar pausa o al desplazarse a mano.
+
+## Editar el itinerario
+
+Todo el contenido está en `itinerario.json`. Guardá el archivo y recargá la página para ver los cambios.
+
+- `places`: cada lugar, con `name`, `lat`, `lon` e `image`. Los lugares de Paraguay llevan además `"country": "Paraguay"`.
+  En el mapa, un lugar con paradas se muestra como parada. Con `"passThrough": true` se muestra como punto de paso aunque tenga paradas. El criterio:
+  - **Parada:** lugares turísticos, miradores y vistas, hoteles y almuerzos en un lugar con atractivo.
+  - **De paso:** ciudades y pueblos de ruta, lugares sin atractivos, almuerzos de ruta y lugares solo para desayunar o descansar. Por ejemplo, Hohenau, Posadas, Corrientes, Molinos o Chicoana.
+- `days`: los 14 días en orden. Cada día tiene `route`, la lista de lugares que dibuja el trayecto, y `stops`, las paradas.
+- Cada parada usa `time` (`"HH:MM"`, el reloj se calcula a partir de ahí), `place`, `title`, `body` y `kind` (el ícono: `car`, `border`, `food`, `coffee`, `walk`, `wine`, `camera`, `bed`, `moon`, `pin`, `home`, `domo`). `routeIndex` es la posición de la parada dentro de `route` y `uid` identifica su ficha: tiene que ser único.
+- `activityGroups`: las secciones de "Actividades por ciudad" y qué lugares entran en cada una.
+- `checklist`: la lista de "Por confirmar". Cada navegador guarda las tildes por posición, así que conviene agregar ítems al final.
+- `sources`: las referencias que citan las paradas en `refs`.
+
+### Imágenes
+
+Cada lugar elige su ilustración con `image`. Por ejemplo, `"image": "salta"` usa `public/attractions/salta/image.webp`. Varios lugares pueden compartir una imagen, como los pueblos del corredor chaqueño con `chaco`. Una parada puede usar otra imagen que la de su lugar si también lleva `image`.
+
+Para sumar una imagen, creá la carpeta `public/attractions/<nombre>/`, guardá adentro `image.webp` y escribí ese nombre en `image`. En `images` podés agregar opcionalmente el texto del crédito (`label`) y el encuadre (`position`, en el formato de `object-position` de CSS).
 
 ## Publicar con GitHub Pages
 
