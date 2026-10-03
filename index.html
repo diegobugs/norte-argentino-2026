@@ -1199,8 +1199,8 @@ window.addEventListener('pageshow',queueUpdate);
 // Autoplay moves the same document scroll a reader would: it holds each scene
 // long enough to read it, then glides to the next one. It starts paused, and any
 // manual scroll, gesture or in-page link hands control back to the reader.
-const autoplay={on:false,frame:0,mode:'hold',index:0,from:0,to:0,start:0,until:0,y:0};
-const AUTOPLAY_GLIDE=1800;
+const autoplay={on:false,frame:0,mode:'hold',index:0,from:0,to:0,start:0,until:0};
+const AUTOPLAY_GLIDE=1800,AUTOPLAY_SETTLE=400,AUTOPLAY_SLACK=8;
 const readingTime=s=>clamp(1500+`${s.title} ${s.body||''}`.split(/\s+/).length*150,3500,7000);
 function setAutoplayButton(){
  const button=$('autoplayToggle'),label=autoplay.on?'Pausar el recorrido':'Reproducir el recorrido';
@@ -1208,12 +1208,15 @@ function setAutoplayButton(){
  button.classList.toggle('is-playing',autoplay.on);
  button.querySelector('use').setAttribute('href',autoplay.on?'#i-pause':'#i-play');
 }
-function holdAutoplay(index,now){autoplay.mode='hold';autoplay.index=index;autoplay.until=now+readingTime(scenes[index]);}
+function holdAutoplay(index,now){autoplay.mode='hold';autoplay.index=index;autoplay.start=now;autoplay.until=now+readingTime(scenes[index]);}
 function glideAutoplay(index,now){autoplay.mode='glide';autoplay.index=index;autoplay.from=scrollY;autoplay.to=index*unit;autoplay.start=now;}
 function autoplayFrame(now){
  autoplay.frame=0;
- // A scroll that autoplay did not make means the reader took over.
- if(Math.abs(scrollY-autoplay.y)>2){pauseAutoplay();return;}
+ // iOS reports scrollY a frame or two late, so any position along the stretch autoplay
+ // is moving through still counts as its own. Only one outside it means the reader
+ // took over. Once a hold settles, that stretch narrows to the scene itself.
+ if(autoplay.mode==='hold'&&now-autoplay.start>AUTOPLAY_SETTLE)autoplay.from=autoplay.to;
+ if(scrollY<Math.min(autoplay.from,autoplay.to)-AUTOPLAY_SLACK||scrollY>Math.max(autoplay.from,autoplay.to)+AUTOPLAY_SLACK){pauseAutoplay();return;}
  if(autoplay.mode==='hold'&&now>=autoplay.until){
   if(autoplay.index>=scenes.length-1){pauseAutoplay('Fin del recorrido.');return;}
   glideAutoplay(autoplay.index+1,now);
@@ -1221,7 +1224,6 @@ function autoplayFrame(now){
  if(autoplay.mode==='glide'){
   const p=reduceMotion?1:clamp((now-autoplay.start)/AUTOPLAY_GLIDE,0,1);
   window.scrollTo({top:lerp(autoplay.from,autoplay.to,p),behavior:'instant'});
-  autoplay.y=scrollY;
   if(p>=1)holdAutoplay(autoplay.index,now);
  }
  autoplay.frame=requestAnimationFrame(autoplayFrame);
@@ -1230,9 +1232,9 @@ function playAutoplay(){
  if(autoplay.on||!scenes.length)return;
  const now=performance.now(),pos=scrollY/unit;
  // From the last scene, or past it, the trip starts over.
- if(pos>=scenes.length-1.02){window.scrollTo({top:0,behavior:'instant'});holdAutoplay(0,now);}
+ if(pos>=scenes.length-1.02){autoplay.from=scrollY;autoplay.to=0;window.scrollTo({top:0,behavior:'instant'});holdAutoplay(0,now);}
  else glideAutoplay(Math.floor(pos+.02)+1,now);
- autoplay.on=true;autoplay.y=scrollY;
+ autoplay.on=true;
  setAutoplayButton();$('status').textContent='Recorrido en reproducción.';
  autoplay.frame=requestAnimationFrame(autoplayFrame);
 }
