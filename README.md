@@ -13,6 +13,8 @@ Sitio del itinerario Hohenau–Salta–Jujuy: 14 días en un solo scroll, con ma
 
 Abrí `index.html` en tu navegador. No necesita compilación ni servidor.
 
+El botón con el ícono de mapa, arriba a la izquierda, abre el mapa a pantalla completa: se puede mover, acercar y tocar cada lugar para ver sus actividades. Para compartirlo abierto, agregá `#mapa` al final del enlace.
+
 ## Publicar con GitHub Pages
 
 1. En el repositorio, entrá a **Settings → Pages**.
