@@ -37,7 +37,8 @@
       "name": "Itá Ibaté",
       "lat": -27.426,
       "lon": -57.337,
-      "image": "posadas"
+      "image": "posadas",
+      "passThrough": true
     },
     "corrientes": {
       "name": "Corrientes",
@@ -82,7 +83,8 @@
       "name": "Taco Pozo",
       "lat": -25.618,
       "lon": -63.27,
-      "image": "chaco"
+      "image": "chaco",
+      "passThrough": true
     },
     "quebrachal": {
       "name": "El Quebrachal",
@@ -92,9 +94,10 @@
     },
     "joaquin": {
       "name": "J. V. González",
-      "lat": -25.08,
-      "lon": -64.18,
-      "image": "chaco"
+      "lat": -25.091,
+      "lon": -64.1763,
+      "image": "chaco",
+      "passThrough": true
     },
     "galpon": {
       "name": "El Galpón",
@@ -102,12 +105,6 @@
       "lon": -64.65,
       "image": "chaco",
       "passThrough": true
-    },
-    "metan": {
-      "name": "Metán",
-      "lat": -25.5,
-      "lon": -64.975,
-      "image": "chaco"
     },
     "guemes": {
       "name": "General Güemes",
@@ -179,8 +176,8 @@
     },
     "flechas": {
       "name": "Quebrada de las Flechas",
-      "lat": -25.658,
-      "lon": -66.134,
+      "lat": -25.7034,
+      "lon": -66.1427,
       "image": "valles"
     },
     "molinos": {
@@ -283,14 +280,14 @@
     },
     "hornocal": {
       "name": "Hornocal",
-      "lat": -23.196,
-      "lon": -65.179,
+      "lat": -23.2095,
+      "lon": -65.1983,
       "image": "hornocal"
     },
     "lipan": {
       "name": "Cuesta de Lipán",
-      "lat": -23.681,
-      "lon": -65.647,
+      "lat": -23.6806,
+      "lon": -65.6456,
       "image": "purmamarca"
     },
     "salinas": {
@@ -355,7 +352,7 @@
           "uid": "d01-a01"
         },
         {
-          "time": "08:00",
+          "time": "06:45",
           "place": "posadas",
           "title": "Encarnación → Posadas",
           "body": "Cruce de frontera. El reloj es orientativo: la espera real marca el ritmo del resto de la jornada.",
@@ -378,7 +375,28 @@
           "uid": "d01-a02"
         },
         {
-          "time": "12:30",
+          "time": "10:15",
+          "place": "itaibate",
+          "title": "Itá Ibaté: pausa",
+          "body": "Café, baño y estirar las piernas a mitad de camino entre Posadas y Corrientes.",
+          "kind": "coffee",
+          "tag": "Plan base",
+          "budget": "20 min",
+          "mode": "Descanso",
+          "priority": "Plan base",
+          "todo": [
+            "Revisar combustible antes del tramo a Corrientes.",
+            "Volver a la ruta apenas estén descansados."
+          ],
+          "booking": "Parador o estación a elegir durante el viaje.",
+          "fallback": "Si ya pararon cerca, acortar la pausa, pero no eliminarla.",
+          "refs": [],
+          "query": "",
+          "routeIndex": 4,
+          "uid": "d01-a08"
+        },
+        {
+          "time": "13:15",
           "place": "corrientes",
           "title": "Almuerzo en el camino",
           "body": "Parar a comer en un lugar práctico entre Corrientes y Resistencia, estirar las piernas y seguir. Es una pausa de ruta, no un paseo.",
@@ -460,7 +478,6 @@
         "quebrachal",
         "joaquin",
         "galpon",
-        "metan",
         "guemes",
         "salta"
       ],
@@ -489,13 +506,13 @@
           "uid": "d02-a01"
         },
         {
-          "time": "08:30",
+          "time": "07:10",
           "place": "pampa",
           "title": "Pampa del Infierno: pausa",
           "body": "Baño, café y unos minutos caminando fuera del auto. El punto concreto se elige por seguridad y servicios disponibles.",
           "kind": "coffee",
           "tag": "Plan base",
-          "budget": "20–30 min",
+          "budget": "15–20 min",
           "mode": "Descanso",
           "priority": "Plan base",
           "todo": [
@@ -510,7 +527,7 @@
           "uid": "d02-a02"
         },
         {
-          "time": "11:00",
+          "time": "10:00",
           "place": "monte",
           "title": "Monte Quemado: descansar",
           "body": "Hacer otra pausa de descanso y comprobar combustible. No es una visita al pueblo ni una carrera contra el horario.",
@@ -531,28 +548,48 @@
           "uid": "d02-a03"
         },
         {
-          "time": "13:30",
-          "place": "galpon",
+          "time": "12:40",
+          "place": "joaquin",
           "title": "Almuerzo en el corredor",
-          "body": "Parar a comer antes del último tramo hacia Salta. Elegir un lugar práctico y reservar tiempo para caminar un poco.",
+          "body": "Parar a comer en el corredor de J. V. González, a mitad del tramo más largo de la RN 16. Elegir un lugar práctico y reservar tiempo para caminar un poco.",
           "kind": "food",
           "tag": "Plan base",
           "budget": "45–60 min",
           "mode": "Comida + pausa",
           "priority": "Plan base",
           "todo": [
-            "El Galpón es una referencia regional, no un restaurante confirmado.",
-            "Si el avance es distinto, almorzar antes: no esperar al pin del mapa."
+            "Elegir un lugar con servicio ágil sobre la ruta.",
+            "Cargar combustible antes de seguir hacia Salta."
           ],
           "booking": "Comercio por definir; llevar una alternativa de comida.",
           "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
           "refs": [],
           "query": "",
-          "routeIndex": 6,
+          "routeIndex": 5,
           "uid": "d02-a04"
         },
         {
-          "time": "17:30",
+          "time": "14:25",
+          "place": "galpon",
+          "title": "El Galpón: pausa",
+          "body": "Café, baño y unos minutos fuera del auto antes del último tramo hacia Salta.",
+          "kind": "coffee",
+          "tag": "Plan base",
+          "budget": "20 min",
+          "mode": "Descanso",
+          "priority": "Plan base",
+          "todo": [
+            "Revisar cómo viene el cansancio antes de entrar a Salta."
+          ],
+          "booking": "Parador o estación a elegir durante el viaje.",
+          "fallback": "Si ya pararon cerca, acortar la pausa, pero no eliminarla.",
+          "refs": [],
+          "query": "",
+          "routeIndex": 6,
+          "uid": "d02-a08"
+        },
+        {
+          "time": "17:00",
           "place": "salta",
           "title": "Salta: instalarse primero",
           "body": "Dejar el auto en el alojamiento. La primera visita será a pie y solo si quedan ganas después de la ruta.",
@@ -569,7 +606,7 @@
           "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
           "refs": [],
           "query": "",
-          "routeIndex": 9,
+          "routeIndex": 8,
           "uid": "d02-a05"
         },
         {
@@ -592,7 +629,7 @@
             "saltacentro"
           ],
           "query": "Plaza 9 de Julio Salta",
-          "routeIndex": 9,
+          "routeIndex": 8,
           "uid": "d02-a06"
         },
         {
@@ -615,11 +652,11 @@
             "donasalta"
           ],
           "query": "Doña Salta restaurante Córdoba 46 Salta",
-          "routeIndex": 9,
+          "routeIndex": 8,
           "uid": "d02-a07"
         }
       ],
-      "note": "Etapa larga: la estimación previa ronda 9 h de conducción, sin pausas. Confirmar tiempos y ruta antes de salir; 17:30 es una meta flexible.",
+      "note": "Etapa larga: unas 8 h 30 min de manejo real (656 km), más las pausas. Confirmar el estado de la RN 16 antes de salir; 17:00 es una meta flexible.",
       "source": "rutas",
       "practical": "Salta se conoce en varias visitas cortas del circuito. La tarde de llegada es solo para la plaza y la cena."
     },
@@ -642,7 +679,7 @@
       ],
       "stops": [
         {
-          "time": "08:30",
+          "time": "08:00",
           "place": "salta",
           "title": "Salta → Quebrada de las Conchas",
           "body": "Salir por la RN 68 con agua y almuerzo previsto. Hoy elegimos las paradas principales y protegemos la llegada a los domos a media tarde.",
@@ -666,7 +703,7 @@
           "uid": "d03-a01"
         },
         {
-          "time": "10:30",
+          "time": "10:15",
           "place": "alemania",
           "title": "Pausa antes de las rocas",
           "body": "Estirar las piernas en el corredor de Alemania y continuar hacia las formaciones. Esta pausa se puede trasladar a otro punto con servicios.",
@@ -687,7 +724,7 @@
           "uid": "d03-a02"
         },
         {
-          "time": "11:00",
+          "time": "11:05",
           "place": "puentemorales",
           "title": "Puente Morales",
           "body": "El puente viejo de hierro donde se filmó el final de “El más fuerte”, en Relatos salvajes. Una parada corta para fotos sobre el lecho del río de las Conchas.",
@@ -711,7 +748,7 @@
           "uid": "d03-a11"
         },
         {
-          "time": "11:30",
+          "time": "11:40",
           "place": "conchas",
           "title": "Garganta del Diablo",
           "body": "Acercarse a la entrada del cañón, observar sus paredes y hacer fotos desde el sector permitido. No planteamos escalar ni superar pasos rocosos.",
@@ -734,7 +771,7 @@
           "uid": "d03-a03"
         },
         {
-          "time": "12:15",
+          "time": "12:20",
           "place": "conchas",
           "title": "El Anfiteatro",
           "body": "Entrar al espacio natural, mirar la escala de las paredes y disfrutar su acústica sin apuro. Es una parada distinta de la Garganta del Diablo.",
@@ -802,7 +839,7 @@
           "uid": "d03-a06"
         },
         {
-          "time": "14:45",
+          "time": "14:50",
           "place": "conchas",
           "title": "Los Castillos",
           "body": "Una última parada para fotografiar las formaciones desde un lugar habilitado. Sin acercarse a paredes inestables ni añadir otra caminata.",
@@ -1231,8 +1268,8 @@
       "route": [
         "cafayate",
         "sancarlos",
-        "angastaco",
         "flechas",
+        "angastaco",
         "molinos",
         "cachi"
       ],
@@ -1302,7 +1339,7 @@
             "flechas"
           ],
           "query": "Quebrada de las Flechas Salta",
-          "routeIndex": 3,
+          "routeIndex": 2,
           "uid": "d06-a03"
         },
         {
@@ -1488,7 +1525,7 @@
           "uid": "d07-a03"
         },
         {
-          "time": "12:30",
+          "time": "12:45",
           "place": "cuesta",
           "title": "Cuesta del Obispo",
           "body": "Parada panorámica en un sector autorizado y descenso a ritmo tranquilo. La visibilidad decide si conviene detenerse.",
@@ -1512,7 +1549,7 @@
           "uid": "d07-a04"
         },
         {
-          "time": "14:00",
+          "time": "14:15",
           "place": "chicoana",
           "title": "Almuerzo antes de Salta",
           "body": "Pausa en el corredor de Chicoana para almorzar y descansar. Si el avance es distinto, comer antes en un lugar adecuado.",
@@ -2236,12 +2273,13 @@
           "body": "Proponemos contratar el ascenso desde Humahuaca para descansar de manejar. Ruta, horario y regreso quedan sujetos a confirmación.",
           "kind": "car",
           "tag": "Condicionado",
-          "budget": "3–4 h ida, visita y vuelta",
+          "budget": "Unas 3 h ida, visita y vuelta",
           "mode": "Con traslado",
           "priority": "Condicionado",
           "todo": [
             "Acordar qué incluye el servicio, esperas, tarifa y lugar de regreso.",
-            "El transporte no elimina el efecto de la altura; mantener la opción de no subir."
+            "El transporte no elimina el efecto de la altura; mantener la opción de no subir.",
+            "Contratar una salida de 3 h como máximo, así la vuelta a Purmamarca es a las 17:30 y con luz."
           ],
           "booking": "No hay traslado contratado. La alternativa en RAV4 requiere revisar ripio y comodidad al volante.",
           "fallback": "Quedarse en Humahuaca y regresar a Purmamarca sin ascenso.",
@@ -2460,7 +2498,7 @@
           "uid": "d12-a05"
         },
         {
-          "time": "15:30",
+          "time": "15:45",
           "place": "salta",
           "title": "Dejar valijas en Salta",
           "body": "Instalarse y tener la tarde libre para descansar o caminar el centro sin agenda antes de las dos jornadas de regreso.",
@@ -2517,7 +2555,6 @@
       "route": [
         "salta",
         "guemes",
-        "metan",
         "galpon",
         "joaquin",
         "quebrachal",
@@ -2551,7 +2588,7 @@
           "uid": "d13-a01"
         },
         {
-          "time": "09:00",
+          "time": "08:00",
           "place": "galpon",
           "title": "Primera pausa de la mañana",
           "body": "Pausa en el corredor de El Galpón para caminar, usar el baño y revisar cómo viene la jornada. El lugar exacto se adapta al avance.",
@@ -2568,8 +2605,28 @@
           "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
           "refs": [],
           "query": "",
-          "routeIndex": 3,
+          "routeIndex": 2,
           "uid": "d13-a02"
+        },
+        {
+          "time": "10:55",
+          "place": "tacopozo",
+          "title": "Taco Pozo: pausa",
+          "body": "Café, baño y unos minutos fuera del auto antes de Monte Quemado.",
+          "kind": "coffee",
+          "tag": "Plan base",
+          "budget": "20 min",
+          "mode": "Descanso",
+          "priority": "Plan base",
+          "todo": [
+            "Revisar combustible: hay largos tramos sin servicios."
+          ],
+          "booking": "Parador o estación a elegir durante el viaje.",
+          "fallback": "Si ya pararon cerca, acortar la pausa, pero no eliminarla.",
+          "refs": [],
+          "query": "",
+          "routeIndex": 5,
+          "uid": "d13-a07"
         },
         {
           "time": "12:00",
@@ -2589,11 +2646,11 @@
           "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
           "refs": [],
           "query": "",
-          "routeIndex": 7,
+          "routeIndex": 6,
           "uid": "d13-a03"
         },
         {
-          "time": "15:00",
+          "time": "15:20",
           "place": "pampa",
           "title": "Última pausa antes del hotel",
           "body": "Pausa breve en el corredor de Pampa del Infierno. Llegar algo más tarde es preferible a eliminar el descanso.",
@@ -2609,11 +2666,11 @@
           "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
           "refs": [],
           "query": "",
-          "routeIndex": 8,
+          "routeIndex": 7,
           "uid": "d13-a04"
         },
         {
-          "time": "17:30",
+          "time": "17:00",
           "place": "saenz",
           "title": "Noche de tránsito en Sáenz Peña",
           "body": "Instalarse, ducharse y descansar. Es una noche de tránsito, sin paseos.",
@@ -2630,7 +2687,7 @@
           "fallback": "Ducha, cena y descanso.",
           "refs": [],
           "query": "",
-          "routeIndex": 9,
+          "routeIndex": 8,
           "uid": "d13-a05"
         },
         {
@@ -2651,7 +2708,7 @@
           "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
           "refs": [],
           "query": "",
-          "routeIndex": 9,
+          "routeIndex": 8,
           "uid": "d13-a06"
         }
       ],
@@ -2703,7 +2760,7 @@
           "uid": "d14-a01"
         },
         {
-          "time": "09:00",
+          "time": "08:40",
           "place": "corrientes",
           "title": "Pausa en Corrientes",
           "body": "Café, baño y estirar las piernas en una parada práctica del corredor. Sin desvíos a la costanera ni al centro.",
@@ -2724,10 +2781,10 @@
           "uid": "d14-a02"
         },
         {
-          "time": "12:00",
-          "place": "ituzaingo",
+          "time": "11:45",
+          "place": "itaibate",
           "title": "Almuerzo antes de la frontera",
-          "body": "Almorzar en el corredor de Ituzaingó y continuar hacia Posadas. Es una parada de servicio; no un recorrido por los esteros.",
+          "body": "Almorzar en el corredor de Itá Ibaté y continuar hacia Posadas. Es una parada de servicio, antes de una espera fronteriza incierta.",
           "kind": "food",
           "tag": "Plan base",
           "budget": "45–60 min",
@@ -2741,11 +2798,11 @@
           "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
           "refs": [],
           "query": "",
-          "routeIndex": 5,
+          "routeIndex": 4,
           "uid": "d14-a03"
         },
         {
-          "time": "14:30",
+          "time": "15:10",
           "place": "posadas",
           "title": "Posadas → Encarnación",
           "body": "Cruzar a Paraguay según la espera real. La hora mostrada orienta el relato, no predice el control fronterizo.",
