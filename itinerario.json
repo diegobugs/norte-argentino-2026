@@ -898,7 +898,7 @@
           "time": "20:00",
           "place": "cafayate",
           "title": "Cena a su ritmo",
-          "body": "Cena cerca del alojamiento. Tras una jornada de vino y almuerzo largo, puede ser algo sencillo, sin otro traslado.",
+          "body": "Cena cerca del alojamiento después del recorrido por la Quebrada de las Conchas. Preparar la salida de mañana a La Yesera.",
           "kind": "food",
           "tag": "Plan base",
           "budget": "45–60 min",
@@ -906,9 +906,9 @@
           "priority": "Plan base",
           "todo": [
             "Elegir una cena cerca del alojamiento.",
-            "Confirmar las bodegas y los traslados de mañana."
+            "Confirmar el circuito de La Yesera, la mesa de las 13:30 en Piattelli y los traslados de mañana."
           ],
-          "booking": "Restaurante por elegir; bodegas y traslados del día 4 por coordinar.",
+          "booking": "Restaurante por elegir; recorrido de La Yesera, almuerzo en Piattelli y traslados del día 4 por coordinar.",
           "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
           "refs": [],
           "query": "",
@@ -922,130 +922,202 @@
     },
     {
       "n": 4,
-      "title": "Cafayate, vino y tiempo libre",
-      "subtitle": "Cafayate · bodegas y gastronomía",
+      "title": "La Yesera y tarde en Piattelli",
+      "subtitle": "Cafayate → La Yesera → Cafayate · almuerzo y tarde en Piattelli",
       "sleep": "Cafayate",
-      "tag": "Vino y comida",
+      "tag": "Paisaje y vino",
       "scene": "wine",
       "route": [
+        "cafayate",
+        "yesera",
         "cafayate"
       ],
       "stops": [
         {
-          "time": "09:00",
+          "time": "07:30",
           "place": "cafayate",
           "title": "Desayuno sin cambiar de hotel",
-          "body": "Mañana tranquila en Cafayate. Confirmar la visita a El Esteco, la mesa en Piattelli y los traslados antes de salir.",
+          "body": "Desayunar y preparar agua, protección solar y calzado para La Yesera. Salida a las 08:15; al mediodía volvemos al mismo hotel antes de ir a Piattelli.",
           "kind": "coffee",
           "tag": "Plan base",
-          "budget": "Mañana libre",
+          "budget": "30–45 min",
           "mode": "A pie",
           "priority": "Plan base",
-          "todo": [],
-          "booking": "Mismo alojamiento de Cafayate; bodegas y traslados por reservar.",
-          "fallback": "Ajustar el horario al avance real del día.",
+          "todo": [
+            "Llevar agua y algo para comer durante la mañana.",
+            "Tener coordinados el recorrido de La Yesera, el almuerzo y los traslados de la tarde."
+          ],
+          "booking": "Mismo alojamiento de Cafayate; caminata y reservas del día por coordinar.",
+          "fallback": "Si el desayuno del hotel empieza más tarde, pedirlo para llevar.",
           "refs": [],
           "query": "",
           "routeIndex": 0,
           "uid": "d04-a01"
         },
         {
+          "time": "08:15",
+          "place": "cafayate",
+          "title": "Salida hacia La Yesera",
+          "body": "Salir por la RN 68 hacia el acceso de La Yesera / Los Estratos, a unos 28–30 km de Cafayate. Reservar 35–45 minutos de manejo, como estimación de planificación.",
+          "kind": "car",
+          "tag": "Plan base",
+          "budget": "35–45 min estimados",
+          "mode": "Auto · RN 68",
+          "priority": "Plan base",
+          "todo": [
+            "Confirmar el punto de encuentro y acceso antes de salir."
+          ],
+          "booking": "Traslado por cuenta propia o con prestador, por definir.",
+          "fallback": "Si se demora la salida, acortar la caminata para conservar el almuerzo de las 13:30.",
+          "refs": [
+            "conchasfolleto"
+          ],
+          "query": "La Yesera Los Estratos Cafayate Ruta 68",
+          "routeIndex": 0,
+          "uid": "d04-salida-yesera"
+        },
+        {
+          "time": "09:00",
+          "place": "yesera",
+          "title": "La Yesera y Los Estratos",
+          "body": "Caminar hasta Los Estratos y volver por el mismo acceso, con tiempo para fotos. Se reservan dos horas y cuarto en total: el folleto de la reserva indica 40–60 minutos de caminata de acceso, a los que hay que sumar regreso y pausas. Salir de vuelta a Cafayate alrededor de las 11:15.",
+          "kind": "walk",
+          "tag": "Plan base",
+          "budget": "2–2:15 h · ida, vuelta y fotos",
+          "mode": "Caminata · circuito corto",
+          "priority": "Plan base",
+          "todo": [
+            "Coordinar el circuito corto, su duración total y el acceso con un guía local.",
+            "Acordar la hora de retorno según el ritmo del grupo; llevar agua, sombrero y calzado con agarre.",
+            "El circuito largo del Cañón del Paso queda fuera de esta mañana."
+          ],
+          "booking": "Guía, acceso y punto de encuentro por confirmar.",
+          "fallback": "Si el terreno, el calor o el ritmo exigen más tiempo, acortar el recorrido y volver a Cafayate para mantener la reserva.",
+          "refs": [
+            "conchasfolleto"
+          ],
+          "query": "La Yesera Los Estratos Cafayate",
+          "routeIndex": 1,
+          "uid": "d04-yesera"
+        },
+        {
           "time": "12:00",
           "place": "cafayate",
-          "title": "Visita a Bodega El Esteco",
-          "body": "Propuesta de bodega: conocer la elaboración y realizar una degustación. Reservar una experiencia que encaje antes del almuerzo, con traslado para los dos.",
-          "kind": "wine",
-          "tag": "Reserva pendiente",
-          "budget": "60–75 min",
-          "mode": "Con traslado",
-          "priority": "Reserva pendiente",
+          "title": "Pausa en el hotel de Cafayate",
+          "body": "Llegada estimada tras 35–45 minutos de regreso desde La Yesera. Ducharse, cambiarse y descansar antes del almuerzo; dejar el auto en el alojamiento si van a degustar.",
+          "kind": "bed",
+          "tag": "Plan base",
+          "budget": "1 h de margen",
+          "mode": "Hotel · misma habitación",
+          "priority": "Plan base",
           "todo": [
-            "Consultar la experiencia disponible, duración, etiquetas e idioma.",
-            "Pedir incluir un Torrontés en la selección si la propuesta lo permite; no asumir un menú de vinos concreto."
+            "Dejar listo lo necesario para salir a Piattelli a las 13:00."
           ],
-          "booking": "Reservar visita, precio y horario directamente con El Esteco. Las 12:00 son una propuesta, no un turno disponible.",
-          "fallback": "Si no hay cupo, elegir otra experiencia de la bodega; no sumar dos catas para compensar.",
+          "booking": "Se conserva la habitación: segunda noche en Cafayate.",
+          "fallback": "Si la caminata se alarga, usar parte de este margen sin apurar el manejo.",
+          "refs": [],
+          "query": "",
+          "routeIndex": 2,
+          "uid": "d04-pausa-cafayate"
+        },
+        {
+          "time": "13:00",
+          "place": "cafayate",
+          "title": "Traslado a Piattelli",
+          "body": "Salir del alojamiento hacia el restaurante de la bodega. Prever 15–20 minutos de traslado, según el hotel y el acceso, más margen para llegar a la mesa de las 13:30.",
+          "kind": "car",
+          "tag": "Plan base",
+          "budget": "15–20 min estimados + llegada",
+          "mode": "Traslado reservado",
+          "priority": "Plan base",
+          "todo": [
+            "Coordinar también el regreso desde Piattelli, tentativamente a las 17:30.",
+            "Confirmar el ingreso al restaurante de la bodega al reservar."
+          ],
+          "booking": "Traslado de ida y vuelta por coordinar.",
+          "fallback": "Si manejan, designar a una persona que no tome alcohol.",
           "refs": [
-            "esteco",
-            "estecotur"
+            "piatellirestaurante"
           ],
-          "query": "Bodega El Esteco Cafayate",
-          "routeIndex": 0,
-          "uid": "d04-a02"
+          "query": "Piattelli Vineyards Cafayate",
+          "routeIndex": 2,
+          "uid": "d04-traslado-piattelli",
+          "image": "piatelli"
         },
         {
           "time": "13:30",
           "place": "cafayate",
           "title": "Almuerzo en Piattelli Vineyards",
-          "body": "Almorzar en el restaurante de la bodega, con vista a los viñedos y al valle. Antes o después de comer, recorrer la bodega o sumar una degustación breve, sin apuro.",
+          "body": "Almorzar con calma en el restaurante de la bodega, con vista a los viñedos y al valle. La mesa se propone a las 13:30, dejando la tarde para una visita o para disfrutar de la terraza.",
           "kind": "food",
           "tag": "Reserva pendiente",
           "budget": "2–2:30 h",
           "mode": "Almuerzo en bodega",
           "priority": "Reserva pendiente",
           "todo": [
-            "Reservar mesa para el almuerzo y consultar si se puede combinar con una visita o degustación.",
-            "Pedir mesa en la terraza si el clima acompaña.",
-            "Ir y volver con traslado: nadie conduce después de degustar."
+            "Solicitar mesa a las 13:30 y confirmar el horario de cocina para la fecha del viaje.",
+            "Consultar una visita o degustación alrededor de las 16:00 y hasta qué hora pueden quedarse en la terraza.",
+            "Pedir mesa en la terraza si el clima acompaña."
           ],
-          "booking": "Mesa por reservar directamente con la bodega; no hay menú, precio ni horario confirmados.",
-          "fallback": "Si no hay mesa, almorzar en el centro de Cafayate y pasar por Piattelli a la tarde para una copa en la terraza.",
+          "booking": "Mesa de las 13:30 por solicitar; visita, menú y permanencia en la terraza por confirmar.",
+          "fallback": "Si no hay mesa a las 13:30, consultar otro turno de almuerzo compatible con el regreso de La Yesera antes de cerrar el día.",
           "refs": [
-            "piatelli"
+            "piatellirestaurante"
           ],
           "query": "Piattelli Vineyards Cafayate",
-          "routeIndex": 0,
+          "routeIndex": 2,
           "uid": "d04-a03",
           "image": "piatelli"
         },
         {
-          "time": "17:00",
+          "time": "16:00",
           "place": "cafayate",
-          "title": "Plaza e iglesia de Cafayate",
-          "body": "Dar una vuelta por la plaza central y el entorno de Nuestra Señora del Rosario. Paseo breve, artesanías y algo fresco; no otra bodega por obligación.",
-          "kind": "walk",
+          "title": "Terminar la tarde en Piattelli",
+          "body": "Seguir en la bodega después del almuerzo: visita y degustación si hay un turno confirmado, o sobremesa en la terraza. Piattelli es la última visita del día; regreso al hotel tentativo a las 17:30.",
+          "kind": "wine",
           "tag": "Plan base",
-          "budget": "45–60 min",
-          "mode": "A pie",
+          "budget": "1–1:30 h · flexible",
+          "mode": "Bodega y terraza",
           "priority": "Plan base",
           "todo": [
-            "Mirar la iglesia desde la plaza; entrar solo si está abierta.",
-            "Usar este rato para elegir dónde cenar cerca del hotel."
+            "Ajustar la visita al turno que confirme la bodega.",
+            "Confirmar el horario de cierre y la recogida del traslado; no dar por incluida la puesta de sol."
           ],
-          "booking": "Paseo libre, sin visita guiada reservada.",
-          "fallback": "Descanso en el hotel después del almuerzo.",
+          "booking": "Visita o degustación y acceso a la terraza sujetos a confirmación.",
+          "fallback": "Si no hay visita disponible, disfrutar del almuerzo y la terraza mientras el servicio lo permita.",
           "refs": [
-            "cafayate"
+            "piatellirestaurante"
           ],
-          "query": "Plaza central Cafayate Nuestra Señora del Rosario",
-          "routeIndex": 0,
-          "uid": "d04-a04"
+          "query": "Piattelli Vineyards Cafayate",
+          "routeIndex": 2,
+          "uid": "d04-piattelli-tarde",
+          "image": "piatelli"
         },
         {
-          "time": "20:30",
+          "time": "18:00",
           "place": "cafayate",
-          "title": "Cena y preparar la Ruta 40",
-          "body": "Cena tranquila y preparar agua, combustible y equipaje. Mañana dejamos Cafayate para dormir en Cachi.",
-          "kind": "food",
+          "title": "Descanso en Cafayate y preparar la Ruta 40",
+          "body": "De vuelta en el alojamiento, descansar y preparar agua y equipaje para salir hacia Cachi mañana. Cena sencilla cerca del hotel si tienen hambre, sin otra visita programada.",
+          "kind": "moon",
           "tag": "Plan base",
-          "budget": "45–60 min",
-          "mode": "A pie",
+          "budget": "Resto de la tarde y noche",
+          "mode": "Alojamiento",
           "priority": "Plan base",
           "todo": [
-            "Cenar cerca del alojamiento.",
-            "Preparar agua, equipaje y revisar la Ruta 40 para salir hacia Cachi."
+            "Revisar la Ruta 40 y dejar listo el equipaje.",
+            "Resolver el combustible antes de la salida a Cachi."
           ],
-          "booking": "Restaurante por elegir; alojamiento de Cachi por confirmar.",
-          "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
+          "booking": "Segunda noche en el mismo alojamiento; hotel de Cachi por confirmar.",
+          "fallback": "Ajustar el regreso al tiempo que quieran quedarse en Piattelli y al horario confirmado de la bodega.",
           "refs": [],
           "query": "",
-          "routeIndex": 0,
+          "routeIndex": 2,
           "uid": "d04-a05"
         }
       ],
-      "note": "Segunda noche en Cafayate, en el mismo alojamiento. Mañana se sale hacia Cachi. La Yesera queda como alternativa a las bodegas, sin sumarla al mismo programa.",
+      "note": "Segunda noche en Cafayate, en el mismo alojamiento. La Yesera tiene su caminata fija por la mañana y Piattelli es la última visita del día. Mañana se sale hacia Cachi.",
       "source": "cafayate",
-      "practical": "Visita a El Esteco y almuerzo en Piattelli. Dejar el auto estacionado antes de degustar y coordinar los traslados. La mañana exclusiva de La Yesera se elimina al acortar el viaje."
+      "practical": "Horarios propuestos: salida 08:15, La Yesera 09:00–11:15, hotel 12:00, traslado 13:00 y almuerzo 13:30. Manejo estimado: 35–45 min por tramo a La Yesera y 15–20 min del hotel a Piattelli. Confirmar el circuito corto, la mesa, el turno de visita y el cierre; usar traslado si van a degustar."
     },
     {
       "n": 5,
@@ -2298,7 +2370,7 @@
         "puentemorales",
         "yesera"
       ],
-      "note": "Garganta, Anfiteatro, Tres Cruces, Los Castillos y Puente Morales camino a Cafayate. La Yesera queda como alternativa a las bodegas del día 4."
+      "note": "Garganta, Anfiteatro, Tres Cruces, Los Castillos y Puente Morales camino a Cafayate el día 3. La Yesera / Los Estratos tiene su caminata corta el día 4, de 09:00 a 11:15, con salida y regreso desde Cafayate."
     },
     {
       "id": "cafayate",
@@ -2306,7 +2378,7 @@
       "places": [
         "cafayate"
       ],
-      "note": "Dos noches en la ciudad. Una jornada de bodegas y gastronomía; auto estacionado desde que empieza la degustación."
+      "note": "Dos noches en la ciudad. El día 4: La Yesera por la mañana, pausa en el hotel y almuerzo en Piattelli a las 13:30 para terminar la tarde allí. Coordinar los traslados si van a degustar."
     },
     {
       "id": "valles",
@@ -2386,14 +2458,15 @@
     "Revisar documentación personal y del vehículo, seguro y asistencia.",
     "Comprobar el estado de la RN 16, la Ruta 40, la RP 33 y las rutas del circuito.",
     "Confirmar guía, circuito, acceso y punto de encuentro en Uquía para el día 7.",
-    "Reservar visitas a bodegas y los traslados para las degustaciones en Cafayate.",
+    "Coordinar los traslados para Piattelli si van a degustar.",
     "Definir la caminata de las Señoritas según el nivel y comodidad de ambos.",
     "Confirmar el hotel en Cachi y revisar el ripio de la Ruta 40.",
     "Revisar clima y accesos antes de cada salida de montaña.",
     "Dejar libre un día extra después del día 10 como margen para el regreso.",
     "Coordinar las tres noches en El Cielo en Tilcara: entrada el día 6, salida el día 9, fechas, acceso, estacionamiento y salida a las 06:00 con desayuno o vianda.",
-    "Coordinar El Esteco, la mesa para almorzar en Piattelli y traslados sin conducir después de degustar.",
-    "Preparar el traslado Cachi–Tilcara y el regreso Tilcara–Sáenz Peña con combustible, comida y descansos."
+    "Reservar la mesa para almorzar en Piattelli; consultar visita o degustación si les interesa.",
+    "Preparar el traslado Cachi–Tilcara y el regreso Tilcara–Sáenz Peña con combustible, comida y descansos.",
+    "Confirmar el circuito corto de La Yesera / Los Estratos para el día 4, con guía, acceso y regreso al auto alrededor de las 11:15; coordinar mesa a las 13:30, visita y horario de cierre en Piattelli."
   ],
   "sources": {
     "rutas": {
@@ -2447,14 +2520,6 @@
     "conchas": {
       "label": "Visit Salta · Quebrada de las Conchas y sus formaciones",
       "url": "https://visitsalta.ar/valles-calchaquies/quebrada-de-las-conchas/"
-    },
-    "esteco": {
-      "label": "El Esteco · visitas y experiencias",
-      "url": "https://elesteco.com.ar/turismo/"
-    },
-    "estecotur": {
-      "label": "Visit Argentina · visitas a Bodega El Esteco",
-      "url": "https://www.argentina.travel/enoturismo/bodega-el-esteco"
     },
     "yesera": {
       "label": "Turismo de Cafayate · La Yesera",
@@ -2539,6 +2604,14 @@
     "regresotilcara": {
       "label": "Rome2Rio · referencia de distancia y manejo Tilcara–Sáenz Peña",
       "url": "https://www.rome2rio.com/es/s/Presidencia-Roque-S%C3%A1enz-Pe%C3%B1a/Tilcara"
+    },
+    "conchasfolleto": {
+      "label": "Gobierno de Salta · folleto de la Reserva Quebrada de las Conchas (2016)",
+      "url": "https://produccionsalta.gob.ar/wp-content/uploads/2024/01/Triptico_RNQC_2016.pdf"
+    },
+    "piatellirestaurante": {
+      "label": "Piattelli Travel · restaurante de Cafayate y contacto para reservas",
+      "url": "https://www.piattellitravel.com/cafayate-wine-tastings"
     }
   },
   "images": {

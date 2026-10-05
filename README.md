@@ -14,7 +14,7 @@ Sitio del itinerario Hohenau–Salta–Jujuy: 10 días en un solo scroll, con ma
 - Día 8: Salinas Grandes y Purmamarca desde Tilcara.
 - Días 9–10: Tilcara → Sáenz Peña → Hohenau.
 
-Hornocal y la mañana exclusiva de La Yesera salen del programa base. La Yesera queda como alternativa a las bodegas. El traslado Cachi–Tilcara y el regreso Tilcara–Sáenz Peña requieren jornadas largas, con pausas.
+El día 4 combina La Yesera / Los Estratos por la mañana (09:00–11:15), pausa en el hotel de Cafayate y almuerzo en Piattelli a las 13:30, con la tarde completa en la bodega como última visita. Salida de Cafayate a las 08:15; prever 35–45 minutos de manejo por tramo a La Yesera y 15–20 minutos del hotel a Piattelli. Son estimaciones de planificación: confirmar el circuito corto, la mesa, el turno de visita y el cierre de la bodega. Hornocal queda fuera del programa base. El traslado Cachi–Tilcara y el regreso Tilcara–Sáenz Peña requieren jornadas largas, con pausas.
 
 ## Archivos
 
