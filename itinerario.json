@@ -1160,27 +1160,6 @@
           "uid": "d05-a01"
         },
         {
-          "time": "09:00",
-          "place": "sancarlos",
-          "title": "San Carlos: pausa",
-          "body": "Café, baño y estirar las piernas antes del ripio de la Ruta 40. Es una pausa de ruta, no un paseo.",
-          "kind": "coffee",
-          "tag": "Opcional",
-          "budget": "20–30 min",
-          "mode": "Descanso",
-          "priority": "Opcional",
-          "todo": [
-            "Cargar combustible si hace falta: después hay pocos surtidores.",
-            "Volver a la ruta apenas estén descansados."
-          ],
-          "booking": "Sin establecimiento reservado.",
-          "fallback": "Hacer la pausa en otro punto adecuado de la ruta.",
-          "refs": [],
-          "query": "",
-          "routeIndex": 1,
-          "uid": "d05-a02"
-        },
-        {
           "time": "11:00",
           "place": "flechas",
           "title": "Quebrada de las Flechas",
@@ -2384,7 +2363,6 @@
       "id": "valles",
       "title": "Ruta 40 y Cachi",
       "places": [
-        "sancarlos",
         "flechas",
         "molinos",
         "cachi"
