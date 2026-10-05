@@ -284,10 +284,10 @@
       "image": "purmamarca"
     },
     "maimara": {
-      "name": "Maimará",
+      "name": "Paleta del Pintor · Maimará",
       "lat": -23.625,
       "lon": -65.406,
-      "image": "purmamarca"
+      "image": "paleta"
     },
     "tilcara": {
       "name": "Tilcara",
@@ -330,6 +330,12 @@
       "lat": -23.597,
       "lon": -65.883,
       "image": "salinas"
+    },
+    "pucara": {
+      "name": "Pucará de Tilcara",
+      "lat": -23.58641,
+      "lon": -65.40183,
+      "image": "pucara"
     }
   },
   "days": [
@@ -1880,8 +1886,8 @@
     },
     {
       "n": 8,
-      "title": "Salinas y Purmamarca desde Tilcara",
-      "subtitle": "Tilcara → Salinas Grandes → Purmamarca → Tilcara",
+      "title": "Salinas, Purmamarca, Paleta y Pucará",
+      "subtitle": "Tilcara → Salinas Grandes → Purmamarca → Maimará → Pucará → Tilcara",
       "sleep": "Tilcara",
       "tag": "Paisajes de altura",
       "scene": "salt",
@@ -1894,14 +1900,15 @@
         "lipan",
         "purmamarca",
         "maimara",
+        "pucara",
         "tilcara"
       ],
       "stops": [
         {
-          "time": "08:00",
+          "time": "07:00",
           "place": "tilcara",
           "title": "Hacia Salinas Grandes",
-          "body": "Desayunar en Tilcara y salir por Maimará y Purmamarca hacia la Cuesta de Lipán. Llevar agua, gafas de sol, abrigo y comida de respaldo.",
+          "body": "Desayunar y salir de Tilcara a las 07:00 para visitar Salinas por la mañana y dejar tiempo al regreso para Purmamarca, la Paleta del Pintor y el Pucará. Llevar agua, abrigo y una vianda para la pausa del mediodía.",
           "kind": "car",
           "tag": "Plan base",
           "budget": "Excursión de día",
@@ -1921,7 +1928,7 @@
           "uid": "d08-a01"
         },
         {
-          "time": "09:30",
+          "time": "08:30",
           "place": "lipan",
           "title": "Cuesta de Lipán",
           "body": "Una parada breve en un mirador habilitado, si hay visibilidad. No es un lugar para sumar esfuerzo físico ni caminar junto al tránsito.",
@@ -1944,13 +1951,13 @@
           "uid": "d08-a02"
         },
         {
-          "time": "10:45",
+          "time": "09:30",
           "place": "salinas",
           "title": "Salinas Grandes",
-          "body": "Consultar el circuito habilitado con los prestadores locales. Dedicar tiempo al paisaje y a fotos de perspectiva, sin conducir por la sal fuera de los accesos autorizados.",
+          "body": "Consultar el circuito habilitado con los prestadores locales. Reservar aproximadamente una hora para el paisaje y las fotos, y salir alrededor de las 10:30 hacia Purmamarca; prever entre 1 h 45 min y 2 h de manejo como estimación de planificación.",
           "kind": "camera",
           "tag": "Plan base",
-          "budget": "60–90 min",
+          "budget": "60 min",
           "mode": "Visita local",
           "priority": "Plan base",
           "todo": [
@@ -1968,33 +1975,12 @@
         },
         {
           "time": "12:15",
-          "place": "salinas",
-          "title": "Almuerzo sencillo",
-          "body": "Comer en un lugar habilitado o usar la vianda. Mantener el descanso sin añadir Susques u otro destino alejado.",
-          "kind": "food",
-          "tag": "Plan base",
-          "budget": "30–45 min",
-          "mode": "Comida + pausa",
-          "priority": "Plan base",
-          "todo": [
-            "No depender de que haya restaurante abierto en el punto del mapa.",
-            "Llevarse todos los residuos y organizar la bajada con luz."
-          ],
-          "booking": "Sin comedor confirmado.",
-          "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
-          "refs": [],
-          "query": "",
-          "routeIndex": 4,
-          "uid": "d08-a04"
-        },
-        {
-          "time": "15:00",
           "place": "purmamarca",
           "title": "Plaza, iglesia y artesanías",
-          "body": "Al bajar del salar, recorrer la plaza, la iglesia y los puestos de artesanías de Purmamarca, con vistas al Cerro de los Siete Colores. Hoy volvemos a dormir en Tilcara.",
+          "body": "Al bajar del salar, recorrer la plaza, la iglesia y los puestos de artesanías de Purmamarca, con vistas al Cerro de los Siete Colores. Salir alrededor de las 13:00 hacia Maimará: prever 25–30 minutos de manejo hasta el sector del mirador.",
           "kind": "walk",
           "tag": "Plan base",
-          "budget": "60 min",
+          "budget": "45 min",
           "mode": "A pie",
           "priority": "Plan base",
           "todo": [
@@ -2011,30 +1997,81 @@
           "uid": "d08-a05"
         },
         {
-          "time": "16:00",
-          "place": "purmamarca",
-          "title": "Merienda frente a los cerros",
-          "body": "Descansar antes de volver a Tilcara. Con energía, cambiar este rato por un tramo corto habilitado de Los Colorados, sin agregar otra caminata larga.",
-          "kind": "coffee",
+          "time": "13:30",
+          "place": "maimara",
+          "title": "Paleta del Pintor · mirador de Maimará",
+          "body": "Parada al mediodía para contemplar las franjas de colores de la Paleta del Pintor y el pueblo de Maimará desde un mirador de la RN 9. Dedicar media hora al paisaje y a las fotos antes de almorzar. El punto del mapa representa Maimará; confirmar el acceso exacto al mirador en el navegador.",
+          "kind": "camera",
+          "image": "paleta",
           "tag": "Plan base",
-          "budget": "30–45 min",
-          "mode": "A pie",
+          "budget": "30 min",
+          "mode": "Mirador",
           "priority": "Plan base",
-          "todo": [],
-          "booking": "Lugar de merienda por elegir.",
-          "fallback": "Ajustar el horario al avance real del día.",
-          "refs": [
-            "purmamarca"
+          "todo": [
+            "Elegir un mirador habilitado con lugar para estacionar.",
+            "Contemplar las capas rojizas, ocres y verdosas del cerro y las vistas del pueblo."
           ],
+          "booking": "Sin visita guiada reservada. Verificar el acceso al mirador; el horario de las 13:30 es una propuesta sujeta al avance desde Salinas.",
+          "fallback": "Si la bajada del salar se demora, hacer una parada breve y conservar la pausa para comer; ajustar la visita al Pucará según su horario de ingreso.",
+          "refs": [
+            "maimara"
+          ],
+          "query": "Mirador Paleta del Pintor Maimará Jujuy",
+          "routeIndex": 7,
+          "uid": "d08-paleta"
+        },
+        {
+          "time": "14:00",
+          "place": "maimara",
+          "title": "Almuerzo en Maimará",
+          "body": "Después del mirador, almorzar en Maimará o usar la vianda en un lugar habilitado. Reservar 45 minutos para comer y descansar. Luego seguir hacia el Pucará de Tilcara, con margen para el traslado, estacionamiento y entrada.",
+          "kind": "food",
+          "tag": "Plan base",
+          "budget": "45 min",
+          "mode": "Comida + pausa",
+          "priority": "Plan base",
+          "todo": [
+            "No depender de que haya restaurante abierto en el punto del mapa.",
+            "Llevarse todos los residuos y organizar la bajada con luz."
+          ],
+          "booking": "Restaurante por elegir; llevar vianda de respaldo.",
+          "fallback": "Usar la vianda si no hay un lugar disponible y ajustar el ingreso al Pucará al avance real.",
+          "refs": [],
           "query": "",
-          "routeIndex": 6,
-          "uid": "d08-a06"
+          "routeIndex": 7,
+          "uid": "d08-a04"
+        },
+        {
+          "time": "15:30",
+          "place": "pucara",
+          "title": "Pucará de Tilcara",
+          "body": "Aprovechar la tarde libre para recorrer el poblado prehispánico: recintos de piedra, senderos entre cardones y vistas de la Quebrada de Humahuaca. Visita estimada de 15:30 a 17:00, antes de volver a El Cielo en Tilcara para preparar el regreso.",
+          "kind": "walk",
+          "image": "pucara",
+          "tag": "Plan base",
+          "budget": "90 min",
+          "mode": "Sitio arqueológico",
+          "priority": "Plan base",
+          "todo": [
+            "Recorrer los caminos señalizados y los sectores habilitados del sitio.",
+            "Confirmar qué día de la semana corresponde al día 8: el Pucará cierra los lunes.",
+            "Si desean visita guiada, consultar los turnos de la UBA antes del viaje."
+          ],
+          "booking": "Según la UBA: martes a domingo de 09:00 a 18:30, último ingreso a las 17:15; lunes cerrado. Sin guía se puede visitar abonando la entrada, sin reserva previa. Reconfirmar horario, tarifa y apertura antes del viaje.",
+          "fallback": "Si el día 8 cae lunes, llueve o la excursión se demora más allá del último ingreso, mantener el descanso en Tilcara y reprogramar el Pucará solo si se dispone de otra jornada.",
+          "refs": [
+            "pucara",
+            "pucaraguia"
+          ],
+          "query": "Pucará de Tilcara Jujuy",
+          "routeIndex": 8,
+          "uid": "d08-pucara"
         },
         {
           "time": "17:30",
           "place": "tilcara",
           "title": "Última tarde en la base",
-          "body": "Volver a El Cielo en Tilcara, cargar combustible y preparar el equipaje. Coordinar la salida a las 06:00 y el desayuno o vianda de mañana.",
+          "body": "Volver a El Cielo en Tilcara después del Pucará, cargar combustible y preparar el equipaje. Coordinar la salida a las 06:00 y el desayuno o vianda de mañana.",
           "kind": "bed",
           "tag": "Plan base",
           "budget": "Descanso y preparativos",
@@ -2047,7 +2084,7 @@
             "elcielocontacto"
           ],
           "query": "",
-          "routeIndex": 8,
+          "routeIndex": 9,
           "uid": "d08-a07"
         },
         {
@@ -2065,13 +2102,13 @@
           "fallback": "Ajustar el horario al avance real del día.",
           "refs": [],
           "query": "",
-          "routeIndex": 8,
+          "routeIndex": 9,
           "uid": "d08-a08"
         }
       ],
-      "note": "Excursión de altura después de dos noches en Tilcara, sujeta a clima y bienestar. Regreso a El Cielo en Tilcara y preparación de la salida temprana hacia Sáenz Peña.",
+      "note": "Salida a las 07:00: Salinas por la mañana, Purmamarca al bajar, Paleta del Pintor a las 13:30, almuerzo en Maimará y Pucará a las 15:30. Los tiempos de manejo son estimaciones de planificación; ajustar al clima y al avance. Regreso a la base a las 17:30.",
       "source": "jujuy",
-      "practical": "Subir al salar por la mañana y visitar Purmamarca al bajar. El paseo largo de Los Colorados queda como alternativa al paseo por el pueblo, según energía y tiempo. Tercera noche en Tilcara.",
+      "practical": "Salir temprano y prever una visita de una hora al salar. Purmamarca de 12:15 a 13:00, Paleta del Pintor de 13:30 a 14:00, almuerzo de 14:00 a 14:45 y Pucará de 15:30 a 17:00. Se utiliza la tarde libre y se reemplaza la merienda por las nuevas visitas. Confirmar apertura del Pucará: lunes cerrado y último ingreso publicado a las 17:15. Los Colorados queda para una jornada con más margen. Tercera noche en Tilcara.",
       "accommodation": {
         "name": "El Cielo en Tilcara",
         "area": "Tilcara",
@@ -2521,7 +2558,7 @@
       "places": [
         "purmamarca"
       ],
-      "note": "Visita desde Tilcara, combinada con Salinas Grandes. Plaza, artesanías y vistas al Cerro de los Siete Colores."
+      "note": "Día 8: paseo por plaza, iglesia y artesanías de 12:15 a 13:00 al regresar de Salinas, antes de continuar a Maimará."
     },
     {
       "id": "uquia",
@@ -2546,7 +2583,7 @@
         "lipan",
         "salinas"
       ],
-      "note": "Salida desde Tilcara por Purmamarca y Lipán. Visita al salar por la mañana y al pueblo al regreso."
+      "note": "Día 8: salida de Tilcara a las 07:00, Lipán a las 08:30 y Salinas de 09:30 a 10:30. Después, Purmamarca, Maimará y Pucará."
     },
     {
       "id": "humahuaca",
@@ -2565,13 +2602,28 @@
       "note": "Día 7: ascenso en la RAV4 desde Humahuaca a las 14:30, mirador de 15:45 a 16:30 y descenso con margen. Reconfirmar horarios de temporada y estado del acceso."
     },
     {
+      "id": "paleta",
+      "title": "Paleta del Pintor · Maimará",
+      "places": [
+        "maimara"
+      ],
+      "note": "Día 8: mirador de 13:30 a 14:00 y almuerzo en Maimará antes de seguir al Pucará."
+    },
+    {
+      "id": "pucara",
+      "title": "Pucará de Tilcara",
+      "places": [
+        "pucara"
+      ],
+      "note": "Día 8: visita de 15:30 a 17:00 en la tarde libre. Reconfirmar apertura: lunes cerrado; último ingreso publicado a las 17:15."
+    },
+    {
       "id": "tilcara",
       "title": "Tilcara · El Cielo en Tilcara",
       "places": [
-        "tilcara",
-        "maimara"
+        "tilcara"
       ],
-      "note": "Base de tres noches, del día 6 al día 9, en El Cielo en Tilcara. Día 7: las Señoritas, Humahuaca y Hornocal, de 07:30 a 19:00. Día 8: Salinas y Purmamarca."
+      "note": "Base de tres noches, del día 6 al día 9, en El Cielo en Tilcara. Día 7: Señoritas, Humahuaca y Hornocal. Día 8: Salinas, Purmamarca, Paleta del Pintor y Pucará; regreso a la base a las 17:30."
     }
   ],
   "checklist": [
@@ -2588,7 +2640,8 @@
     "Reservar la mesa para almorzar en Piattelli; consultar visita o degustación si les interesa.",
     "Preparar el traslado Cachi–Tilcara y el regreso Tilcara–Sáenz Peña con combustible, comida y descansos.",
     "Confirmar el circuito corto de La Yesera / Los Estratos para el día 4, con guía, acceso y regreso al auto alrededor de las 11:15; coordinar mesa a las 13:30, visita y horario de cierre en Piattelli.",
-    "Reconfirmar el acceso a Hornocal en la RAV4: estado del ripio, clima, tarifa y horario de temporada. Plan: ascenso desde Humahuaca 14:30, mirador 15:45–16:30 y regreso a Tilcara alrededor de las 19:00."
+    "Reconfirmar el acceso a Hornocal en la RAV4: estado del ripio, clima, tarifa y horario de temporada. Plan: ascenso desde Humahuaca 14:30, mirador 15:45–16:30 y regreso a Tilcara alrededor de las 19:00.",
+    "Confirmar apertura y tarifa del Pucará para el día 8: lunes cerrado, visita propuesta 15:30–17:00 y último ingreso publicado a las 17:15. Consultar turno si desean guía."
   ],
   "sources": {
     "rutas": {
@@ -2856,6 +2909,10 @@
     "senoritas-v2": {
       "label": "Quebrada de las Señoritas · cañadones y paredes rojizas · interpretación visual",
       "position": "50% 45%"
+    },
+    "paleta": {
+      "label": "Paleta del Pintor en Maimará · interpretación visual generada con IA",
+      "position": "50% 50%"
     }
   },
   "checklistVersion": 3
