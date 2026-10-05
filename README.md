@@ -10,11 +10,13 @@ Sitio del itinerario Hohenau–Salta–Jujuy: 10 días en un solo scroll, con ma
 - Días 3–4: Quebrada de las Conchas y Cafayate, sin Domos del Viento.
 - Día 5: Ruta 40, Quebrada de las Flechas y Cachi.
 - Día 6: Cachi → Los Cardones → Cuesta del Obispo → Tilcara.
-- Día 7: Uquía, Quebrada de las Señoritas y Humahuaca desde Tilcara.
+- Día 7: sendero largo de las Señoritas, Humahuaca y Hornocal en la RAV4 desde Tilcara (07:30–19:00).
 - Día 8: Salinas Grandes y Purmamarca desde Tilcara.
 - Días 9–10: Tilcara → Sáenz Peña → Hohenau.
 
-El día 4 combina La Yesera / Los Estratos por la mañana (09:00–11:15), pausa en el hotel de Cafayate y almuerzo en Piattelli a las 13:30, con la tarde completa en la bodega como última visita. Salida de Cafayate a las 08:15; prever 35–45 minutos de manejo por tramo a La Yesera y 15–20 minutos del hotel a Piattelli. Son estimaciones de planificación: confirmar el circuito corto, la mesa, el turno de visita y el cierre de la bodega. Hornocal queda fuera del programa base. El traslado Cachi–Tilcara y el regreso Tilcara–Sáenz Peña requieren jornadas largas, con pausas.
+El día 4 combina La Yesera / Los Estratos por la mañana (09:00–11:15), pausa en el hotel de Cafayate y almuerzo en Piattelli a las 13:30, con la tarde completa en la bodega como última visita. Salida de Cafayate a las 08:15; prever 35–45 minutos de manejo por tramo a La Yesera y 15–20 minutos del hotel a Piattelli. Son estimaciones de planificación: confirmar el circuito corto, la mesa, el turno de visita y el cierre de la bodega. El traslado Cachi–Tilcara y el regreso Tilcara–Sáenz Peña requieren jornadas largas, con pausas.
+
+El día 7 sale de Tilcara a las 07:30: encuentro con el guía en Uquía a las 08:15, sendero largo de las Señoritas de 08:30 a 12:30 (cuatro horas estimadas en total con ida, vuelta y pausas), más 30 minutos de margen hasta las 13:00, almuerzo en Humahuaca a las 13:30 y ascenso a Hornocal en la RAV4 a las 14:30. Mirador de 15:45 a 16:30, descenso hasta las 17:45, pausa y salida de Humahuaca a las 18:00 para llegar a El Cielo en Tilcara alrededor de las 19:00. Es una jornada larga: la iglesia de Uquía depende de terminar antes la caminata y el paseo urbano de Humahuaca es breve y opcional. Confirmar el turno temprano del guía, el acceso a Hornocal y los horarios de temporada; sin mes definido no se garantiza volver con luz.
 
 ## Archivos
 

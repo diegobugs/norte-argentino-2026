@@ -1462,13 +1462,15 @@
           "time": "20:00",
           "place": "tilcara",
           "title": "Primera cena en Tilcara",
-          "body": "Cena cerca del alojamiento y descanso después del traslado. Las salidas de los próximos dos días regresan a esta misma base.",
+          "body": "Cena cerca del alojamiento y descanso después del traslado. Dejar listos el desayuno temprano, la vianda y el encuentro con el guía: mañana se sale a las 07:30 para las Señoritas y Hornocal.",
           "kind": "food",
           "tag": "Plan base",
           "budget": "60 min",
           "mode": "A pie",
           "priority": "Plan base",
-          "todo": [],
+          "todo": [
+            "Confirmar guía a las 08:15, sendero largo a las 08:30 y desayuno temprano o para llevar."
+          ],
           "booking": "Restaurante a elegir; alojamiento en El Cielo en Tilcara.",
           "fallback": "Ajustar el horario al avance real del día.",
           "refs": [],
@@ -1503,8 +1505,8 @@
     },
     {
       "n": 7,
-      "title": "Uquía y Humahuaca desde Tilcara",
-      "subtitle": "Tilcara → Uquía y las Señoritas → Humahuaca → Tilcara",
+      "title": "Las Señoritas y Hornocal",
+      "subtitle": "Tilcara → Uquía y las Señoritas → Humahuaca → Hornocal → Tilcara",
       "sleep": "Tilcara",
       "tag": "Imprescindible",
       "scene": "uquia",
@@ -1514,26 +1516,28 @@
         "senoritas",
         "uquia",
         "humahuaca",
+        "hornocal",
+        "humahuaca",
         "uquia",
         "tilcara"
       ],
       "stops": [
         {
-          "time": "08:00",
+          "time": "07:30",
           "place": "tilcara",
           "title": "Salida hacia Uquía",
-          "body": "Salir de El Cielo en Tilcara hacia Uquía. Agua, protección solar, calzado con agarre y una vianda de respaldo para la caminata.",
+          "body": "Salir de El Cielo en Tilcara con desayuno resuelto, combustible, agua y una vianda. Ir en la RAV4 hasta el punto de encuentro acordado en Uquía para comenzar el sendero largo a las 08:30.",
           "kind": "car",
           "tag": "Plan base",
-          "budget": "Traslado con margen",
-          "mode": "Auto",
+          "budget": "45 min estimados",
+          "mode": "RAV4 · RN 9",
           "priority": "Plan base",
           "todo": [
-            "Confirmar punto de encuentro y el último acceso con el guía.",
-            "Llevar comida de respaldo por si el almuerzo se retrasa."
+            "Coordinar desayuno temprano o para llevar con el alojamiento.",
+            "Confirmar con el guía el encuentro a las 08:15 y el comienzo de la caminata a las 08:30."
           ],
-          "booking": "Guía, circuito y encuentro por confirmar.",
-          "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
+          "booking": "Encuentro temprano y acceso al sendero por confirmar con el guía.",
+          "fallback": "Si el guía no puede comenzar a las 08:30, revisar el encaje de Hornocal antes de salir; no compensar conduciendo más rápido.",
           "refs": [
             "uquiaguia"
           ],
@@ -1542,115 +1546,116 @@
           "uid": "d07-a01"
         },
         {
-          "time": "08:45",
+          "time": "08:15",
           "place": "uquia",
           "title": "Encuentro con el guía",
-          "body": "Acordar el circuito, esfuerzo y tiempo antes de comenzar. El objetivo es disfrutar la Quebrada de las Señoritas, no alcanzar cualquier punto a toda costa.",
+          "body": "Reunirse con el guía y preparar el sendero largo de las Señoritas, elegido por ustedes. Acordar el acceso en vehículo y el circuito habilitado: se estiman cuatro horas para la visita completa con regreso al auto, más media hora de margen.",
           "kind": "pin",
           "tag": "Imprescindible",
-          "budget": "20–30 min",
+          "budget": "15 min",
           "mode": "Preparación",
           "priority": "Imprescindible",
           "todo": [
-            "Pedir un recorrido ajustado a ambos y conocer las opciones de regreso corto.",
-            "Consultar acceso, tarifa y condiciones del día antes de iniciar."
+            "Confirmar que las 08:30 sean un inicio posible según acceso y luz disponible.",
+            "Confirmar un regreso estimado al auto a las 12:30, con margen hasta las 13:00, según el circuito y el ritmo del grupo."
           ],
-          "booking": "No se ha contratado guía. La referencia consultada ofrece trekking local, no garantiza un turno para ustedes.",
-          "fallback": "Recorrido más corto si está habilitado; reordenar el día de Jujuy ante cierre o mal tiempo.",
+          "booking": "Guía y turno de las 08:30 por reservar; el sendero largo ya está elegido.",
+          "fallback": "Si el circuito largo está cerrado o no puede hacerse dentro del bloque previsto, reordenar la jornada con el guía.",
           "refs": [
-            "uquiaguia"
+            "uquiaguia",
+            "senoritasduracion",
+            "senoritasregistro"
           ],
           "query": "Uquía Jujuy",
           "routeIndex": 1,
           "uid": "d07-a02"
         },
         {
-          "time": "09:15",
+          "time": "08:30",
           "place": "senoritas",
-          "title": "Quebrada de las Señoritas",
-          "body": "Recorrer los cañones y miradores habilitados con guía, con paradas para fotos y descanso. Es la actividad prioritaria del viaje y tiene toda la mañana.",
+          "title": "Las Señoritas · sendero largo",
+          "body": "Hacer el sendero largo con guía, estimando cuatro horas en total para ida, vuelta, explicaciones y fotos: de 08:30 a 12:30. Dejar 30 minutos adicionales hasta las 13:00 como margen, no como otra caminata. La duración real depende del circuito y del grupo; la cueva y el cañón de las 13 vueltas se incluyen solo si están habilitados y forman parte del recorrido acordado.",
           "kind": "walk",
           "tag": "Imprescindible",
-          "budget": "Bloque de 3–4 h",
+          "budget": "4 h estimadas ida y vuelta + 30 min de margen",
           "mode": "Senderismo guiado",
           "priority": "Imprescindible",
           "todo": [
-            "Acordar un circuito real antes de salir: la duración no implica que todas las cuevas o pasos estén abiertos.",
-            "Seguir las indicaciones locales y no entrar a estrechamientos o cauces si el guía desaconseja hacerlo."
+            "Confirmar con el guía el trazado exacto del sendero largo y los pasos habilitados.",
+            "Si terminan con tiempo suficiente, descansar o visitar la iglesia de Uquía si está abierta, conservando la salida hacia Humahuaca a las 13:00."
           ],
-          "booking": "Confirmar circuito, dificultad, guía, precio y cancelación por clima. No hay reserva realizada.",
-          "fallback": "Intercambiar con otra jornada de Jujuy si el acceso no es adecuado; no reemplazarlo por una caminata improvisada.",
+          "booking": "Sendero largo elegido; guía, horario temprano, tarifa y condiciones por confirmar.",
+          "fallback": "Si el circuito demora más de lo previsto, reducir primero el paseo urbano y revisar si Hornocal sigue siendo compatible con el regreso a las 19:00. No apurar la caminata ni el manejo.",
           "refs": [
             "uquiaguia",
-            "uquia"
+            "uquia",
+            "senoritasduracion",
+            "senoritasregistro"
           ],
           "query": "Quebrada de las Señoritas Uquía",
           "routeIndex": 2,
           "uid": "d07-a03"
         },
         {
-          "time": "13:15",
-          "place": "uquia",
-          "title": "Almuerzo en Uquía",
-          "body": "Comer sin apuro después de caminar. Elegir un comedor abierto cerca del pueblo y probar un plato regional según la oferta del día.",
+          "time": "13:00",
+          "place": "senoritas",
+          "title": "De las Señoritas a Humahuaca",
+          "body": "Terminar la caminata, volver por el acceso a Uquía y seguir por RN 9 hasta Humahuaca. Reservar unos 30 minutos para salir del acceso, conducir y estacionar cerca del almuerzo.",
+          "kind": "car",
+          "tag": "Plan base",
+          "budget": "30 min estimados",
+          "mode": "RAV4 · acceso y RN 9",
+          "priority": "Plan base",
+          "todo": [
+            "Salir del acceso con el almuerzo resuelto: mesa coordinada o vianda."
+          ],
+          "booking": "Lugar para almorzar por coordinar.",
+          "fallback": "Si el almuerzo se retrasa, usar la vianda y descansar; el paseo urbano es lo primero que se omite.",
+          "refs": [
+            "quebradapueblos"
+          ],
+          "query": "Humahuaca Jujuy",
+          "routeIndex": 2,
+          "uid": "d07-traslado-humahuaca"
+        },
+        {
+          "time": "13:30",
+          "place": "humahuaca",
+          "title": "Almuerzo y descanso en Humahuaca",
+          "body": "Comer y descansar después del sendero largo. Reservar 45 minutos para un almuerzo sencillo con servicio coordinado o una vianda, antes de subir a Hornocal.",
           "kind": "food",
           "tag": "Plan base",
-          "budget": "60 min",
+          "budget": "45 min",
           "mode": "Comida + descanso",
           "priority": "Plan base",
           "todo": [
-            "Consultar dónde almorzar con el guía antes del trekking.",
-            "Guardar un rato sentado antes del paseo cultural."
+            "Coordinar el servicio antes de la caminata para evitar una espera larga.",
+            "Revisar en Humahuaca el estado del acceso a Hornocal y la visibilidad."
           ],
-          "booking": "Comedor a elegir; llevar alternativa si no hay servicio.",
-          "fallback": "Vianda y almuerzo posterior en una localidad con servicio.",
+          "booking": "Almuerzo por coordinar; llevar una vianda como alternativa.",
+          "fallback": "Usar la vianda y mantener el descanso. Omitir el paseo urbano si hace falta conservar margen.",
           "refs": [
-            "uquiaguia"
+            "hornocalacceso"
           ],
-          "query": "",
-          "routeIndex": 3,
+          "query": "Humahuaca Jujuy",
+          "routeIndex": 4,
           "uid": "d07-a04"
         },
         {
           "time": "14:15",
-          "place": "uquia",
-          "title": "La iglesia de Uquía",
-          "body": "Visitar Santa Cruz y San Francisco de Paula si está abierta. Mirar su arquitectura y las pinturas de ángeles arcabuceros, siguiendo las indicaciones del templo.",
-          "kind": "walk",
-          "tag": "Plan base",
-          "budget": "25–30 min",
-          "mode": "Interior + pueblo",
-          "priority": "Plan base",
-          "todo": [
-            "Consultar si se puede fotografiar y respetar el uso religioso.",
-            "Completar con una vuelta corta por la plaza de artesanos."
-          ],
-          "booking": "Apertura e ingreso a confirmar; no se publica aquí un horario garantizado.",
-          "fallback": "Conocer el exterior y el pueblo si el templo está cerrado.",
-          "refs": [
-            "uquiaiglesia",
-            "uquiaguia"
-          ],
-          "query": "Iglesia Santa Cruz San Francisco de Paula Uquía",
-          "routeIndex": 3,
-          "uid": "d07-a05"
-        },
-        {
-          "time": "15:15",
           "place": "humahuaca",
-          "title": "Centro de Humahuaca",
-          "body": "Recorrer el centro histórico y la plaza de Humahuaca después de Uquía. Es una visita al pueblo; no se suma el ascenso a Hornocal.",
+          "title": "Paseo breve por Humahuaca",
+          "body": "Dar una vuelta corta por la plaza y el centro si el almuerzo terminó a tiempo. El monumento puede verse desde su entorno si queda cerca; no se reserva un bloque adicional para subir escaleras.",
           "kind": "walk",
-          "tag": "Plan base",
-          "budget": "45–60 min",
+          "tag": "Opcional",
+          "budget": "15 min",
           "mode": "A pie",
-          "priority": "Plan base",
+          "priority": "Opcional",
           "todo": [
-            "Hacer un recorrido compacto por el centro.",
-            "Reservar tiempo para volver a Tilcara y descansar."
+            "Estar listos para comenzar el ascenso a Hornocal a las 14:30."
           ],
-          "booking": "Interiores sujetos a apertura; paseo base exterior.",
-          "fallback": "Recorrido más breve si el cansancio o el clima lo aconsejan.",
+          "booking": "Paseo exterior, sujeto al avance de la mañana.",
+          "fallback": "Omitir el paseo si el sendero o el almuerzo consumieron el margen.",
           "refs": [
             "quebradapueblos"
           ],
@@ -1659,46 +1664,132 @@
           "uid": "d07-a06"
         },
         {
-          "time": "16:15",
+          "time": "14:30",
           "place": "humahuaca",
-          "title": "Monumento a la Independencia",
-          "body": "Acercarse al monumento y su entorno. Las escaleras son opcionales: también se puede apreciar el conjunto desde abajo.",
-          "kind": "camera",
-          "tag": "Opcional",
-          "budget": "20–30 min",
-          "mode": "Paseo corto",
-          "priority": "Opcional",
+          "title": "Ascenso a Hornocal en la RAV4",
+          "body": "Salir de Humahuaca hacia el mirador de Hornocal por la RP 73 y el desvío señalizado. La referencia provincial indica alrededor de una hora de ascenso; el plan reserva 1 h 15 min para el ripio, curvas e ingreso.",
+          "kind": "car",
+          "tag": "Plan base",
+          "budget": "1–1:15 h estimadas",
+          "mode": "RAV4 · camino de ripio",
+          "priority": "Plan base",
           "todo": [
-            "Subir solo si están cómodos después de la caminata de Uquía.",
-            "Contemplar el monumento desde abajo si prefieren evitar más escalones."
+            "Confirmar transitabilidad, visibilidad y horario de ingreso antes de subir.",
+            "Mantener un ritmo tranquilo y el margen de descenso; la RAV4 no garantiza acceso si el camino está cerrado o deteriorado."
           ],
-          "booking": "Acceso a verificar.",
-          "fallback": "Vista desde el sector inferior y paseo por el centro.",
+          "booking": "Acceso comunitario y tarifa por reconfirmar; no se ha contratado traslado.",
+          "fallback": "Si hay cierre, mala visibilidad o demora importante, reprogramar Hornocal y mantener el regreso a Tilcara.",
           "refs": [
-            "quebradapueblos"
+            "hornocalacceso"
           ],
-          "query": "Monumento a los Héroes de la Independencia Humahuaca",
+          "query": "Mirador Hornocal acceso Humahuaca",
           "routeIndex": 4,
-          "uid": "d07-a07"
+          "uid": "d07-ascenso-hornocal"
+        },
+        {
+          "time": "15:45",
+          "place": "hornocal",
+          "title": "Hornocal · mirador de los 14 colores",
+          "body": "Contemplar la serranía y sacar fotos desde el mirador principal, con una visita tranquila después del trekking. Reservar 45 minutos y comenzar el descenso a las 16:30. La franja incluye las 16:00, cuando la luz de la tarde suele resaltar los colores.",
+          "kind": "camera",
+          "tag": "Plan base",
+          "budget": "45 min",
+          "mode": "Mirador · paseo mínimo",
+          "priority": "Plan base",
+          "todo": [
+            "Descansar al llegar y disfrutar de la vista desde el sector principal, a unos 4.350 m.",
+            "Evitar añadir otra caminata larga y comenzar el regreso a las 16:30."
+          ],
+          "booking": "Reconfirmar acceso y tarifa. El catálogo provincial publica cierre a las 17:30 de abril a agosto y a las 18:30 de septiembre a marzo; verificarlo para la fecha del viaje.",
+          "fallback": "Si se sienten mal con la altura, descender. Si el mirador está cubierto, no esperar hasta consumir el margen de regreso.",
+          "refs": [
+            "hornocalacceso",
+            "hornocalluz"
+          ],
+          "query": "Mirador Serranía del Hornocal Humahuaca",
+          "routeIndex": 5,
+          "uid": "d07-hornocal"
+        },
+        {
+          "time": "16:30",
+          "place": "hornocal",
+          "title": "Bajar a Humahuaca",
+          "body": "Volver por el mismo camino con tiempo para las curvas y el ripio. Se reserva hasta 1 h 15 min de descenso, sin agregar otros desvíos.",
+          "kind": "car",
+          "tag": "Plan base",
+          "budget": "1–1:15 h estimadas",
+          "mode": "RAV4 · camino de ripio",
+          "priority": "Plan base",
+          "todo": [
+            "Mantener el margen de conducción aunque la llegada a Tilcara se demore."
+          ],
+          "booking": "Regreso en vehículo propio.",
+          "fallback": "Avisar al alojamiento si el estado del camino retrasa la llegada; no recuperar tiempo acelerando.",
+          "refs": [
+            "hornocalacceso"
+          ],
+          "query": "Humahuaca Jujuy",
+          "routeIndex": 5,
+          "uid": "d07-descenso-hornocal"
         },
         {
           "time": "17:45",
+          "place": "humahuaca",
+          "title": "Pausa antes de volver a Tilcara",
+          "body": "Baño, agua y un descanso breve antes del último tramo. Si llegaron antes, el tiempo extra queda como margen para esta pausa.",
+          "kind": "coffee",
+          "tag": "Plan base",
+          "budget": "15 min",
+          "mode": "Descanso",
+          "priority": "Plan base",
+          "todo": [],
+          "booking": "Sin establecimiento reservado.",
+          "fallback": "Elegir otro punto adecuado si no hay servicio disponible.",
+          "refs": [],
+          "query": "",
+          "routeIndex": 6,
+          "uid": "d07-pausa-humahuaca"
+        },
+        {
+          "time": "18:00",
+          "place": "humahuaca",
+          "title": "Regreso a Tilcara por RN 9",
+          "body": "Volver directamente a El Cielo en Tilcara por RN 9, pasando por Uquía. Prever 45–60 minutos incluyendo la llegada al alojamiento, con las 19:00 como objetivo. Según el mes, parte del tramo puede ser de noche.",
+          "kind": "car",
+          "tag": "Plan base",
+          "budget": "45–60 min estimados",
+          "mode": "RAV4 · RN 9",
+          "priority": "Plan base",
+          "todo": [
+            "Al conocer el mes del viaje, revisar las horas de luz para este tramo."
+          ],
+          "booking": "Segunda noche en El Cielo en Tilcara.",
+          "fallback": "El objetivo de las 19:00 se ajusta a las condiciones reales de ruta.",
+          "refs": [
+            "humahuacatilcara"
+          ],
+          "query": "El Cielo en Tilcara Belgrano 56",
+          "routeIndex": 6,
+          "uid": "d07-regreso-tilcara"
+        },
+        {
+          "time": "19:00",
           "place": "tilcara",
           "title": "Volver a El Cielo en Tilcara",
-          "body": "Regresar a la misma base y descansar. Preparar agua y abrigo para la salida a Salinas y Purmamarca de mañana.",
+          "body": "Llegada prevista a El Cielo en Tilcara después de las Señoritas y Hornocal. Descansar y preparar lo necesario para Salinas y Purmamarca mañana.",
           "kind": "bed",
           "tag": "Plan base",
-          "budget": "Tarde libre",
+          "budget": "Descanso antes de cenar",
           "mode": "Descanso",
           "priority": "Plan base",
           "todo": [],
           "booking": "Segunda de tres noches en El Cielo en Tilcara.",
-          "fallback": "Ajustar el horario al avance real del día.",
+          "fallback": "Las 19:00 son un objetivo; avisar si el acceso o el tránsito demoran el regreso.",
           "refs": [
             "elcielocontacto"
           ],
           "query": "",
-          "routeIndex": 6,
+          "routeIndex": 8,
           "uid": "d07-a08"
         },
         {
@@ -1716,13 +1807,13 @@
           "fallback": "Ajustar el horario al avance real del día.",
           "refs": [],
           "query": "",
-          "routeIndex": 6,
+          "routeIndex": 8,
           "uid": "d07-a09"
         }
       ],
-      "note": "Segunda noche en El Cielo en Tilcara. La caminata se acuerda con guía. Si se prolonga, acortar el paseo urbano por Humahuaca; las pausas se mantienen.",
+      "note": "Segunda noche en El Cielo en Tilcara. Jornada larga: sendero largo de las Señoritas por la mañana y Hornocal por la tarde en la RAV4. La iglesia de Uquía queda para un final temprano del trekking; el paseo urbano de Humahuaca es breve y opcional.",
       "source": "uquia",
-      "practical": "Caminata en las Señoritas por la mañana, almuerzo e iglesia en Uquía, y paseo por Humahuaca por la tarde. Hornocal queda fuera del programa para conservar la caminata y volver a descansar.",
+      "practical": "Salida 07:30; guía 08:15 e inicio del sendero largo 08:30, ambos por confirmar. Estimar cuatro horas de recorrido completo, hasta 12:30, y dejar margen hasta 13:00 para volver al auto; almuerzo en Humahuaca 13:30, ascenso 14:30, Hornocal 15:45–16:30, descenso hasta 17:45, pausa y salida a Tilcara 18:00 para llegar alrededor de las 19:00. Confirmar clima, acceso y horarios al conocer el mes; no se garantiza volver con luz. Si la caminata o el camino exceden el margen, revisar Hornocal sin apurar el regreso.",
       "accommodation": {
         "name": "El Cielo en Tilcara",
         "area": "Tilcara",
@@ -2394,7 +2485,7 @@
       "places": [
         "uquia"
       ],
-      "note": "Encuentro con el guía, almuerzo e iglesia en Uquía. La caminata de las Señoritas tiene su propia ficha como punto de interés."
+      "note": "Encuentro con el guía a las 08:15 para el sendero largo de las Señoritas. La iglesia queda como visita opcional si el trekking termina antes de las 13:00; el almuerzo se hace en Humahuaca."
     },
     {
       "id": "senoritas",
@@ -2402,7 +2493,7 @@
       "places": [
         "senoritas"
       ],
-      "note": "Punto de interés del día 7: senderismo guiado entre cañadones y paredes rojizas. Salida desde Tilcara, con toda la mañana destinada a la caminata."
+      "note": "Día 7: sendero largo elegido, con guía. Recorrido completo de 08:30 a 12:30 como estimación de cuatro horas con ida, vuelta y pausas; margen adicional hasta las 13:00. Después, almuerzo en Humahuaca y Hornocal."
     },
     {
       "id": "salinas",
@@ -2419,7 +2510,15 @@
       "places": [
         "humahuaca"
       ],
-      "note": "Paseo por el centro y el monumento después de Uquía. Hornocal queda fuera del programa de diez días."
+      "note": "Día 7: almuerzo a las 13:30 y paseo breve opcional antes del ascenso a Hornocal a las 14:30. Pausa a la vuelta y salida a Tilcara a las 18:00."
+    },
+    {
+      "id": "hornocal",
+      "title": "Hornocal · los 14 colores",
+      "places": [
+        "hornocal"
+      ],
+      "note": "Día 7: ascenso en la RAV4 desde Humahuaca a las 14:30, mirador de 15:45 a 16:30 y descenso con margen. Reconfirmar horarios de temporada y estado del acceso."
     },
     {
       "id": "tilcara",
@@ -2428,23 +2527,24 @@
         "tilcara",
         "maimara"
       ],
-      "note": "Base de tres noches, del día 6 al día 9, en El Cielo en Tilcara. Excursiones de ida y vuelta a Uquía, Humahuaca, Salinas y Purmamarca."
+      "note": "Base de tres noches, del día 6 al día 9, en El Cielo en Tilcara. Día 7: las Señoritas, Humahuaca y Hornocal, de 07:30 a 19:00. Día 8: Salinas y Purmamarca."
     }
   ],
   "checklist": [
     "Elegir alojamientos con estacionamiento: dos noches de tránsito en Sáenz Peña (días 1 y 9), una en Salta (día 2), dos en Cafayate (días 3 y 4) y una en Cachi (día 5).",
     "Revisar documentación personal y del vehículo, seguro y asistencia.",
     "Comprobar el estado de la RN 16, la Ruta 40, la RP 33 y las rutas del circuito.",
-    "Confirmar guía, circuito, acceso y punto de encuentro en Uquía para el día 7.",
+    "Reservar guía en Uquía para el día 7: encuentro a las 08:15, inicio a las 08:30 y regreso al auto estimado a las 12:30, con margen hasta las 13:00.",
     "Coordinar los traslados para Piattelli si van a degustar.",
-    "Definir la caminata de las Señoritas según el nivel y comodidad de ambos.",
+    "Confirmar con el guía el sendero largo de las Señoritas elegido: circuito habilitado, dificultad y estimación de cuatro horas en total (ida, vuelta y pausas), más 30 minutos de margen.",
     "Confirmar el hotel en Cachi y revisar el ripio de la Ruta 40.",
     "Revisar clima y accesos antes de cada salida de montaña.",
     "Dejar libre un día extra después del día 10 como margen para el regreso.",
     "Coordinar las tres noches en El Cielo en Tilcara: entrada el día 6, salida el día 9, fechas, acceso, estacionamiento y salida a las 06:00 con desayuno o vianda.",
     "Reservar la mesa para almorzar en Piattelli; consultar visita o degustación si les interesa.",
     "Preparar el traslado Cachi–Tilcara y el regreso Tilcara–Sáenz Peña con combustible, comida y descansos.",
-    "Confirmar el circuito corto de La Yesera / Los Estratos para el día 4, con guía, acceso y regreso al auto alrededor de las 11:15; coordinar mesa a las 13:30, visita y horario de cierre en Piattelli."
+    "Confirmar el circuito corto de La Yesera / Los Estratos para el día 4, con guía, acceso y regreso al auto alrededor de las 11:15; coordinar mesa a las 13:30, visita y horario de cierre en Piattelli.",
+    "Reconfirmar el acceso a Hornocal en la RAV4: estado del ripio, clima, tarifa y horario de temporada. Plan: ascenso desde Humahuaca 14:30, mirador 15:45–16:30 y regreso a Tilcara alrededor de las 19:00."
   ],
   "sources": {
     "rutas": {
@@ -2590,6 +2690,30 @@
     "piatellirestaurante": {
       "label": "Piattelli Travel · restaurante de Cafayate y contacto para reservas",
       "url": "https://www.piattellitravel.com/cafayate-wine-tastings"
+    },
+    "senoritaslargo": {
+      "label": "Los Viajes de Etheria · experiencia del sendero largo (4–5 h)",
+      "url": "https://losviajesdeetheria.com/2025/02/02/quebrada-de-las-senoritas-y-carolina-condori/"
+    },
+    "hornocalacceso": {
+      "label": "Turismo de Jujuy · catálogo de las rutas 73 y 83, acceso y horarios de Hornocal",
+      "url": "https://www.turismo.jujuy.gob.ar/wp-content/uploads/Catalogo-TRC-Rutas-73-y-83.pdf"
+    },
+    "hornocalluz": {
+      "label": "Lonely Planet · Serranía de Hornocal, luz de la tarde",
+      "url": "https://www.lonelyplanet.com/points-of-interest/serrania-de-hornocal/1529462"
+    },
+    "humahuacatilcara": {
+      "label": "Rome2Rio · referencia del tramo Humahuaca–Tilcara",
+      "url": "https://www.rome2rio.com/s/Humahuaca/Tilcara"
+    },
+    "senoritasduracion": {
+      "label": "El Prisma de Fer · sendero largo, duración total orientativa de 3–4 horas",
+      "url": "https://elprismadefer.com/como-hacer-el-trekking-por-la-quebrada-de-las-senoritas-en-uquia-jujuy/"
+    },
+    "senoritasregistro": {
+      "label": "Wikiloc · registro del circuito largo de mayo de 2026 (4 h 21 min totales)",
+      "url": "https://es.wikiloc.com/rutas-senderismo/la-quebrada-de-las-senoritas-circuito-corto-mediano-y-largo-264248913"
     }
   },
   "images": {
@@ -2682,5 +2806,5 @@
       "position": "50% 45%"
     }
   },
-  "checklistVersion": 2
+  "checklistVersion": 3
 }
