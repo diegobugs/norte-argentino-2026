@@ -1,0 +1,10 @@
+Tool: built-in image_gen.imagegen
+Generated: 2026-10-05
+Purpose: dedicated Quebrada de las Señoritas card and map image.
+AI interpretation, not a documentary photograph.
+
+Use case: photorealistic-natural.
+Asset type: landscape image for a travel itinerary card and interactive map, 16:9 composition.
+Primary request: Create a new high-quality landscape illustration inspired by Quebrada de las Señoritas near Uquía, Jujuy, northern Argentina. Show an intimate red-rock canyon at walking level: tall rugged reddish clay and sandstone walls, angular eroded pinnacles, narrow winding dry sandy footpath entering the canyon, glimpses of pale cream and ochre arid hills under a clear blue sky. The characteristic red geological formations must be the main subject, not a generic distant mountain panorama.
+Style: realistic travel editorial imagery with fine natural rock textures, warm morning sunlight, believable muted terracotta and ochre colors, soft shadows, clear depth. Match the warm scenic tone of an Argentine road-trip website. Keep the striking canyon walls in the upper and central frame so the image reads well in a shallow card crop; the lower quarter may be a quieter sandy foreground for a UI overlay.
+Constraints: landscape only, no people, no vehicles, no paved or vehicle road, no buildings, no text, no lettering, no logo, no watermark, no border, no card UI. This is an AI scenic interpretation, not a documentary photograph or an exact trail map.

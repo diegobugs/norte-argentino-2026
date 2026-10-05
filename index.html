@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#f6eee3">
-<meta name="description" content="Un solo scroll para recorrer los 14 días del viaje de Hohenau a Salta y Jujuy: paradas, paisajes, caminatas, noches y horarios en un mapa a pantalla completa.">
+<meta name="description" content="Un solo scroll para recorrer los 10 días del viaje de Hohenau a Salta y Jujuy: paradas, paisajes, caminatas, noches y horarios en un mapa a pantalla completa.">
 <meta name="robots" content="noindex">
 <title>Norte, sin apuro · Un viaje, un solo scroll</title>
 <script>document.documentElement.classList.add('js');</script>
 <style>:root{--bg:#0f172a;--surface:rgba(15,23,42,.72);--text:#f8f4ec;--muted:#d3c9bb;--line:rgba(255,255,255,.16);--accent:#ff8f5a;--accent-soft:rgba(255,143,90,.18);--map-bg:#162033;--map-land:#1f2e45;--map-other:#19263a;--map-line:rgba(255,255,255,.15);--map-text:#d9d5ca;--route-base:#73d0c6;--glow:#ffb26b;--night:0;--vh:100svh;--gutter:clamp(26px,4.2vw,72px);font-family:Inter,"Avenir Next",Avenir,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color-scheme:light}
-*{box-sizing:border-box}html{scroll-behavior:smooth;overflow-x:clip}body{margin:0;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}button,input{font:inherit}a{color:inherit;text-decoration:none}button{color:inherit;cursor:pointer}button,a,input{-webkit-tap-highlight-color:transparent}button{border:0}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:5px}svg{display:block}.icon{height:20px;width:20px;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round;flex:none}.sr-only,.js .transcript{position:absolute;width:1px;height:1px;padding:0;clip-path:inset(50%);overflow:hidden;white-space:nowrap;border:0}.skip{position:fixed;left:16px;top:-100px;z-index:99;padding:15px 20px;background:var(--surface);border-radius:8px}.skip:focus{top:12px}.skip:focus~main .transcript{position:static;width:auto;height:auto;clip-path:none;white-space:normal}.journey{position:relative}.stage{height:var(--vh);position:sticky;top:0;isolation:isolate;overflow:clip;background:var(--bg)}.scene-anchors{position:absolute;inset:0;pointer-events:none}.scene-anchor{position:absolute;height:1px;left:0;width:1px}.map-layer{position:absolute;inset:0;z-index:-1;pointer-events:none}.map-svg{height:100%;width:100%;background:var(--map-bg);pointer-events:none}.map-wash{position:absolute;inset:0;background:linear-gradient(90deg,var(--bg) 0%,color-mix(in srgb,var(--bg) 97%,transparent) 19%,color-mix(in srgb,var(--bg) 90%,transparent) 32%,color-mix(in srgb,var(--bg) 35%,transparent) 54%,transparent 76%),linear-gradient(0deg,var(--bg) 0%,color-mix(in srgb,var(--bg) 93%,transparent) 10%,transparent 38%),linear-gradient(180deg,color-mix(in srgb,var(--bg) 98%,transparent),transparent 25%)}.light-halo{position:absolute;inset:0;background:radial-gradient(ellipse at var(--sun-x,75%) 8%,var(--glow),transparent 65%);opacity:.12;mix-blend-mode:soft-light}.grain{position:absolute;inset:0;opacity:.065;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.78' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath filter='url(%23n)' opacity='.5' d='M0 0h180v180H0z'/%3E%3C/svg%3E")}.stars{position:absolute;inset:0;opacity:var(--night)}.star{position:absolute;border-radius:50%;background:#e2e4e1;opacity:.36}.country-shape{fill:var(--map-land);stroke:var(--map-line);stroke-width:1;vector-effect:non-scaling-stroke}.country-shape.neighbor{fill:var(--map-other)}.map-grid{stroke:var(--map-line);stroke-width:.65;opacity:.24;fill:none;vector-effect:non-scaling-stroke}.contour-line{stroke:var(--map-line);stroke-width:.7;opacity:.26;fill:none;vector-effect:non-scaling-stroke}.route-all{fill:none;stroke:var(--route-base);stroke-width:1.8;stroke-dasharray:3 7;opacity:.47;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}.route-day{fill:none;stroke:var(--accent);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;opacity:.19;vector-effect:non-scaling-stroke}.route-traveled{fill:none;stroke:var(--accent);stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}.country-label{font-size:10px;font-weight:650;letter-spacing:5px;fill:var(--map-text);opacity:.52;text-anchor:middle}.city-dot{fill:var(--map-land);stroke:var(--map-text);stroke-width:1.4}.city-label{font-size:12px;fill:var(--map-text);font-weight:550;paint-order:stroke;stroke:var(--map-land);stroke-width:4;stroke-linejoin:round}.marker-orbit{fill:none;stroke:var(--accent);stroke-width:1;opacity:.24}.marker-core{fill:var(--accent);stroke:var(--surface);stroke-width:4}.marker-icon{color:var(--surface);fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}#markerLabelBg{fill:var(--surface);stroke:var(--line);stroke-width:1}#markerLabelText{font-size:11px;font-weight:700;fill:var(--text)}.masthead{height:92px;position:absolute;left:var(--gutter);right:var(--gutter);top:env(safe-area-inset-top,0px);display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:11px;font-size:29px;letter-spacing:-1.8px;font-weight:800}.brandmark{width:34px;height:34px;display:grid;place-items:center;background:var(--text);color:var(--bg);border-radius:50%;transform:rotate(-15deg)}.brandmark .icon{width:20px;height:20px}.brand small{font-size:9px;font-weight:500;letter-spacing:1.5px;line-height:1.55;color:var(--muted);border-left:1px solid var(--line);padding-left:14px;margin-left:7px}.trip-dates{font-size:10px;font-weight:650;letter-spacing:1.4px;color:var(--muted);margin:0}.trip-dates span{margin:0 10px;opacity:.6}.prep-link{display:flex;align-items:center;gap:14px;font-size:12px;font-weight:650;border-bottom:1px solid var(--line);padding:10px 0}.prep-link .icon{width:16px;height:16px}.clock{position:absolute;top:128px;right:var(--gutter);text-align:right}.clock-phase{display:flex;align-items:center;justify-content:flex-end;gap:6px;font-size:9px;font-weight:700;letter-spacing:2px;color:var(--muted)}.clock-phase .icon{width:14px;height:14px}#clockValue{display:block;font-weight:350;font-size:clamp(60px,6.3vw,100px);line-height:1.14;letter-spacing:-5px;font-variant-numeric:tabular-nums;margin:3px 0;color:var(--text)}.clock-caption{font-size:9px;color:var(--muted)}.sun-track{width:108px;height:32px;margin:15px 0 0 auto}.sun-track path{stroke:var(--muted);stroke-width:.75;fill:none;stroke-dasharray:2 4;opacity:.6}.sun-track circle{fill:var(--accent)}.map-context{position:absolute;right:var(--gutter);top:43%;display:flex;flex-direction:column;align-items:flex-end;gap:15px;color:var(--map-text);font-size:8px;font-weight:600;letter-spacing:1.5px}.north{display:flex;align-items:center;gap:4px;font-size:10px}.north .icon{width:19px;height:19px}.scene-content{position:absolute;left:var(--gutter);bottom:164px;width:min(550px,43vw);will-change:opacity,transform}.scene-kicker{display:flex;align-items:center;gap:10px;color:var(--accent);font-size:10px;font-weight:750;letter-spacing:1.65px;margin-bottom:19px;min-height:28px}.category-icon{width:28px;height:28px;display:grid;place-items:center;border:1px solid color-mix(in srgb,var(--accent) 36%,transparent);border-radius:50%}.category-icon .icon{width:15px;height:15px}.event-schedule{margin-left:5px;padding-left:15px;border-left:1px solid var(--line);font-size:10px;letter-spacing:1px;color:var(--muted)}.scene-content h1,.scene-content h2{font-size:clamp(37px,4.2vw,68px);line-height:1.02;font-weight:610;letter-spacing:-2.8px;margin:0 0 20px;text-wrap:balance}.scene-content.is-intro h1{font-size:clamp(64px,7.4vw,117px);letter-spacing:-6px;line-height:.97;font-weight:650;margin-bottom:27px}.scene-content em{font-family:Georgia,"Times New Roman",serif;font-weight:400;color:var(--accent);letter-spacing:-3px}.scene-description{max-width:440px;font-size:15px;line-height:1.8;color:var(--muted);margin:0 0 23px;text-wrap:pretty}.scene-details{display:flex;align-items:center;gap:22px;flex-wrap:wrap;min-height:40px;padding-top:17px;border-top:1px solid var(--line);font-size:11px;line-height:1.6}.detail{display:flex;align-items:center;gap:8px;color:var(--muted)}.detail .icon{width:16px;height:16px}.detail strong{font-weight:650;color:var(--text)}.intro-stat strong{font-weight:550;font-size:25px;letter-spacing:-1px}.intro-stat{display:flex;align-items:baseline;gap:7px;color:var(--muted);font-size:11px}.scene-follow{font-size:11px;line-height:1.6;color:var(--muted);margin-top:23px;display:flex;align-items:center;gap:10px;min-height:22px}.scene-follow b{color:var(--text);font-weight:550}.scene-follow .icon{height:15px;width:15px}.scene-follow button,.scene-follow a{font:inherit;display:flex;align-items:center;gap:9px;background:none;padding:4px 0;color:var(--accent);font-weight:650}.journey-footer{position:absolute;bottom:20px;left:var(--gutter);right:var(--gutter)}.footer-meta{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:18px;font-size:10px;line-height:1.3;color:var(--muted)}#dayDescription{max-width:45%;font-weight:600;color:var(--text);white-space:nowrap;text-overflow:ellipsis;overflow:hidden}.scroll-hint{display:flex;align-items:center;gap:7px;font-size:9px}.scroll-hint .icon{width:14px;height:14px;animation:hint 2.6s infinite}#stepCounter{font-size:9px;letter-spacing:1px;min-width:124px;text-align:right;font-variant-numeric:tabular-nums}.day-track{display:grid;grid-template-columns:repeat(14,minmax(0,1fr));gap:8px}.day-tick{display:flex;flex-direction:column;align-items:flex-start;gap:10px;font-size:10px;font-weight:650;font-variant-numeric:tabular-nums;color:var(--muted);min-width:0;min-height:35px;position:relative;padding-top:6px}.day-tick:before{content:"";position:absolute;top:0;bottom:-3px;left:-4px;right:-4px}.day-line{display:block;height:2px;width:100%;background:var(--line);position:relative}.day-fill{display:block;height:100%;width:100%;background:var(--accent);transform:scaleX(var(--fill,0));transform-origin:left}.day-tick[aria-current="true"]{color:var(--accent)}.day-tick[aria-current="true"] .day-line{height:3px}.day-tick.priority .day-number:after{content:"";display:inline-block;width:3px;height:3px;margin:0 0 2px 5px;background:var(--accent);border-radius:50%}.day-tick:hover{color:var(--accent)}.footer-bottom{display:flex;gap:12px;font-size:8px;color:var(--muted);margin-top:8px}.footer-bottom a{text-decoration:underline;text-underline-offset:2px}.route-legend{margin-left:auto;display:flex;gap:6px;align-items:center}.route-legend i{width:16px;height:2px;background:var(--accent)}@keyframes hint{0%,100%{transform:translateY(-2px)}50%{transform:translateY(3px)}}
+*{box-sizing:border-box}html{scroll-behavior:smooth;overflow-x:clip}body{margin:0;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}button,input{font:inherit}a{color:inherit;text-decoration:none}button{color:inherit;cursor:pointer}button,a,input{-webkit-tap-highlight-color:transparent}button{border:0}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:5px}svg{display:block}.icon{height:20px;width:20px;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round;flex:none}.sr-only,.js .transcript{position:absolute;width:1px;height:1px;padding:0;clip-path:inset(50%);overflow:hidden;white-space:nowrap;border:0}.skip{position:fixed;left:16px;top:-100px;z-index:99;padding:15px 20px;background:var(--surface);border-radius:8px}.skip:focus{top:12px}.skip:focus~main .transcript{position:static;width:auto;height:auto;clip-path:none;white-space:normal}.journey{position:relative}.stage{height:var(--vh);position:sticky;top:0;isolation:isolate;overflow:clip;background:var(--bg)}.scene-anchors{position:absolute;inset:0;pointer-events:none}.scene-anchor{position:absolute;height:1px;left:0;width:1px}.map-layer{position:absolute;inset:0;z-index:-1;pointer-events:none}.map-svg{height:100%;width:100%;background:var(--map-bg);pointer-events:none}.map-wash{position:absolute;inset:0;background:linear-gradient(90deg,var(--bg) 0%,color-mix(in srgb,var(--bg) 97%,transparent) 19%,color-mix(in srgb,var(--bg) 90%,transparent) 32%,color-mix(in srgb,var(--bg) 35%,transparent) 54%,transparent 76%),linear-gradient(0deg,var(--bg) 0%,color-mix(in srgb,var(--bg) 93%,transparent) 10%,transparent 38%),linear-gradient(180deg,color-mix(in srgb,var(--bg) 98%,transparent),transparent 25%)}.light-halo{position:absolute;inset:0;background:radial-gradient(ellipse at var(--sun-x,75%) 8%,var(--glow),transparent 65%);opacity:.12;mix-blend-mode:soft-light}.grain{position:absolute;inset:0;opacity:.065;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.78' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath filter='url(%23n)' opacity='.5' d='M0 0h180v180H0z'/%3E%3C/svg%3E")}.stars{position:absolute;inset:0;opacity:var(--night)}.star{position:absolute;border-radius:50%;background:#e2e4e1;opacity:.36}.country-shape{fill:var(--map-land);stroke:var(--map-line);stroke-width:1;vector-effect:non-scaling-stroke}.country-shape.neighbor{fill:var(--map-other)}.map-grid{stroke:var(--map-line);stroke-width:.65;opacity:.24;fill:none;vector-effect:non-scaling-stroke}.contour-line{stroke:var(--map-line);stroke-width:.7;opacity:.26;fill:none;vector-effect:non-scaling-stroke}.route-all{fill:none;stroke:var(--route-base);stroke-width:1.8;stroke-dasharray:3 7;opacity:.47;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}.route-day{fill:none;stroke:var(--accent);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;opacity:.19;vector-effect:non-scaling-stroke}.route-traveled{fill:none;stroke:var(--accent);stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}.country-label{font-size:10px;font-weight:650;letter-spacing:5px;fill:var(--map-text);opacity:.52;text-anchor:middle}.city-dot{fill:var(--map-land);stroke:var(--map-text);stroke-width:1.4}.city-label{font-size:12px;fill:var(--map-text);font-weight:550;paint-order:stroke;stroke:var(--map-land);stroke-width:4;stroke-linejoin:round}.marker-orbit{fill:none;stroke:var(--accent);stroke-width:1;opacity:.24}.marker-core{fill:var(--accent);stroke:var(--surface);stroke-width:4}.marker-icon{color:var(--surface);fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}#markerLabelBg{fill:var(--surface);stroke:var(--line);stroke-width:1}#markerLabelText{font-size:11px;font-weight:700;fill:var(--text)}.masthead{height:92px;position:absolute;left:var(--gutter);right:var(--gutter);top:env(safe-area-inset-top,0px);display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:11px;font-size:29px;letter-spacing:-1.8px;font-weight:800}.brandmark{width:34px;height:34px;display:grid;place-items:center;background:var(--text);color:var(--bg);border-radius:50%;transform:rotate(-15deg)}.brandmark .icon{width:20px;height:20px}.brand small{font-size:9px;font-weight:500;letter-spacing:1.5px;line-height:1.55;color:var(--muted);border-left:1px solid var(--line);padding-left:14px;margin-left:7px}.trip-dates{font-size:10px;font-weight:650;letter-spacing:1.4px;color:var(--muted);margin:0}.trip-dates span{margin:0 10px;opacity:.6}.prep-link{display:flex;align-items:center;gap:14px;font-size:12px;font-weight:650;border-bottom:1px solid var(--line);padding:10px 0}.prep-link .icon{width:16px;height:16px}.clock{position:absolute;top:128px;right:var(--gutter);text-align:right}.clock-phase{display:flex;align-items:center;justify-content:flex-end;gap:6px;font-size:9px;font-weight:700;letter-spacing:2px;color:var(--muted)}.clock-phase .icon{width:14px;height:14px}#clockValue{display:block;font-weight:350;font-size:clamp(60px,6.3vw,100px);line-height:1.14;letter-spacing:-5px;font-variant-numeric:tabular-nums;margin:3px 0;color:var(--text)}.clock-caption{font-size:9px;color:var(--muted)}.sun-track{width:108px;height:32px;margin:15px 0 0 auto}.sun-track path{stroke:var(--muted);stroke-width:.75;fill:none;stroke-dasharray:2 4;opacity:.6}.sun-track circle{fill:var(--accent)}.map-context{position:absolute;right:var(--gutter);top:43%;display:flex;flex-direction:column;align-items:flex-end;gap:15px;color:var(--map-text);font-size:8px;font-weight:600;letter-spacing:1.5px}.north{display:flex;align-items:center;gap:4px;font-size:10px}.north .icon{width:19px;height:19px}.scene-content{position:absolute;left:var(--gutter);bottom:164px;width:min(550px,43vw);will-change:opacity,transform}.scene-kicker{display:flex;align-items:center;gap:10px;color:var(--accent);font-size:10px;font-weight:750;letter-spacing:1.65px;margin-bottom:19px;min-height:28px}.category-icon{width:28px;height:28px;display:grid;place-items:center;border:1px solid color-mix(in srgb,var(--accent) 36%,transparent);border-radius:50%}.category-icon .icon{width:15px;height:15px}.event-schedule{margin-left:5px;padding-left:15px;border-left:1px solid var(--line);font-size:10px;letter-spacing:1px;color:var(--muted)}.scene-content h1,.scene-content h2{font-size:clamp(37px,4.2vw,68px);line-height:1.02;font-weight:610;letter-spacing:-2.8px;margin:0 0 20px;text-wrap:balance}.scene-content.is-intro h1{font-size:clamp(64px,7.4vw,117px);letter-spacing:-6px;line-height:.97;font-weight:650;margin-bottom:27px}.scene-content em{font-family:Georgia,"Times New Roman",serif;font-weight:400;color:var(--accent);letter-spacing:-3px}.scene-description{max-width:440px;font-size:15px;line-height:1.8;color:var(--muted);margin:0 0 23px;text-wrap:pretty}.scene-details{display:flex;align-items:center;gap:22px;flex-wrap:wrap;min-height:40px;padding-top:17px;border-top:1px solid var(--line);font-size:11px;line-height:1.6}.detail{display:flex;align-items:center;gap:8px;color:var(--muted)}.detail .icon{width:16px;height:16px}.detail strong{font-weight:650;color:var(--text)}.intro-stat strong{font-weight:550;font-size:25px;letter-spacing:-1px}.intro-stat{display:flex;align-items:baseline;gap:7px;color:var(--muted);font-size:11px}.scene-follow{font-size:11px;line-height:1.6;color:var(--muted);margin-top:23px;display:flex;align-items:center;gap:10px;min-height:22px}.scene-follow b{color:var(--text);font-weight:550}.scene-follow .icon{height:15px;width:15px}.scene-follow button,.scene-follow a{font:inherit;display:flex;align-items:center;gap:9px;background:none;padding:4px 0;color:var(--accent);font-weight:650}.journey-footer{position:absolute;bottom:20px;left:var(--gutter);right:var(--gutter)}.footer-meta{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:18px;font-size:10px;line-height:1.3;color:var(--muted)}#dayDescription{max-width:45%;font-weight:600;color:var(--text);white-space:nowrap;text-overflow:ellipsis;overflow:hidden}.scroll-hint{display:flex;align-items:center;gap:7px;font-size:9px}.scroll-hint .icon{width:14px;height:14px;animation:hint 2.6s infinite}#stepCounter{font-size:9px;letter-spacing:1px;min-width:124px;text-align:right;font-variant-numeric:tabular-nums}.day-track{display:grid;grid-template-columns:repeat(var(--trip-days,10),minmax(0,1fr));gap:8px}.day-tick{display:flex;flex-direction:column;align-items:flex-start;gap:10px;font-size:10px;font-weight:650;font-variant-numeric:tabular-nums;color:var(--muted);min-width:0;min-height:35px;position:relative;padding-top:6px}.day-tick:before{content:"";position:absolute;top:0;bottom:-3px;left:-4px;right:-4px}.day-line{display:block;height:2px;width:100%;background:var(--line);position:relative}.day-fill{display:block;height:100%;width:100%;background:var(--accent);transform:scaleX(var(--fill,0));transform-origin:left}.day-tick[aria-current="true"]{color:var(--accent)}.day-tick[aria-current="true"] .day-line{height:3px}.day-tick.priority .day-number:after{content:"";display:inline-block;width:3px;height:3px;margin:0 0 2px 5px;background:var(--accent);border-radius:50%}.day-tick:hover{color:var(--accent)}.footer-bottom{display:flex;gap:12px;font-size:8px;color:var(--muted);margin-top:8px}.footer-bottom a{text-decoration:underline;text-underline-offset:2px}.route-legend{margin-left:auto;display:flex;gap:6px;align-items:center}.route-legend i{width:16px;height:2px;background:var(--accent)}@keyframes hint{0%,100%{transform:translateY(-2px)}50%{transform:translateY(3px)}}
 /* Everything below remains in the same document flow. There are no scrollable panels or dialogs. */
 .preparations{--bg:#f6f1e8;--surface:#fcf9f3;--text:#302e28;--muted:#726e63;--line:#dfd7c9;--accent:#9c4d30;--accent-soft:#efdfd2;color-scheme:light;background:var(--bg);color:var(--text);padding:95px var(--gutter) 25px;position:relative}.prep-intro{max-width:760px;margin-bottom:50px}.eyebrow{font-size:9px;font-weight:750;letter-spacing:2px;color:var(--muted);line-height:1.6}.prep-intro h2{font-size:clamp(46px,5.5vw,76px);font-weight:600;letter-spacing:-3px;line-height:1.1;margin:15px 0 20px}.prep-intro h2 em{font-family:Georgia,serif;font-weight:400;color:var(--accent)}.prep-intro p{color:var(--muted);font-size:15px;line-height:1.7;margin:0 0 25px}.outline-button{display:inline-flex;gap:9px;align-items:center;border:1px solid var(--line);background:none;padding:12px 16px;border-radius:99px;color:var(--text);font-size:12px;font-weight:600}.outline-button:hover{background:var(--accent-soft)}.outline-button .icon{width:16px;height:16px}.prep-layout{display:grid;grid-template-columns:1.25fr 1fr;gap:9vw;align-items:start}.preparations h3{font-size:23px;font-weight:600;letter-spacing:-.6px;line-height:1.3;margin:0 0 20px}.check-item{display:flex;align-items:flex-start;gap:12px;border-bottom:1px solid var(--line);padding:14px 0;font-size:13px;line-height:1.7;cursor:pointer}.check-item input{width:17px;height:17px;margin:4px 0 0;flex:none;accent-color:var(--accent)}.check-item input:checked+span{color:var(--muted);text-decoration:line-through}.storage-note{font-size:10px;color:var(--muted);line-height:1.6}.prep-actions{display:flex;gap:10px;margin-top:25px;flex-wrap:wrap}.plan-notes{padding-top:4px}.plan-notes h3{margin:12px 0 20px}.plan-notes p{font-size:13px;line-height:1.85;margin:0 0 20px;color:var(--muted)}.plan-notes b{font-weight:600;color:var(--text)}.route-summary{padding-top:70px}.route-summary h3{margin:12px 0 27px}.summary-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.summary-card{padding:18px 16px;border:1px solid var(--line);border-radius:13px;display:flex;flex-direction:column;align-items:flex-start;gap:10px;transition:background .15s}.summary-card:hover{background:var(--accent-soft)}.summary-card.priority{border-color:var(--accent)}.summary-card .summary-date{font-size:9px;letter-spacing:.8px;color:var(--muted)}.summary-card b{font-size:13px;font-weight:600;line-height:1.5}.summary-card small{font-size:10px;line-height:1.5;color:var(--muted)}.sources{padding:65px 0}.sources>p{font-size:12px;color:var(--muted);line-height:1.7}.source-list{display:grid;grid-template-columns:1fr 1fr;gap:0 45px;margin-top:20px}.source-item{padding:13px 0;border-bottom:1px solid var(--line);font-size:12px;line-height:1.7;display:flex;align-items:center;justify-content:space-between;gap:15px}.source-item:hover{color:var(--accent)}.source-item .icon{width:14px;height:14px}.endnote{display:flex;justify-content:space-between;align-items:center;gap:20px;border-top:1px solid var(--line);padding-top:24px;font-size:11px;color:var(--muted)}.endnote .brand{color:var(--text)}.transcript:target{position:relative;width:auto;height:auto;clip-path:none;white-space:normal;padding:50px var(--gutter);background:var(--bg)}.transcript section{margin-bottom:35px}.transcript h2{margin-top:35px}.transcript p{line-height:1.7}.js:not(.ready) .scene-content{opacity:1}.no-script-notice{padding:30px}html:not(.js) .journey{display:none}html:not(.js) .preparations{display:none}html:not(.js) .transcript{padding:30px}
 @media(min-width:1600px){.scene-content{width:590px;bottom:180px}.scene-content h2{font-size:70px}.scene-description{font-size:16px;max-width:490px}}
@@ -63,10 +63,10 @@
 
 
 <style id="confirmed-lodging-style">
-.lodging-status[hidden]{display:none!important}.lodging-status{display:flex;align-items:center;gap:10px;padding:10px 13px;margin:0 0 13px;border:1px solid var(--accent);border-radius:12px;background:var(--accent-soft);color:var(--accent);font-size:11px;font-weight:750;line-height:1.45;max-width:430px}.lodging-status .icon{width:24px;height:24px}.lodging-status small{display:block;font-size:10px;font-weight:550;color:var(--text)}.at-domos .scene-details .detail-badge{display:none}.at-domos .scene-details{padding-top:10px}.at-domos .scene-description{margin-bottom:13px}.at-domos h2{font-size:clamp(36px,4.05vw,66px)}.confirmed-stay{display:flex;gap:27px;padding:30px;margin:15px 0 42px;border:1px solid var(--accent);border-radius:22px;background:var(--surface)}.confirmed-stay-symbol{width:84px;height:84px;border-radius:23px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;flex:none}.confirmed-stay-symbol .icon{width:53px;height:53px;stroke-width:1.5}.confirmed-stay-copy{flex:1;min-width:0}.confirmed-stay h3{margin:10px 0 12px;font-size:31px;letter-spacing:-1.1px}.confirmed-stay p{font-size:13px;line-height:1.75;color:var(--muted);margin:0 0 17px;max-width:720px}.stay-dates{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:19px 0}.stay-dates span{display:flex;flex-direction:column;gap:7px}.stay-dates small{font-size:8px;font-weight:750;letter-spacing:1px;color:var(--muted)}.stay-dates strong{font-size:23px;font-weight:650;letter-spacing:-.7px}.stay-dates em{font-size:10px;font-style:normal;color:var(--muted)}.confirmed-stay p.stay-note,.confirmed-stay p.stay-source{font-size:11px;line-height:1.75}.stay-links{display:flex;gap:10px;flex-wrap:wrap;margin:17px 0}.stay-source a{text-decoration:underline;text-underline-offset:3px}.summary-card.lodging-confirmed{border-color:var(--accent);background:var(--accent-soft)}
-@media(max-width:760px){.lodging-status{padding:8px 10px;font-size:10px;gap:8px;margin-bottom:10px}.lodging-status small{font-size:9px}.lodging-status .icon{width:20px;height:20px}.at-domos h2{font-size:35px;margin-bottom:12px}.at-domos .scene-kicker{margin-bottom:10px}.at-domos .scene-description{font-size:12px;line-height:1.6;margin-bottom:11px}.at-domos .scene-follow{margin-top:10px}.at-domos .scene-details{padding-top:8px;min-height:26px}.at-domos .detail{padding:6px 10px}.confirmed-stay{gap:16px;padding:22px 19px;flex-direction:column;margin-bottom:32px}.confirmed-stay-symbol{width:66px;height:66px;border-radius:19px}.confirmed-stay-symbol .icon{width:42px;height:42px}.confirmed-stay h3{font-size:28px}.stay-dates{gap:9px}.stay-dates strong{font-size:20px}.stay-dates small{font-size:7px;letter-spacing:.65px}.stay-dates em{font-size:9px}.stay-links .outline-button{padding:10px 12px;font-size:10px}}
-@media(max-width:760px) and (max-height:720px){.at-domos h2{font-size:29px}.at-domos .category-icon{width:34px;height:34px;border-radius:11px}.at-domos .category-icon .icon{width:20px;height:20px}.at-domos .scene-description{font-size:11px;line-height:1.5}.at-domos .scene-kicker{font-size:8px;margin-bottom:8px}.at-domos .lodging-status{font-size:9px;padding:6px 9px;margin-bottom:8px}.at-domos .lodging-status small{font-size:8px}.at-domos .scene-follow{font-size:9px;margin-top:7px}.at-domos .detail.primary-stop strong{font-size:10px}}
-@media(orientation:landscape) and (max-height:520px){.at-domos h2{font-size:27px}.lodging-status{padding:5px 8px;font-size:9px;margin-bottom:6px}.lodging-status small{font-size:8px}.at-domos .category-icon{width:25px;height:25px}.at-domos .category-icon .icon{width:16px;height:16px}.at-domos .scene-description{font-size:10px;line-height:1.4}.at-domos .scene-kicker{margin-bottom:7px}.at-domos .scene-details{padding-top:5px}.at-domos .scene-follow{margin-top:6px;font-size:8px}}
+.lodging-status[hidden]{display:none!important}.lodging-status{display:flex;align-items:center;gap:10px;padding:10px 13px;margin:0 0 13px;border:1px solid var(--accent);border-radius:12px;background:var(--accent-soft);color:var(--accent);font-size:11px;font-weight:750;line-height:1.45;max-width:430px}.lodging-status .icon{width:24px;height:24px}.lodging-status small{display:block;font-size:10px;font-weight:550;color:var(--text)}.at-lodging .scene-details .detail-badge{display:none}.at-lodging .scene-details{padding-top:10px}.at-lodging .scene-description{margin-bottom:13px}.at-lodging h2{font-size:clamp(36px,4.05vw,66px)}.confirmed-stay{display:flex;gap:27px;padding:30px;margin:15px 0 42px;border:1px solid var(--accent);border-radius:22px;background:var(--surface)}.confirmed-stay-symbol{width:84px;height:84px;border-radius:23px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;flex:none}.confirmed-stay-symbol .icon{width:53px;height:53px;stroke-width:1.5}.confirmed-stay-copy{flex:1;min-width:0}.confirmed-stay h3{margin:10px 0 12px;font-size:31px;letter-spacing:-1.1px}.confirmed-stay p{font-size:13px;line-height:1.75;color:var(--muted);margin:0 0 17px;max-width:720px}.stay-dates{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:19px 0}.stay-dates span{display:flex;flex-direction:column;gap:7px}.stay-dates small{font-size:8px;font-weight:750;letter-spacing:1px;color:var(--muted)}.stay-dates strong{font-size:23px;font-weight:650;letter-spacing:-.7px}.stay-dates em{font-size:10px;font-style:normal;color:var(--muted)}.confirmed-stay p.stay-note,.confirmed-stay p.stay-source{font-size:11px;line-height:1.75}.stay-links{display:flex;gap:10px;flex-wrap:wrap;margin:17px 0}.stay-source a{text-decoration:underline;text-underline-offset:3px}.summary-card.lodging-confirmed{border-color:var(--accent);background:var(--accent-soft)}
+@media(max-width:760px){.lodging-status{padding:8px 10px;font-size:10px;gap:8px;margin-bottom:10px}.lodging-status small{font-size:9px}.lodging-status .icon{width:20px;height:20px}.at-lodging h2{font-size:35px;margin-bottom:12px}.at-lodging .scene-kicker{margin-bottom:10px}.at-lodging .scene-description{font-size:12px;line-height:1.6;margin-bottom:11px}.at-lodging .scene-follow{margin-top:10px}.at-lodging .scene-details{padding-top:8px;min-height:26px}.at-lodging .detail{padding:6px 10px}.confirmed-stay{gap:16px;padding:22px 19px;flex-direction:column;margin-bottom:32px}.confirmed-stay-symbol{width:66px;height:66px;border-radius:19px}.confirmed-stay-symbol .icon{width:42px;height:42px}.confirmed-stay h3{font-size:28px}.stay-dates{gap:9px}.stay-dates strong{font-size:20px}.stay-dates small{font-size:7px;letter-spacing:.65px}.stay-dates em{font-size:9px}.stay-links .outline-button{padding:10px 12px;font-size:10px}}
+@media(max-width:760px) and (max-height:720px){.at-lodging h2{font-size:29px}.at-lodging .category-icon{width:34px;height:34px;border-radius:11px}.at-lodging .category-icon .icon{width:20px;height:20px}.at-lodging .scene-description{font-size:11px;line-height:1.5}.at-lodging .scene-kicker{font-size:8px;margin-bottom:8px}.at-lodging .lodging-status{font-size:9px;padding:6px 9px;margin-bottom:8px}.at-lodging .lodging-status small{font-size:8px}.at-lodging .scene-follow{font-size:9px;margin-top:7px}.at-lodging .detail.primary-stop strong{font-size:10px}}
+@media(orientation:landscape) and (max-height:520px){.at-lodging h2{font-size:27px}.lodging-status{padding:5px 8px;font-size:9px;margin-bottom:6px}.lodging-status small{font-size:8px}.at-lodging .category-icon{width:25px;height:25px}.at-lodging .category-icon .icon{width:16px;height:16px}.at-lodging .scene-description{font-size:10px;line-height:1.4}.at-lodging .scene-kicker{margin-bottom:7px}.at-lodging .scene-details{padding-top:5px}.at-lodging .scene-follow{margin-top:6px;font-size:8px}}
 @media print{.confirmed-stay{break-inside:avoid}.lodging-status{display:none!important}}
 </style>
 
@@ -113,8 +113,8 @@
  box-shadow:0 12px 35px rgba(12,25,39,.13);opacity:1;
  -webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
 }
-.scene-content h1,.scene-content h2,.at-domos h2,.scene-details strong,.scene-follow b,#clockValue,#dayDescription{color:var(--text)}
-.scene-description,.at-domos .scene-description,.scene-follow,.scene-details,.detail,.detail-muted,.intro-stat,.footer-meta,.footer-bottom,.brand small,.trip-dates,.clock-caption,.clock-phase,.map-context{color:var(--muted)}
+.scene-content h1,.scene-content h2,.at-lodging h2,.scene-details strong,.scene-follow b,#clockValue,#dayDescription{color:var(--text)}
+.scene-description,.at-lodging .scene-description,.scene-follow,.scene-details,.detail,.detail-muted,.intro-stat,.footer-meta,.footer-bottom,.brand small,.trip-dates,.clock-caption,.clock-phase,.map-context{color:var(--muted)}
 .scene-content em,.scene-kicker,.scene-follow a,.scene-follow button,.day-tick[aria-current="true"]{color:var(--accent)}
 .category-icon,.detail,.detail.primary-stop,.detail-badge,.event-schedule,.lodging-status{
  background:var(--accent-soft);border-color:var(--line);box-shadow:none;
@@ -122,7 +122,7 @@
 .category-icon,.detail-badge,.event-schedule,.lodging-status{color:var(--accent)}
 .detail.primary-stop,.detail strong,.lodging-status small{color:var(--text)}
 .scene-content{padding:22px 24px;bottom:160px}
-.scene-content h2,.at-domos h2{font-size:clamp(34px,3.2vw,52px);line-height:1.08;letter-spacing:-1.6px}
+.scene-content h2,.at-lodging h2{font-size:clamp(34px,3.2vw,52px);line-height:1.08;letter-spacing:-1.6px}
 .scene-content.is-intro h1{font-size:clamp(58px,6vw,88px);letter-spacing:-4px;line-height:1.02}
 .scene-description{font-size:15px;line-height:1.7}
 .scene-kicker{font-size:11px;letter-spacing:1.1px;gap:10px;flex-wrap:wrap}
@@ -144,7 +144,7 @@
 .day-line{background:var(--line)}
 @media(max-width:1100px) and (min-width:761px){
  .scene-content{width:44vw;padding:18px 20px}
- .scene-content h2,.at-domos h2{font-size:38px}
+ .scene-content h2,.at-lodging h2{font-size:38px}
  .scene-content.is-intro h1{font-size:65px}
  .scene-description{font-size:14px}
 }
@@ -154,20 +154,20 @@
  #clockValue{font-size:39px;letter-spacing:-2px}
  .clock-caption{font-size:7px;max-width:100px}
  .map-context{display:none}
- .scene-content,.scene-content.at-domos{left:14px;right:14px;bottom:110px;width:auto;padding:14px 16px}
- .scene-content h2,.at-domos h2{font-size:30px;letter-spacing:-1.1px;line-height:1.09;margin-bottom:12px}
+ .scene-content,.scene-content.at-lodging{left:14px;right:14px;bottom:110px;width:auto;padding:14px 16px}
+ .scene-content h2,.at-lodging h2{font-size:30px;letter-spacing:-1.1px;line-height:1.09;margin-bottom:12px}
  .scene-content.is-intro h1{font-size:49px;letter-spacing:-2.6px;line-height:1;margin-bottom:13px}
- .scene-kicker,.at-domos .scene-kicker{font-size:9px;letter-spacing:.7px;gap:7px;margin-bottom:11px;flex-wrap:nowrap}
- .category-icon,.at-domos .category-icon{width:38px;height:38px;border-radius:12px}
- .category-icon .icon,.at-domos .category-icon .icon{width:22px;height:22px}
+ .scene-kicker,.at-lodging .scene-kicker{font-size:9px;letter-spacing:.7px;gap:7px;margin-bottom:11px;flex-wrap:nowrap}
+ .category-icon,.at-lodging .category-icon{width:38px;height:38px;border-radius:12px}
+ .category-icon .icon,.at-lodging .category-icon .icon{width:22px;height:22px}
  .event-schedule{font-size:9px;margin-left:auto;padding:5px 7px;letter-spacing:.6px}
- .scene-description,.at-domos .scene-description{font-size:13px;line-height:1.6;margin-bottom:12px}
+ .scene-description,.at-lodging .scene-description{font-size:13px;line-height:1.6;margin-bottom:12px}
  .scene-details{padding-top:10px;gap:8px;min-height:0}
- .detail.primary-stop strong,.at-domos .detail.primary-stop strong{font-size:11px}
+ .detail.primary-stop strong,.at-lodging .detail.primary-stop strong{font-size:11px}
  .detail{padding:7px 9px}.detail-badge{font-size:8px;padding:7px 9px}
- .scene-follow,.at-domos .scene-follow{font-size:10px;margin-top:10px;line-height:1.5}
- .lodging-status,.at-domos .lodging-status{font-size:10px;padding:7px 9px;line-height:1.4;margin-bottom:10px}
- .lodging-status small,.at-domos .lodging-status small{font-size:9px}
+ .scene-follow,.at-lodging .scene-follow{font-size:10px;margin-top:10px;line-height:1.5}
+ .lodging-status,.at-lodging .lodging-status{font-size:10px;padding:7px 9px;line-height:1.4;margin-bottom:10px}
+ .lodging-status small,.at-lodging .lodging-status small{font-size:9px}
  .city-label{font-size:12px;font-weight:650}#markerLabelText{font-size:12px;font-weight:750}
  .country-label{font-size:9px;letter-spacing:2px}
  .journey-footer{left:14px;right:14px;padding:9px 10px 8px}
@@ -176,32 +176,32 @@
  .footer-bottom{font-size:7px}
 }
 @media(max-width:760px) and (max-height:740px){
- .scene-content,.scene-content.at-domos{bottom:103px;padding:12px 14px}
- .scene-content h2,.at-domos h2{font-size:26px;margin-bottom:9px}
+ .scene-content,.scene-content.at-lodging{bottom:103px;padding:12px 14px}
+ .scene-content h2,.at-lodging h2{font-size:26px;margin-bottom:9px}
  .scene-content.is-intro h1{font-size:42px;margin-bottom:10px}
- .scene-description,.at-domos .scene-description{font-size:12px;line-height:1.5;margin-bottom:9px}
- .scene-kicker,.at-domos .scene-kicker{margin-bottom:9px;font-size:8px;letter-spacing:.55px}
- .category-icon,.at-domos .category-icon{width:32px;height:32px}
- .category-icon .icon,.at-domos .category-icon .icon{width:19px;height:19px}
+ .scene-description,.at-lodging .scene-description{font-size:12px;line-height:1.5;margin-bottom:9px}
+ .scene-kicker,.at-lodging .scene-kicker{margin-bottom:9px;font-size:8px;letter-spacing:.55px}
+ .category-icon,.at-lodging .category-icon{width:32px;height:32px}
+ .category-icon .icon,.at-lodging .category-icon .icon{width:19px;height:19px}
  .detail-badge{display:none}
- .scene-follow,.at-domos .scene-follow{font-size:9px;margin-top:8px}
- .scene-details,.at-domos .scene-details{padding-top:8px}
- .lodging-status,.at-domos .lodging-status{margin-bottom:8px}
+ .scene-follow,.at-lodging .scene-follow{font-size:9px;margin-top:8px}
+ .scene-details,.at-lodging .scene-details{padding-top:8px}
+ .lodging-status,.at-lodging .lodging-status{margin-bottom:8px}
 }
 @media(orientation:landscape) and (max-height:520px){
  .masthead{top:8px;height:42px;left:16px;right:16px;padding:5px 12px}
  .clock{top:63px;right:16px;padding:9px 12px}
- .scene-content,.scene-content.at-domos{width:49%;left:16px;right:auto;bottom:91px;padding:10px 12px}
- .scene-content h2,.at-domos h2{font-size:23px;margin-bottom:7px}
+ .scene-content,.scene-content.at-lodging{width:49%;left:16px;right:auto;bottom:91px;padding:10px 12px}
+ .scene-content h2,.at-lodging h2{font-size:23px;margin-bottom:7px}
  .scene-content.is-intro h1{font-size:37px;line-height:.99;letter-spacing:-1.4px;margin-bottom:7px}
- .scene-kicker,.at-domos .scene-kicker{font-size:7px;margin-bottom:7px;min-height:24px;gap:7px;flex-wrap:nowrap}
- .category-icon,.at-domos .category-icon{height:26px;width:26px;border-radius:9px}
- .category-icon .icon,.at-domos .category-icon .icon{width:17px;height:17px}
- .scene-description,.at-domos .scene-description{font-size:11px;line-height:1.45;margin-bottom:8px}
- .scene-details,.at-domos .scene-details{padding-top:6px;min-height:0}
+ .scene-kicker,.at-lodging .scene-kicker{font-size:7px;margin-bottom:7px;min-height:24px;gap:7px;flex-wrap:nowrap}
+ .category-icon,.at-lodging .category-icon{height:26px;width:26px;border-radius:9px}
+ .category-icon .icon,.at-lodging .category-icon .icon{width:17px;height:17px}
+ .scene-description,.at-lodging .scene-description{font-size:11px;line-height:1.45;margin-bottom:8px}
+ .scene-details,.at-lodging .scene-details{padding-top:6px;min-height:0}
  .detail{padding:5px 7px}.detail-badge{display:none}.detail.primary-stop strong{font-size:10px}
- .scene-follow,.at-domos .scene-follow{font-size:8px;margin-top:7px}
- .lodging-status,.at-domos .lodging-status{padding:5px 7px;font-size:9px;line-height:1.35;margin-bottom:7px}
+ .scene-follow,.at-lodging .scene-follow{font-size:8px;margin-top:7px}
+ .lodging-status,.at-lodging .lodging-status{padding:5px 7px;font-size:9px;line-height:1.35;margin-bottom:7px}
  .lodging-status small{font-size:8px}
  .journey-footer{left:16px;right:16px;bottom:8px;padding:7px 10px}
 }
@@ -210,10 +210,10 @@
 }
 
 @media(max-width:760px) and (max-height:740px){
- .at-domos .scene-details{display:none}
+ .at-lodging .scene-details{display:none}
 }
 @media(orientation:landscape) and (max-height:520px){
- .at-domos .scene-details,.is-intro .scene-details{display:none}
+ .at-lodging .scene-details,.is-intro .scene-details{display:none}
  .scene-content.is-intro h1{font-size:32px}
 }
 </style>
@@ -237,13 +237,13 @@
 .clock-caption{font-size:8px;max-width:none;line-height:1.3;letter-spacing:.1px}
 .clock .sun-track{display:none}
 @media(min-width:761px) and (min-height:521px) and (max-height:760px){
- .scene-content,.scene-content.at-domos{padding:16px 20px}
- .scene-content h2,.at-domos h2{font-size:36px;line-height:1.08;margin-bottom:13px}
+ .scene-content,.scene-content.at-lodging{padding:16px 20px}
+ .scene-content h2,.at-lodging h2{font-size:36px;line-height:1.08;margin-bottom:13px}
  .scene-content.is-intro h1{font-size:62px;line-height:1.02;letter-spacing:-3px;margin-bottom:18px}
- .scene-description,.at-domos .scene-description{font-size:13px;line-height:1.6;margin-bottom:13px}
- .scene-kicker,.at-domos .scene-kicker{margin-bottom:14px}
- .category-icon,.at-domos .category-icon{width:46px;height:46px;border-radius:15px}
- .category-icon .icon,.at-domos .category-icon .icon{width:26px;height:26px}
+ .scene-description,.at-lodging .scene-description{font-size:13px;line-height:1.6;margin-bottom:13px}
+ .scene-kicker,.at-lodging .scene-kicker{margin-bottom:14px}
+ .category-icon,.at-lodging .category-icon{width:46px;height:46px;border-radius:15px}
+ .category-icon .icon,.at-lodging .category-icon .icon{width:26px;height:26px}
 }
 @media(max-width:760px){
  :root{--hud-edge:14px;--hud-top:max(14px,env(safe-area-inset-top,0px))}
@@ -321,7 +321,7 @@
 }
 @media(max-width:760px){
  #sceneContent.photo-card{--photo-window-max:110px;--photo-window:110px}
- #sceneContent.photo-card h2,#sceneContent.photo-card.at-domos h2{font-size:30px;line-height:1.09;letter-spacing:-1.1px;margin-bottom:12px}
+ #sceneContent.photo-card h2,#sceneContent.photo-card.at-lodging h2{font-size:30px;line-height:1.09;letter-spacing:-1.1px;margin-bottom:12px}
  #sceneContent.photo-card.is-intro h1{font-size:47px;line-height:1.02;margin-bottom:14px;letter-spacing:-2.4px}
  #sceneContent.photo-card .scene-kicker{margin-bottom:11px}
  #sceneContent.photo-card .scene-description{font-size:13px;line-height:1.6;margin-bottom:12px}
@@ -331,7 +331,7 @@
 }
 @media(max-width:760px) and (max-height:740px){
  #sceneContent.photo-card{--photo-window-max:66px;--photo-window:66px}
- #sceneContent.photo-card h2,#sceneContent.photo-card.at-domos h2{font-size:26px;line-height:1.08;margin-bottom:9px}
+ #sceneContent.photo-card h2,#sceneContent.photo-card.at-lodging h2{font-size:26px;line-height:1.08;margin-bottom:9px}
  #sceneContent.photo-card.is-intro h1{font-size:40px;margin-bottom:10px}
  #sceneContent.photo-card .scene-description{font-size:12px;line-height:1.5;margin-bottom:9px}
  #sceneContent.photo-card .scene-kicker{margin-bottom:9px}
@@ -340,13 +340,13 @@
 }
 @media(max-width:760px) and (max-height:610px){
  #sceneContent.photo-card{--photo-window-max:34px;--photo-window:34px}
- #sceneContent.photo-card h2,#sceneContent.photo-card.at-domos h2{font-size:23px}
+ #sceneContent.photo-card h2,#sceneContent.photo-card.at-lodging h2{font-size:23px}
  #sceneContent.photo-card .scene-description{font-size:11px;line-height:1.5}
  #sceneContent .photo-credit{font-size:7px;padding:3px 6px}
 }
 @media(orientation:landscape) and (max-height:520px){
  #sceneContent.photo-card{--photo-window-max:20px;--photo-window:20px}
- #sceneContent.photo-card h2,#sceneContent.photo-card.at-domos h2{font-size:23px;margin-bottom:7px}
+ #sceneContent.photo-card h2,#sceneContent.photo-card.at-lodging h2{font-size:23px;margin-bottom:7px}
  #sceneContent.photo-card.is-intro h1{font-size:32px;letter-spacing:-1.4px;margin-bottom:7px}
  #sceneContent.photo-card .scene-kicker{margin-bottom:7px}
  #sceneContent.photo-card .scene-description{font-size:11px;line-height:1.45;margin-bottom:8px}
@@ -651,21 +651,18 @@ html.explorer-open{overflow:hidden}
 <section class="preparations" id="preparativos" aria-labelledby="prepTitle">
  <div class="prep-intro"><div class="eyebrow">EL VIAJE SIGUE ACÁ</div><h2 id="prepTitle">Antes de <em>salir.</em></h2><p>El recorrido está planteado. Estas son las decisiones que todavía quedan por tomar.</p><a class="outline-button" href="#inicio" data-start><svg class="icon"><use href="#i-compass"/></svg>Volver al recorrido</a></div>
 
- <section class="confirmed-stay" aria-labelledby="domosTitle">
-  <div class="confirmed-stay-symbol" aria-hidden="true"><svg class="icon"><use href="#i-domo"/></svg></div>
-  <div class="confirmed-stay-copy"><span class="eyebrow">ALOJAMIENTO CONFIRMADO POR USTEDES</span><h3 id="domosTitle">Domos del Viento</h3><p>RN 68, km 14 · Cafayate. Llegar desde la Quebrada de las Conchas, disfrutar la tarde y salir hacia Cafayate a la mañana siguiente.</p><div class="stay-dates"><span><small>ENTRADA PROPUESTA</small><strong>Día 3</strong><em>16:00 · a coordinar</em></span><span><small>SALIDA PROPUESTA</small><strong>Día 4</strong><em>10:30 · a coordinar</em></span><span><small>PARA EL PLAN</small><strong>1 noche</strong><em>Cantidad propuesta</em></span></div><p class="stay-note">La elección del alojamiento está confirmada. La fecha y una noche son la propuesta de este itinerario, no una nueva reserva. Coordinar disponibilidad, horarios, acceso exacto, cena y desayuno. El pin del mapa es esquemático.</p><div class="stay-links"><a class="outline-button" href="#domos"><svg class="icon"><use href="#i-domo"/></svg>Ir a esta estadía</a><a class="outline-button" href="https://www.google.com/maps/search/?api=1&amp;query=Domos+del+Viento+RN+68+km+14+Cafayate" target="_blank" rel="noopener noreferrer">Buscar el acceso en Maps <svg class="icon"><use href="#i-external"/></svg></a></div><p class="stay-source">Dirección: <a href="https://visitsalta.ar/alojamientos/" target="_blank" rel="noopener noreferrer">registro oficial de Visit Salta</a>. Confirmación del alojamiento: indicada por ustedes.</p></div>
- </section>
+ <section class="confirmed-stay" id="selectedStay" aria-labelledby="stayTitle"></section>
  <div class="prep-layout">
   <div class="prep-main">
    <h3>Por confirmar</h3><div id="checklist" class="checklist"></div><p class="storage-note" id="storageNote">Los cambios se guardan solo en este navegador.</p>
    <div class="prep-actions"><button class="outline-button" id="downloadPlan"><svg class="icon"><use href="#i-download"/></svg>Guardar plan detallado</button><button class="outline-button" id="printPlan"><svg class="icon"><use href="#i-print"/></svg>Imprimir itinerario</button></div>
   </div>
-  <aside class="plan-notes"><span class="eyebrow">PARA LEER EL PLAN</span><h3>Con margen, siempre.</h3><p><b>Horarios propuestos.</b> No son reservas, horarios de apertura ni predicciones de llegada. Los traslados y la frontera pueden requerir más tiempo.</p><p><b>Un solo conductor.</b> Las etapas largas pueden superar 8 h al volante. Los descansos no se eliminan para cumplir el programa.</p><p><b>Una estadía confirmada.</b> Domos del Viento está confirmado por ustedes; proponemos una noche, del día 3 al día 4. La fecha debe coordinarse. Los demás alojamientos, bodegas, restaurantes, guías y caminatas siguen pendientes.</p><p><b>Luz ilustrativa.</b> Los colores acompañan la hora del relato: no son un pronóstico ni una simulación del sol real.</p><p><b>Cartografía orientativa.</b> La base es Natural Earth; puntos y líneas son aproximados. No representan carreteras verificadas ni tracks de senderos. Las curvas de fondo son decorativas. El pin de Domos del Viento representa de forma esquemática la zona de la RN 68, km 14; no el acceso del establecimiento.</p><p><b>Un día extra como margen.</b> El regreso previsto es el día 14. El día siguiente queda disponible por demoras o cansancio.</p></aside>
+  <aside class="plan-notes"><span class="eyebrow">PARA LEER EL PLAN</span><h3>Con margen, siempre.</h3><p><b>Horarios propuestos.</b> No son reservas, horarios de apertura ni predicciones de llegada. Los traslados y la frontera pueden requerir más tiempo.</p><p><b>Un solo conductor.</b> Las etapas largas pueden superar 8 h al volante. Los descansos no se eliminan para cumplir el programa.</p><p id="lodgingPlanNote"></p><p><b>Luz ilustrativa.</b> Los colores acompañan la hora del relato: no son un pronóstico ni una simulación del sol real.</p><p><b>Cartografía orientativa.</b> La base es Natural Earth; puntos y líneas son aproximados. No representan carreteras verificadas ni tracks de senderos. Las curvas de fondo son decorativas. El alojamiento de Tilcara se muestra en el punto de la localidad; pedir el acceso exacto al establecimiento.</p><p><b>Un día extra como margen.</b> El regreso previsto es el día <span id="returnPlanDay">10</span>. El día siguiente queda disponible por demoras o cansancio.</p></aside>
  </div>
- <section class="route-summary" aria-labelledby="summaryTitle"><div class="eyebrow">14 DÍAS, DE PRINCIPIO A FIN</div><h3 id="summaryTitle">Volvé a cualquier momento del viaje.</h3><div class="summary-grid" id="summaryGrid"></div></section>
- <p class="image-disclaimer"><b>Fondos generados con IA.</b> Las ilustraciones se eligen por localidad o región. Las paradas cercanas pueden compartir una imagen. Son interpretaciones artísticas: no fotografías documentales ni referencias exactas de monumentos, caminos o alojamientos. La escena de domos recrea un ambiente; no verifica las instalaciones de Domos del Viento.</p>
- <section class="sources" aria-labelledby="sourcesTitle"><h3 id="sourcesTitle">Fuentes para revisar antes de salir</h3><p>Referencias del recorrido y de la ubicación de Domos del Viento. Consultarlas no confirma accesos ni disponibilidad para las fechas del viaje.</p><div id="sourceList" class="source-list"></div></section>
- <footer class="endnote"><a href="#inicio" data-start class="brand">norte.</a><span>Un viaje. Un solo scroll.</span><span>14 días · 13 noches</span></footer>
+ <section class="route-summary" aria-labelledby="summaryTitle"><div class="eyebrow" id="summaryEyebrow">10 DÍAS, DE PRINCIPIO A FIN</div><h3 id="summaryTitle">Volvé a cualquier momento del viaje.</h3><div class="summary-grid" id="summaryGrid"></div></section>
+ <p class="image-disclaimer"><b>Fondos generados con IA.</b> Las ilustraciones se eligen por localidad o región. Las paradas cercanas pueden compartir una imagen. Son interpretaciones artísticas: no fotografías documentales ni referencias exactas de monumentos, caminos o alojamientos.</p>
+ <section class="sources" aria-labelledby="sourcesTitle"><h3 id="sourcesTitle">Fuentes para revisar antes de salir</h3><p>Referencias del recorrido y del alojamiento El Cielo en Tilcara. Consultarlas no confirma accesos ni disponibilidad para las fechas del viaje.</p><div id="sourceList" class="source-list"></div></section>
+ <footer class="endnote"><a href="#inicio" data-start class="brand">norte.</a><span>Un viaje. Un solo scroll.</span><span id="tripDuration">10 días · 9 noches</span></footer>
 </section>
 <section id="transcript" class="transcript" aria-label="Versión de lectura del itinerario"></section>
 </main>
@@ -693,6 +690,7 @@ catch(error){
  document.body.prepend(note);throw error;
 }
 const SOURCES=DATA.sources,CHECKS=DATA.checklist;
+const CHECKLIST_KEY=`norte2026-checklist-${DATA.checklistVersion}`;
 const PALETTES=[
  {h:0,bg:'#0e1830',surface:'#ffffff',text:'#f6f2e9',muted:'#d1c8bb',line:'#ffffff',accent:'#ff9a62',soft:'#ffffff',mapbg:'#131f36',land:'#1c2c46',other:'#17253b',mapline:'#ffffff',maptext:'#d7d3c9',route:'#5cc8bb',glow:'#ffb974'},
  {h:5,bg:'#2a2240',surface:'#ffffff',text:'#f8efe8',muted:'#dccbc0',line:'#ffffff',accent:'#ff9366',soft:'#ffffff',mapbg:'#2a2842',land:'#343553',other:'#2a3149',mapline:'#ffffff',maptext:'#e1d7cf',route:'#6acdb7',glow:'#ffb57d'},
@@ -785,7 +783,7 @@ const polygonPath=g=>(g.type==='Polygon'?[g.coordinates]:g.coordinates).map(poly
 const categories={domo:'ALOJAMIENTO CONFIRMADO',car:'EN RUTA',border:'FRONTERA',food:'PAUSA PARA COMER',coffee:'DESCANSO',walk:'CAMINATA',wine:'BODEGAS',camera:'PUNTO TURÍSTICO',bed:'LLEGADA A LA BASE',moon:'CIERRE DEL DÍA',pin:'PARADA',home:'DE VUELTA EN CASA',overnight:'ESTADÍA'};
 const categoryIcon=k=>k==='overnight'?'bed':k;
 let stored={},storageOK=true;
-try{stored=JSON.parse(localStorage.getItem('norte2026')||'{}');if(!stored||typeof stored!=='object')stored={};}catch{stored={};storageOK=false;}
+try{stored=JSON.parse(localStorage.getItem(CHECKLIST_KEY)||'{}');if(!stored||typeof stored!=='object')stored={};}catch{stored={};storageOK=false;}
 let checks=Array.isArray(stored.checks)?stored.checks.filter(v=>Number.isInteger(v)):[];
 let DAYS=[],scenes=[],segments=[],cameras=[],dayStarts=[],dayEnds=[],sceneIndex=-1;
 let W=innerWidth,H=innerHeight,unit=H*.92,framePending=false,currentCamera={cx:0,cy:0,scale:1};
@@ -793,11 +791,15 @@ let lastThemeMinute=-1,lastRouteDay=-1,lastMapLabel='',lastPhase='',lastUIIndex=
 let markerNodes=[],countryNodes=[],scrollPosition=0;
 // Stops carry only their "HH:MM" time; the narrated clock works in minutes since day 1.
 const minutesOf=time=>{const[h,m]=time.split(':').map(Number);return h*60+m;};
-const displayPlace=id=>id==='domos'?'Domos del Viento':xy(id).name;
-function save(){try{localStorage.setItem('norte2026',JSON.stringify({checks}));}catch{storageOK=false;}$('storageNote').textContent=storageOK?'Los cambios y la lista se guardan solo en este navegador. No se envían datos.':'Este navegador no permite guardar cambios localmente. Se mantienen durante esta sesión.';}
+const displayPlace=id=>xy(id).name;
+function save(){try{localStorage.setItem(CHECKLIST_KEY,JSON.stringify({checks}));}catch{storageOK=false;}$('storageNote').textContent=storageOK?'Los cambios y la lista se guardan solo en este navegador. No se envían datos.':'Este navegador no permite guardar cambios localmente. Se mantienen durante esta sesión.';}
 function getStay(di){let a=di,b=di;while(a>0&&DAYS[a-1].sleep===DAYS[di].sleep)a--;while(b<DAYS.length-2&&DAYS[b+1].sleep===DAYS[di].sleep)b++;return{number:di-a+1,total:b-a+1};}
 function renderModel(){
  DAYS=DATA.days;
+ document.documentElement.style.setProperty('--trip-days',DAYS.length);
+ $('summaryEyebrow').textContent=`${DAYS.length} DÍAS, DE PRINCIPIO A FIN`;
+ $('tripDuration').textContent=`${DAYS.length} días · ${DAYS.length-1} noches`;
+ $('returnPlanDay').textContent=DAYS.length;
 
  scenes=[{intro:true,di:0,si:-1,time:'06:00',hour:6,absolute:360,place:DAYS[0].stops[0].place,kind:'car',routeIndex:0,title:'El norte, sin apuro.'}];
  dayStarts=[];dayEnds=[];
@@ -809,8 +811,8 @@ function renderModel(){
    const nextStart=DAYS[di+1].stops[0].time;
    const returnBase=stay.total>1?`Noche ${stay.number} de ${stay.total} en esta base.`:'Una noche para descansar antes de continuar.';
    const lodging=d.accommodation;
-   const overnightBody=lodging?`Alojamiento confirmado por ustedes. Para el plan asignamos una noche, del día 3 al día 4; fecha a coordinar. Mañana: desayuno tranquilo y salida propuesta a las 10:30.`:`${returnBase} Alojamiento por elegir, sin reserva confirmada. Mañana retomamos el plan a las ${nextStart}.`;
-   scenes.push({di,si:d.stops.length,place:last.place,routeIndex:d.route.length-1,time:'22:00',hour:22,absolute:di*1440+1320,kind:'overnight',title:lodging?'Noche en Domos del Viento':`Noche en ${d.sleep}`,body:overnightBody,tag:`NOCHE ${di+1} DE 13`,stay,accommodation:lodging||null});
+   const overnightBody=lodging?`${returnBase} ${lodging.name}, elegido por ustedes del día ${lodging.arrivalDay} al ${lodging.departureDay}. Fechas y horarios a coordinar. Mañana retomamos el plan a las ${nextStart}.`:`${returnBase} Alojamiento por elegir, sin reserva confirmada. Mañana retomamos el plan a las ${nextStart}.`;
+   scenes.push({di,si:d.stops.length,place:last.place,routeIndex:d.route.length-1,time:'22:00',hour:22,absolute:di*1440+1320,kind:'overnight',title:`Noche en ${lodging?.name||d.sleep}`,body:overnightBody,tag:`NOCHE ${di+1} DE ${DAYS.length-1}`,stay,accommodation:lodging||null});
   }
   dayEnds[di]=scenes.length-1;
  });
@@ -818,10 +820,15 @@ function renderModel(){
  scenes[scenes.length-1].final=true;
  segments=scenes.slice(0,-1).map((a,i)=>makeSegment(a,scenes[i+1]));
  sceneIndex=-1;lastUIIndex=-1;lastRouteDay=-1;
- $('dayTrack').innerHTML=DAYS.map((d,i)=>`<a class="day-tick ${d.n===9?'priority':''}" href="#dia-${d.n}" data-day="${d.n}" aria-label="Día ${d.n}: ${esc(d.title)}" title="${esc('Día '+d.n+' · '+d.title)}" aria-current="false"><span class="day-line"><i class="day-fill"></i></span><span class="day-number">${String(d.n).padStart(2,'0')}</span></a>`).join('');
- $('summaryGrid').innerHTML=DAYS.map(d=>`<a class="summary-card ${d.accommodation?'lodging-confirmed ':''}${d.n===9?'priority':''}" href="#dia-${d.n}"><span class="summary-date">DÍA ${String(d.n).padStart(2,'0')}</span><b>${esc(d.title)}</b><small>${d.n===14?'Llegada a casa':'Noche en '+esc(d.sleep)}${d.accommodation?' · Confirmado por ustedes':d.n===9?' · Imprescindible':''}</small></a>`).join('');
+ $('dayTrack').innerHTML=DAYS.map((d,i)=>`<a class="day-tick ${d.tag==='Imprescindible'?'priority':''}" href="#dia-${d.n}" data-day="${d.n}" aria-label="Día ${d.n}: ${esc(d.title)}" title="${esc('Día '+d.n+' · '+d.title)}" aria-current="false"><span class="day-line"><i class="day-fill"></i></span><span class="day-number">${String(d.n).padStart(2,'0')}</span></a>`).join('');
+ $('summaryGrid').innerHTML=DAYS.map(d=>`<a class="summary-card ${d.accommodation?'lodging-confirmed ':''}${d.tag==='Imprescindible'?'priority':''}" href="#dia-${d.n}"><span class="summary-date">DÍA ${String(d.n).padStart(2,'0')}</span><b>${esc(d.title)}</b><small>${d.n===DAYS.length?'Llegada a casa':'Noche en '+esc(d.sleep)}${d.accommodation?' · '+esc(d.accommodation.name):d.tag==='Imprescindible'?' · Imprescindible':''}</small></a>`).join('');
  $('sceneAnchors').innerHTML=scenes.map(s=>`<span class="scene-anchor" id="${s.intro?'inicio':'etapa-'+s.index}" data-scene="${s.index}"></span>`).join('')+DAYS.map((d,i)=>`<span class="scene-anchor" id="dia-${d.n}" data-scene="${dayStarts[i]}"></span>`).join('');
- $('sceneAnchors').insertAdjacentHTML('beforeend',`<span class="scene-anchor" id="domos" data-scene="${scenes.find(s=>s.kind==='domo').index}"></span>`);
+ DAYS.forEach((d,di)=>{
+  if(d.accommodation&&d.n===d.accommodation.arrivalDay){
+   const arrival=scenes.find(s=>s.di===di&&s.kind==='bed'&&s.place===d.accommodation.place);
+   if(arrival)$('sceneAnchors').insertAdjacentHTML('beforeend',`<span class="scene-anchor" id="alojamiento-${esc(d.accommodation.place)}" data-scene="${arrival.index}"></span>`);
+  }
+ });
  renderTranscript();renderActivityGuide();renderRoutes();measure();queueUpdate();
 }
 
@@ -867,7 +874,7 @@ function activityDetailsText(s){
 }
 
 function renderTranscript(){
- $('transcript').innerHTML='<h1>Norte, sin apuro · Actividades detalladas</h1><p>Los horarios y duraciones son propuestas; no reservas ni tiempos de ruta garantizados. Domos del Viento confirmado por ustedes: una noche propuesta, del día 3 al día 4. Resto de alojamientos y actividades por confirmar. Un día extra como margen para el regreso.</p>'+DAYS.map((d,di)=>`<section><h2>Día ${d.n} · ${esc(d.title)}</h2><p>${esc(d.subtitle)} · ${d.n===14?'En casa':'Noche en '+esc(d.sleep)}</p>${d.practical?`<p><b>Criterio del día:</b> ${esc(d.practical)}</p>`:''}${scenes.filter(s=>!s.intro&&s.di===di).map(s=>`<div class="transcript-activity"><h3>${s.time} · ${esc(s.title)}</h3><p>${esc(s.body)}</p>${s.budget?`<p><b>Tiempo propuesto:</b> ${esc(s.budget)} · ${esc(s.mode)} · ${esc(s.priority||'Plan base')}</p>`:''}${s.todo?.length?`<ul>${s.todo.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>`:''}${s.booking?`<p><b>Antes de ir:</b> ${esc(s.booking)}</p>`:''}${s.fallback?`<p><b>Si cambia el día:</b> ${esc(s.fallback)}</p>`:''}${(s.refs||[]).filter(k=>SOURCES[k]).map(k=>`<p class="source-print">Referencia: ${esc(SOURCES[k].label)} — <a href="${esc(SOURCES[k].url)}">${esc(SOURCES[k].url)}</a></p>`).join('')}</div>`).join('')}<p><b>Nota:</b> ${esc(d.note)}</p></section>`).join('');
+ $('transcript').innerHTML='<h1>Norte, sin apuro · Actividades detalladas</h1><p>Los horarios y duraciones son propuestas; no reservas ni tiempos de ruta garantizados. El Cielo en Tilcara elegido por ustedes: tres noches, del día 6 al día 9. Fechas y horarios a coordinar. Resto de alojamientos y actividades por confirmar. Un día extra como margen para el regreso.</p>'+DAYS.map((d,di)=>`<section><h2>Día ${d.n} · ${esc(d.title)}</h2><p>${esc(d.subtitle)} · ${d.n===DAYS.length?'En casa':'Noche en '+esc(d.sleep)}</p>${d.practical?`<p><b>Criterio del día:</b> ${esc(d.practical)}</p>`:''}${scenes.filter(s=>!s.intro&&s.di===di).map(s=>`<div class="transcript-activity"><h3>${s.time} · ${esc(s.title)}</h3><p>${esc(s.body)}</p>${s.budget?`<p><b>Tiempo propuesto:</b> ${esc(s.budget)} · ${esc(s.mode)} · ${esc(s.priority||'Plan base')}</p>`:''}${s.todo?.length?`<ul>${s.todo.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>`:''}${s.booking?`<p><b>Antes de ir:</b> ${esc(s.booking)}</p>`:''}${s.fallback?`<p><b>Si cambia el día:</b> ${esc(s.fallback)}</p>`:''}${(s.refs||[]).filter(k=>SOURCES[k]).map(k=>`<p class="source-print">Referencia: ${esc(SOURCES[k].label)} — <a href="${esc(SOURCES[k].url)}">${esc(SOURCES[k].url)}</a></p>`).join('')}</div>`).join('')}<p><b>Nota:</b> ${esc(d.note)}</p></section>`).join('');
 }
 
 function makeSegment(a,b){
@@ -891,7 +898,7 @@ function segmentPoint(segment,fraction){
 }
 const countryShape=f=>svg('path',{d:polygonPath(f.geometry),class:'country-shape'+(f.properties.name!=='Argentina'?' neighbor':'')});
 const COUNTRY_LABELS=[['ARGENTINA',-27.0,-63.6],['PARAGUAY',-25.3,-58.5],['BOLIVIA',-21.4,-66.8],['BRASIL',-26.0,-53.8]];
-const MAJOR_PLACES=new Set(['hohenau','posadas','corrientes','saenz','salta','cafayate','cachi','purmamarca','uquia','senoritas','domos','salinas','hornocal','tilcara']);
+const MAJOR_PLACES=new Set(['hohenau','posadas','corrientes','saenz','salta','cafayate','cachi','purmamarca','uquia','senoritas','salinas','hornocal','tilcara']);
 function gridPath(){let d='';for(let lon=-76;lon<=-45;lon+=1)d+=pathFor([projection(-36,lon),projection(-16,lon)]);for(let lat=-36;lat<=-16;lat+=1)d+=pathFor([projection(lat,-76),projection(lat,-45)]);return d;}
 function buildMap(){
  COUNTRIES.forEach(f=>$('mapCountries').appendChild(countryShape(f)));
@@ -984,7 +991,7 @@ function drawMap(point,path,a,b,t){
  const labelY=sideLabel?0:58;
  const lx=clamp(sideLabel?p.x+42:p.x-lw/2,10,W-lw-10)-p.x;
  $('markerLabel').setAttribute('transform',`translate(${lx.toFixed(2)} ${labelY})`);
- $('markerUse').setAttribute('href','#i-'+(active.place==='domos'?'domo':categoryIcon(active.intro?'car':active.kind)));
+ $('markerUse').setAttribute('href','#i-'+categoryIcon(active.intro?'car':active.kind));
  $('mapContextText').textContent=active.intro?'VISTA DEL VIAJE':moving?'EN CAMINO':active.kind==='overnight'?'HACEMOS NOCHE':'ESTAMOS ACÁ';
  // Avoid labels behind overlays and one another. The map itself stays full-screen.
  const occupied=[{x:p.x-48,y:p.y-44,w:96,h:84},{x:p.x+lx-6,y:p.y+labelY-22,w:lw+12,h:44}];
@@ -1055,7 +1062,6 @@ function applyCardPhoto(scene){
  card.dataset.photoPlace=scene.place;card.dataset.photoKey=key;
  if(!asset){++photoRequestId;requestedPhoto=shownPhoto='';['scenePhotoA','scenePhotoB'].forEach(id=>$(id).classList.remove('is-visible'));return;}
  $('photoCredit').title=asset.label+'. Imagen generada con IA: no es una fotografía documental ni verifica cómo es el sitio real.';
- if(scene.place==='domos')$('photoCredit').title='Recreación de ambiente con IA. No representa las instalaciones verificadas de Domos del Viento.';
  if(requestedPhoto===key)return;
  requestedPhoto=key;const token=++photoRequestId;
  decodeCardPhoto(asset).then(ok=>{
@@ -1089,10 +1095,11 @@ function fitPhotoWindow(){
 }
 
 function present(s){
- const d=DAYS[s.di],isNight=s.kind==='overnight',atDomos=s.place==='domos';
- $('sceneContent').classList.toggle('at-domos',atDomos);
- $('lodgingStatus').hidden=!atDomos;
- $('lodgingStatus').innerHTML=atDomos?`${icon('check')}<span>Alojamiento confirmado <small>Propuesta: día 3 → día 4 · 1 noche</small></span>`:'';
+ const d=DAYS[s.di],isNight=s.kind==='overnight',lodging=d.accommodation;
+ const atLodging=!!lodging&&s.place===lodging.place&&(isNight||s.kind==='bed');
+ $('sceneContent').classList.toggle('at-lodging',atLodging);
+ $('lodgingStatus').hidden=!atLodging;
+ $('lodgingStatus').innerHTML=atLodging?`${icon('check')}<span>${esc(lodging.name)}<small>Día ${lodging.arrivalDay} → día ${lodging.departureDay} · ${lodging.nights} noches</small></span>`:'';
  $('sceneContent').classList.toggle('is-intro',!!s.intro);
  $('sceneContent').classList.toggle('is-night',isNight);
  $('sceneContent').classList.toggle('is-priority',s.place==='senoritas');
@@ -1102,15 +1109,15 @@ function present(s){
   $('sceneKicker').innerHTML=`<span class="category-icon">${icon('compass')}</span>UN VIAJE PARA QUEDARSE`;
   title.innerHTML='El norte,<br><em>sin apuro.</em>';
   $('sceneDescription').textContent='De Hohenau a Salta y Jujuy. Desiertos, vino y caminatas, con tiempo para disfrutar cada parada.';
-  $('sceneDetails').innerHTML='<span class="intro-stat"><strong>14</strong> días</span><span class="intro-stat"><strong>2</strong> personas</span><span class="intro-stat"><strong>1</strong> RAV4</span>';
+  $('sceneDetails').innerHTML=`<span class="intro-stat"><strong>${DAYS.length}</strong> días</span><span class="intro-stat"><strong>2</strong> personas</span><span class="intro-stat"><strong>1</strong> RAV4</span>`;
   $('sceneFollow').innerHTML=`<a href="#dia-1">Empezar el viaje ${icon('down')}</a>`;
  }else{
   const priority=s.place==='senoritas';
-  $('sceneKicker').innerHTML=`<span class="category-icon">${icon(atDomos&&isNight?'domo':categoryIcon(s.kind))}</span>${priority?'CAMINATA IMPRESCINDIBLE':categories[s.kind]||'PARADA'}<time class="event-schedule">${s.time}</time>`;
+  $('sceneKicker').innerHTML=`<span class="category-icon">${icon(categoryIcon(s.kind))}</span>${priority?'CAMINATA IMPRESCINDIBLE':categories[s.kind]||'PARADA'}<time class="event-schedule">${s.time}</time>`;
   title.textContent=s.title;
   $('sceneDescription').textContent=s.body;
-  if(isNight){$('sceneDetails').innerHTML=`<span class="detail primary-stop">${icon(atDomos?'domo':'bed')}<strong>${atDomos?'Una noche en Domos del Viento':`Noche ${s.stay.number} de ${s.stay.total} en ${esc(d.sleep)}`}</strong></span><span class="detail-badge">${icon('moon')}${esc(s.tag)}</span>`;}
-  else $('sceneDetails').innerHTML=`<span class="detail primary-stop">${icon(atDomos?'domo':categoryIcon(s.kind))}<strong>${esc(displayPlace(s.place))}</strong></span><span class="detail-badge">${icon(d.n===14?'home':d.accommodation?'domo':'bed')}${d.n===14?'En casa':(d.accommodation?'Esta noche · ':'Base · ')+esc(d.sleep)}</span>`;
+  if(isNight){$('sceneDetails').innerHTML=`<span class="detail primary-stop">${icon('bed')}<strong>Noche ${s.stay.number} de ${s.stay.total} en ${esc(d.sleep)}</strong></span><span class="detail-badge">${icon('moon')}${esc(s.tag)}</span>`;}
+  else $('sceneDetails').innerHTML=`<span class="detail primary-stop">${icon(categoryIcon(s.kind))}<strong>${esc(displayPlace(s.place))}</strong></span><span class="detail-badge">${icon(d.n===DAYS.length?'home':'bed')}${d.n===DAYS.length?'En casa':(d.accommodation?'Esta noche · ':'Base · ')+esc(d.sleep)}</span>`;
   const next=scenes[s.index+1];
   if(next){$('sceneFollow').innerHTML=`${icon('down')}<span>${next.di!==s.di?'Mañana':'Después'} · <b>${next.time}</b> &nbsp;${esc(next.title)}</span>`;}
   else $('sceneFollow').innerHTML=`<a href="#guia-por-ciudad">Actividades por ciudad ${icon('down')}</a>`;
@@ -1146,14 +1153,22 @@ function update(){
 }
 function queueUpdate(){if(!framePending){framePending=true;requestAnimationFrame(update);}}
 function renderPrep(){
+ const lodging=DAYS.find(d=>d.accommodation).accommodation;
+ $('selectedStay').innerHTML=`<div class="confirmed-stay-symbol" aria-hidden="true">${icon('bed')}</div>
+  <div class="confirmed-stay-copy"><span class="eyebrow">ALOJAMIENTO ELEGIDO POR USTEDES</span><h3 id="stayTitle">${esc(lodging.name)}</h3><p>${esc(lodging.address)}. Base para visitar Purmamarca, Salinas Grandes, Uquía y Humahuaca, regresando cada noche a Tilcara.</p>
+  <div class="stay-dates"><span><small>ENTRADA PROPUESTA</small><strong>Día ${lodging.arrivalDay}</strong><em>${lodging.entryTime} · a coordinar</em></span><span><small>SALIDA PROPUESTA</small><strong>Día ${lodging.departureDay}</strong><em>${lodging.exitTime} · a coordinar</em></span><span><small>ESTADÍA</small><strong>${lodging.nights} noches</strong><em>Según su itinerario</em></span></div>
+  <p class="stay-note">${esc(lodging.note)} El mapa marca Tilcara, no la entrada del alojamiento.</p>
+  <div class="stay-links"><a class="outline-button" href="#alojamiento-${esc(lodging.place)}">${icon('bed')}Ir a esta estadía</a><a class="outline-button" href="${esc(lodging.mapUrl)}" target="_blank" rel="noopener noreferrer">Buscar el acceso en Maps ${icon('external')}</a><a class="outline-button" href="${esc(lodging.website)}" target="_blank" rel="noopener noreferrer">@elcieloentilcara ${icon('external')}</a></div>
+  <p class="stay-source">Dirección: <a href="${esc(lodging.source)}" target="_blank" rel="noopener noreferrer">registro de alojamientos de la Quebrada</a>. Elección del alojamiento y cantidad de noches: indicadas por ustedes.</p></div>`;
+ $('lodgingPlanNote').innerHTML=`<b>Tres noches en Tilcara.</b> ${esc(lodging.name)} es la base elegida por ustedes, del día ${lodging.arrivalDay} al día ${lodging.departureDay}. Coordinar fechas y horarios con el alojamiento. Los demás hoteles y actividades siguen pendientes.`;
  $('checklist').innerHTML=CHECKS.map((t,i)=>`<label class="check-item"><input type="checkbox" data-check="${i}" ${checks.includes(i)?'checked':''}><span>${esc(t)}</span></label>`).join('');
  document.querySelectorAll('[data-check]').forEach(el=>el.addEventListener('change',()=>{const n=Number(el.dataset.check);checks=checks.filter(i=>i!==n);if(el.checked)checks.push(n);save();}));
  $('sourceList').innerHTML=Object.entries(SOURCES).map(([k,s])=>`<a class="source-item" href="${esc(s.url)}" target="_blank" rel="noopener noreferrer"><span>${esc(s.label)}${k==='uquia'?' · referencia de 2018':''}</span>${icon('external')}</a>`).join('');
  save();
 }
 function download(){
- let text='NORTE, SIN APURO\n14 DÍAS · HOHENAU / SALTA / JUJUY\nHorarios sugeridos. Domos del Viento: alojamiento confirmado por ustedes; una noche propuesta, del día 3 al día 4. Fecha a coordinar. Resto de alojamientos y actividades por confirmar.\nUn día extra como margen para el regreso.\n\n';
- DAYS.forEach((d,di)=>{text+=`DÍA ${d.n}\n${d.title}\n${d.subtitle}\n${d.n===14?'Llegada a casa':'Noche en '+d.sleep}\n\n`;scenes.filter(s=>!s.intro&&s.di===di).forEach(s=>text+=`${s.time} · ${s.title}\n${s.body}\n${activityDetailsText(s)}\n`);text+=`NOTA: ${d.note}\n\n${'—'.repeat(50)}\n\n`;});
+ let text=`NORTE, SIN APURO\n${DAYS.length} DÍAS · ${DAYS.length-1} NOCHES · HOHENAU / SALTA / JUJUY\nHorarios sugeridos. El Cielo en Tilcara: alojamiento elegido por ustedes para tres noches, del día 6 al día 9. Fechas y horarios a coordinar. Resto de alojamientos y actividades por confirmar.\nUn día extra como margen para el regreso.\n\n`;
+ DAYS.forEach((d,di)=>{text+=`DÍA ${d.n}\n${d.title}\n${d.subtitle}\n${d.n===DAYS.length?'Llegada a casa':'Noche en '+d.sleep}\n\n`;scenes.filter(s=>!s.intro&&s.di===di).forEach(s=>text+=`${s.time} · ${s.title}\n${s.body}\n${activityDetailsText(s)}\n`);text+=`NOTA: ${d.note}\n\n${'—'.repeat(50)}\n\n`;});
  text+='FUENTES PARA REVISAR\n'+Object.values(SOURCES).map(s=>s.label+'\n'+s.url).join('\n\n');
  const url=URL.createObjectURL(new Blob([text],{type:'text/plain;charset=utf-8'})),a=document.createElement('a');a.href=url;a.download='norte-argentino-actividades-2026.txt';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1500);$('status').textContent='Resumen del viaje generado.';
 }
@@ -1395,7 +1410,7 @@ function selectPlace(id,{center=false,announce=true}={}){
  const days=[...new Set(list.length?list.map(s=>DAYS[s.di].n):routeDays.get(id)||[])],related=new Set(days);
  explorer.routes.forEach(r=>{const hit=r.days.some(n=>related.has(n));r.el.classList.toggle('is-related',hit);r.el.classList.toggle('is-muted',!hit);});
  const asset=photoFor({place:id});
- const credit=id==='domos'?'Recreación de ambiente con IA. No representa las instalaciones verificadas de Domos del Viento.':`${asset?.label}. Imagen generada con IA: no es una fotografía documental.`;
+ const credit=`${asset?.label}. Imagen generada con IA: no es una fotografía documental.`;
  const query=list.find(s=>s.query)?.query||`${name} ${xy(id).country}`;
  card.innerHTML=`${asset?`<div class="explorer-card-photo"><img alt="" decoding="async"><span class="explorer-credit" title="${esc(credit)}">${icon('camera')}ILUSTRACIÓN IA</span></div>`:''}<button class="explorer-card-close" type="button" aria-label="Cerrar la ficha de ${esc(name)}">${icon('close')}</button><div class="explorer-card-body"><span class="eyebrow">${tier==='stop'?'Parada':'Punto de paso'} · ${days.length>1?'días':'día'} ${joinDays(days)}</span><h3>${esc(name)}</h3>${nightDays?`<p class="explorer-card-note">${icon('bed')}${nightDays.length>1?'Noches':'Noche'} acá: ${nightDays.length>1?'días':'día'} ${joinDays(nightDays)}.</p>`:''}${list.length?`<ul class="explorer-stops">${list.map(s=>`<li><a href="#ficha-${esc(s.uid)}"><span class="explorer-stop-icon">${icon(categoryIcon(s.kind))}</span><span><small>DÍA ${DAYS[s.di].n} · ${esc(s.time)}</small>${esc(s.title)}</span>${icon('arrow')}</a></li>`).join('')}</ul>`:'<p class="explorer-card-note">El recorrido pasa por acá sin una parada planificada.</p>'}<div class="explorer-actions"><a href="${list.length?`#etapa-${list[0].index}`:`#dia-${days[0]}`}">${icon('pin')}Ver en el recorrido</a><a href="https://www.google.com/maps/search/?api=1&amp;query=${encodeURIComponent(query)}" target="_blank" rel="noopener noreferrer">${icon('external')}Buscar en Maps</a></div></div>`;
  if(asset){const img=card.querySelector('img');img.src=asset.src;img.style.objectPosition=asset.position;}

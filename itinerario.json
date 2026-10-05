@@ -270,7 +270,7 @@
       "name": "Quebrada de las Señoritas",
       "lat": -23.323,
       "lon": -65.386,
-      "image": "senoritas"
+      "image": "senoritas-v2"
     },
     "humahuaca": {
       "name": "Humahuaca",
@@ -295,16 +295,6 @@
       "lat": -23.597,
       "lon": -65.883,
       "image": "salinas"
-    },
-    "domos": {
-      "name": "Domos del Viento · aprox.",
-      "lat": -25.994,
-      "lon": -65.882,
-      "image": "domos",
-      "coordinateStatus": "schematic_unverified",
-      "address": "RN 68, km 14, Cafayate, Salta",
-      "source": "https://visitsalta.ar/alojamientos/",
-      "note": "Pin esquemático del sector, no del acceso. Solicitar ubicación exacta al alojamiento."
     }
   },
   "days": [
@@ -393,7 +383,7 @@
           "refs": [],
           "query": "",
           "routeIndex": 4,
-          "uid": "d01-a08"
+          "uid": "d01-a03"
         },
         {
           "time": "13:15",
@@ -456,7 +446,7 @@
           "refs": [],
           "query": "",
           "routeIndex": 8,
-          "uid": "d01-a07"
+          "uid": "d01-a06"
         }
       ],
       "note": "Ventana prevista: 06:00–17:00/18:00, incluidas las pausas. La frontera y el estado de la RN 16 pueden alterar la etapa.",
@@ -586,7 +576,7 @@
           "refs": [],
           "query": "",
           "routeIndex": 6,
-          "uid": "d02-a08"
+          "uid": "d02-a05"
         },
         {
           "time": "17:00",
@@ -607,7 +597,7 @@
           "refs": [],
           "query": "",
           "routeIndex": 8,
-          "uid": "d02-a05"
+          "uid": "d02-a06"
         },
         {
           "time": "18:30",
@@ -630,7 +620,7 @@
           ],
           "query": "Plaza 9 de Julio Salta",
           "routeIndex": 8,
-          "uid": "d02-a06"
+          "uid": "d02-a07"
         },
         {
           "time": "20:00",
@@ -653,19 +643,19 @@
           ],
           "query": "Doña Salta restaurante Córdoba 46 Salta",
           "routeIndex": 8,
-          "uid": "d02-a07"
+          "uid": "d02-a08"
         }
       ],
       "note": "Etapa larga: unas 8 h 30 min de manejo real (656 km), más las pausas. Confirmar el estado de la RN 16 antes de salir; 17:00 es una meta flexible.",
       "source": "rutas",
-      "practical": "Salta se conoce en varias visitas cortas del circuito. La tarde de llegada es solo para la plaza y la cena."
+      "practical": "Única noche en Salta. La tarde de llegada se dedica a instalarse, conocer la plaza y cenar; al día siguiente se sale hacia Cafayate."
     },
     {
       "n": 3,
-      "title": "Una noche en Domos del Viento",
-      "subtitle": "Salta → Quebrada de las Conchas → Domos del Viento",
-      "sleep": "Domos del Viento",
-      "tag": "Alojamiento confirmado",
+      "title": "Las rocas nos llevan a Cafayate",
+      "subtitle": "Salta → Quebrada de las Conchas → Cafayate",
+      "sleep": "Cafayate",
+      "tag": "Paisajes y nueva base",
       "scene": "desert",
       "route": [
         "salta",
@@ -675,28 +665,28 @@
         "puentemorales",
         "conchas",
         "yesera",
-        "domos"
+        "cafayate"
       ],
       "stops": [
         {
           "time": "08:00",
           "place": "salta",
           "title": "Salta → Quebrada de las Conchas",
-          "body": "Salir por la RN 68 con agua y almuerzo previsto. Hoy elegimos las paradas principales y protegemos la llegada a los domos a media tarde.",
+          "body": "Salir por la RN 68 con agua y almuerzo previsto. Hoy elegimos las paradas principales y llegamos a Cafayate a media tarde.",
           "kind": "car",
           "tag": "Plan base",
           "budget": "Día panorámico",
           "mode": "Auto",
           "priority": "Plan base",
           "todo": [
-            "Coordinar con Domos del Viento el acceso exacto, la llegada y la cena.",
+            "Coordinar el ingreso y el estacionamiento con el alojamiento de Cafayate.",
             "El orden del programa sigue el avance hacia Cafayate; no es un track vial."
           ],
-          "booking": "Noche en los domos propuesta del día 3 al 4; pendiente de coordinar.",
+          "booking": "Primera de dos noches en Cafayate; alojamiento por elegir.",
           "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
           "refs": [
             "conchas",
-            "domos"
+            "cafayate"
           ],
           "query": "",
           "routeIndex": 0,
@@ -745,7 +735,7 @@
           ],
           "query": "Puente Morales Ruta 68 Salta",
           "routeIndex": 4,
-          "uid": "d03-a11"
+          "uid": "d03-a03"
         },
         {
           "time": "11:40",
@@ -768,7 +758,7 @@
           ],
           "query": "Garganta del Diablo Quebrada de las Conchas Salta",
           "routeIndex": 5,
-          "uid": "d03-a03"
+          "uid": "d03-a04"
         },
         {
           "time": "12:20",
@@ -791,7 +781,7 @@
           ],
           "query": "El Anfiteatro Quebrada de las Conchas",
           "routeIndex": 5,
-          "uid": "d03-a04",
+          "uid": "d03-a05",
           "image": "anfiteatro"
         },
         {
@@ -815,13 +805,13 @@
           ],
           "query": "Mirador Tres Cruces Quebrada de las Conchas",
           "routeIndex": 5,
-          "uid": "d03-a05"
+          "uid": "d03-a06"
         },
         {
           "time": "13:30",
           "place": "conchas",
           "title": "Almuerzo ya resuelto",
-          "body": "Comer en un parador confirmado o usar una vianda en un espacio permitido. No damos por hecho que haya restaurante en los domos.",
+          "body": "Comer en un parador confirmado o usar una vianda en un espacio permitido. Llevar el almuerzo resuelto antes de entrar a la quebrada.",
           "kind": "food",
           "tag": "Plan base",
           "budget": "45–60 min",
@@ -831,12 +821,12 @@
             "Tener agua, vianda o un lugar de almuerzo definido desde la mañana.",
             "Llevarse todos los residuos y no abrir un picnic junto al tránsito."
           ],
-          "booking": "Coordinar cena y desayuno con el alojamiento; confirmar qué está incluido.",
+          "booking": "Parador o vianda a definir antes de salir de Salta.",
           "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
           "refs": [],
           "query": "",
           "routeIndex": 5,
-          "uid": "d03-a06"
+          "uid": "d03-a07"
         },
         {
           "time": "14:50",
@@ -850,185 +840,114 @@
           "priority": "Opcional",
           "todo": [
             "Elegir una perspectiva desde el sector autorizado.",
-            "Si el día viene lento, seguir directamente hacia Domos del Viento."
+            "Si el día viene lento, seguir directamente hacia Cafayate."
           ],
           "booking": "Verificar indicaciones del área protegida.",
-          "fallback": "Se elimina antes que recortar el descanso en los domos.",
+          "fallback": "Se elimina antes que recortar el descanso en Cafayate.",
           "refs": [
             "conchas"
           ],
           "query": "Los Castillos Quebrada de las Conchas",
           "routeIndex": 5,
-          "uid": "d03-a07"
-        },
-        {
-          "time": "16:00",
-          "place": "domos",
-          "title": "Domos del Viento",
-          "body": "Llegar con luz, instalarse y dejar el auto. El alojamiento está confirmado por ustedes; la fecha y esta hora son propuestas para coordinar.",
-          "kind": "domo",
-          "tag": "Alojamiento elegido",
-          "budget": "Llegada + tarde libre",
-          "mode": "Descanso",
-          "priority": "Alojamiento elegido",
-          "todo": [
-            "Solicitar ubicación exacta e instrucciones del último acceso.",
-            "Preguntar por cena, desayuno y horarios, sin asumir servicios a partir de la imagen IA."
-          ],
-          "booking": "Una noche propuesta, del día 3 al día 4; no se efectuó una nueva reserva.",
-          "fallback": "Ajustar la jornada a la hora real que confirme el alojamiento.",
-          "refs": [
-            "domos"
-          ],
-          "query": "Domos del Viento Cafayate RN 68 km 14",
-          "routeIndex": 7,
           "uid": "d03-a08"
         },
         {
-          "time": "18:00",
-          "place": "domos",
-          "title": "Fotos y descanso en los domos",
-          "body": "Dedicar la tarde al alojamiento: fotos del entorno y un paseo corto solo por las zonas autorizadas. No hay una excursión adicional programada.",
-          "kind": "camera",
+          "time": "16:00",
+          "place": "cafayate",
+          "title": "Dos noches en Cafayate",
+          "body": "Instalarse en el alojamiento de la ciudad. Dejamos el equipaje y el auto: esta será la base de las próximas dos noches.",
+          "kind": "bed",
           "tag": "Plan base",
-          "budget": "60–90 min",
-          "mode": "En el alojamiento",
+          "budget": "60 min",
+          "mode": "Descanso",
           "priority": "Plan base",
-          "todo": [
-            "Consultar qué sectores se pueden recorrer.",
-            "Quedarse a descansar si hay viento o si simplemente no apetece caminar."
-          ],
-          "booking": "No se ha contratado actividad, guía ni observación astronómica.",
-          "fallback": "Disfrutar el domo sin salir del área habilitada.",
+          "todo": [],
+          "booking": "Elegir alojamiento con estacionamiento para las noches de los días 3 y 4.",
+          "fallback": "Ajustar el horario al avance real del día.",
           "refs": [
-            "domos"
+            "cafayate"
           ],
           "query": "",
           "routeIndex": 7,
           "uid": "d03-a09"
         },
         {
-          "time": "20:00",
-          "place": "domos",
-          "title": "Cena y cielo del valle",
-          "body": "Cenar con la opción previamente coordinada. Después, mirar el cielo desde el alojamiento si las condiciones acompañan, sin conducir ni salir a senderos.",
-          "kind": "moon",
+          "time": "17:30",
+          "place": "cafayate",
+          "title": "Plaza e iglesia de Cafayate",
+          "body": "Dar una vuelta por la plaza central y el entorno de Nuestra Señora del Rosario. Paseo breve, artesanías y algo fresco; no otra bodega por obligación.",
+          "kind": "walk",
           "tag": "Plan base",
-          "budget": "60–90 min",
-          "mode": "En el alojamiento",
+          "budget": "45–60 min",
+          "mode": "A pie",
           "priority": "Plan base",
           "todo": [
-            "Resolver la comida antes de llegar, no al anochecer.",
-            "La vista del cielo depende de nubes e iluminación; no se promete una experiencia astronómica."
+            "Mirar la iglesia desde la plaza; entrar solo si está abierta.",
+            "Usar este rato para elegir dónde cenar cerca del hotel."
           ],
-          "booking": "Confirmar alimentación y cualquier servicio con los anfitriones.",
-          "fallback": "Cena y descanso dentro del alojamiento.",
+          "booking": "Paseo libre, sin visita guiada reservada.",
+          "fallback": "Descanso en el hotel después del almuerzo.",
+          "refs": [
+            "cafayate"
+          ],
+          "query": "Plaza central Cafayate Nuestra Señora del Rosario",
+          "routeIndex": 7,
+          "uid": "d03-a10"
+        },
+        {
+          "time": "20:00",
+          "place": "cafayate",
+          "title": "Cena a su ritmo",
+          "body": "Cena cerca del alojamiento. Tras una jornada de vino y almuerzo largo, puede ser algo sencillo, sin otro traslado.",
+          "kind": "food",
+          "tag": "Plan base",
+          "budget": "45–60 min",
+          "mode": "A pie",
+          "priority": "Plan base",
+          "todo": [
+            "Elegir una cena cerca del alojamiento.",
+            "Confirmar las bodegas y los traslados de mañana."
+          ],
+          "booking": "Restaurante por elegir; bodegas y traslados del día 4 por coordinar.",
+          "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
           "refs": [],
           "query": "",
           "routeIndex": 7,
-          "uid": "d03-a10"
+          "uid": "d03-a11"
         }
       ],
-      "note": "Domos del Viento: alojamiento confirmado por el viajero. Noche propuesta: del día 3 al día 4; se asigna una noche como supuesto de planificación. Llegada 16:00 y salida 10:30 orientativas, a coordinar. RN 68, km 14, según Visit Salta. El pin es esquemático, no el acceso exacto. Coordinar cena y desayuno. No se efectuó una nueva reserva.",
-      "source": "domos",
-      "sleepArea": "Cafayate",
-      "accommodation": {
-        "name": "Domos del Viento",
-        "area": "Cafayate",
-        "place": "domos",
-        "confirmedBy": "user",
-        "status": "accommodation_confirmed_date_proposed",
-        "arrivalDay": 3,
-        "departureDay": 4,
-        "nights": 1,
-        "nightCountStatus": "planning_assumption",
-        "dateStatus": "proposed",
-        "address": "RN 68, km 14 · Cafayate",
-        "entryTime": "16:00",
-        "exitTime": "10:30",
-        "mapUrl": "https://www.google.com/maps/search/?api=1&query=Domos+del+Viento+RN+68+km+14+Cafayate",
-        "source": "https://visitsalta.ar/alojamientos/",
-        "note": "Alojamiento confirmado por el viajero. Una noche y fecha propuestas; coordinar con el establecimiento. No se efectuó una nueva reserva."
-      },
-      "practical": "Prioridad: Garganta del Diablo + Anfiteatro + llegada a Domos del Viento. Tres Cruces y Los Castillos se recortan primero. La Yesera tiene otra mañana propia."
+      "note": "Primera de dos noches en Cafayate, del día 3 al día 5. Alojamiento en la ciudad por elegir.",
+      "source": "conchas",
+      "practical": "Prioridad: Garganta del Diablo, Anfiteatro y llegada a Cafayate. Tres Cruces y Los Castillos pueden acortarse si el camino demora."
     },
     {
       "n": 4,
-      "title": "De los domos al vino",
-      "subtitle": "Domos del Viento → Cafayate · bodegas y gastronomía",
+      "title": "Cafayate, vino y tiempo libre",
+      "subtitle": "Cafayate · bodegas y gastronomía",
       "sleep": "Cafayate",
       "tag": "Vino y comida",
       "scene": "wine",
       "route": [
-        "domos",
         "cafayate"
       ],
       "stops": [
         {
           "time": "09:00",
-          "place": "domos",
-          "title": "Desayuno en los domos",
-          "body": "Desayunar sin correr y aprovechar la última mañana. Coordinar si el desayuno está incluido o hay que llevarlo.",
+          "place": "cafayate",
+          "title": "Desayuno sin cambiar de hotel",
+          "body": "Mañana tranquila en Cafayate. Confirmar la visita a El Esteco, la mesa en Piattelli y los traslados antes de salir.",
           "kind": "coffee",
           "tag": "Plan base",
-          "budget": "45–60 min",
-          "mode": "En el alojamiento",
+          "budget": "Mañana libre",
+          "mode": "A pie",
           "priority": "Plan base",
-          "todo": [
-            "Tomar las últimas fotos sin retrasar el horario acordado de salida.",
-            "Preparar equipaje y confirmar dónde lo recibirán en Cafayate."
-          ],
-          "booking": "Desayuno y salida sujetos a condiciones de Domos del Viento.",
-          "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
-          "refs": [
-            "domos"
-          ],
+          "todo": [],
+          "booking": "Mismo alojamiento de Cafayate; bodegas y traslados por reservar.",
+          "fallback": "Ajustar el horario al avance real del día.",
+          "refs": [],
           "query": "",
           "routeIndex": 0,
           "uid": "d04-a01"
-        },
-        {
-          "time": "10:30",
-          "place": "domos",
-          "title": "Salida hacia Cafayate",
-          "body": "Dejar los domos y trasladarse a Cafayate. Desde que empiece la degustación, el auto ya no se usa.",
-          "kind": "car",
-          "tag": "Plan base",
-          "budget": "Traslado corto",
-          "mode": "Auto",
-          "priority": "Plan base",
-          "todo": [
-            "Pedir indicaciones del acceso al salir.",
-            "No llevar la RAV4 a una cata con la idea de conducir después."
-          ],
-          "booking": "Coordinar traslado para la jornada de vino.",
-          "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
-          "refs": [],
-          "query": "",
-          "routeIndex": 0,
-          "uid": "d04-a02",
-          "image": "cafayate"
-        },
-        {
-          "time": "11:00",
-          "place": "cafayate",
-          "title": "Equipaje y auto a resguardo",
-          "body": "Dejar las valijas en el hotel y estacionar. Esto no supone que la habitación esté disponible antes del horario de check-in.",
-          "kind": "bed",
-          "tag": "Plan base",
-          "budget": "30–45 min",
-          "mode": "Logística",
-          "priority": "Plan base",
-          "todo": [
-            "Pedir guarda de equipaje y estacionamiento anticipado.",
-            "Confirmar el traslado de ida y regreso antes de salir a la bodega."
-          ],
-          "booking": "Dos noches en Cafayate, días 4 y 5: hotel aún por elegir.",
-          "fallback": "Guardar equipaje según lo que ofrezca el alojamiento y reprogramar la visita si hace falta.",
-          "refs": [],
-          "query": "",
-          "routeIndex": 1,
-          "uid": "d04-a03"
         },
         {
           "time": "12:00",
@@ -1051,8 +970,8 @@
             "estecotur"
           ],
           "query": "Bodega El Esteco Cafayate",
-          "routeIndex": 1,
-          "uid": "d04-a04"
+          "routeIndex": 0,
+          "uid": "d04-a02"
         },
         {
           "time": "13:30",
@@ -1075,8 +994,8 @@
             "piatelli"
           ],
           "query": "Piattelli Vineyards Cafayate",
-          "routeIndex": 1,
-          "uid": "d04-a06",
+          "routeIndex": 0,
+          "uid": "d04-a03",
           "image": "piatelli"
         },
         {
@@ -1099,167 +1018,37 @@
             "cafayate"
           ],
           "query": "Plaza central Cafayate Nuestra Señora del Rosario",
-          "routeIndex": 1,
-          "uid": "d04-a07"
+          "routeIndex": 0,
+          "uid": "d04-a04"
         },
         {
           "time": "20:30",
           "place": "cafayate",
-          "title": "Cena a su ritmo",
-          "body": "Cena cerca del alojamiento. Tras una jornada de vino y almuerzo largo, puede ser algo sencillo, sin otro traslado.",
+          "title": "Cena y preparar la Ruta 40",
+          "body": "Cena tranquila y preparar agua, combustible y equipaje. Mañana dejamos Cafayate para dormir en Cachi.",
           "kind": "food",
           "tag": "Plan base",
           "budget": "45–60 min",
           "mode": "A pie",
           "priority": "Plan base",
           "todo": [
-            "Elegir según apetito y no por completar una lista.",
-            "Confirmar con el guía el circuito de mañana en La Yesera."
+            "Cenar cerca del alojamiento.",
+            "Preparar agua, equipaje y revisar la Ruta 40 para salir hacia Cachi."
           ],
-          "booking": "Restaurante por elegir; guía de mañana por coordinar.",
+          "booking": "Restaurante por elegir; alojamiento de Cachi por confirmar.",
           "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
           "refs": [],
           "query": "",
-          "routeIndex": 1,
-          "uid": "d04-a08"
+          "routeIndex": 0,
+          "uid": "d04-a05"
         }
       ],
-      "note": "Salida de Domos del Viento y traslado a Cafayate antes de cualquier degustación. Check-out 10:30 propuesto, sujeto a coordinación. Guarda de equipaje, estacionamiento, bodegas y traslados por confirmar. Noches de los días 4 y 5 en otro alojamiento de Cafayate, aún por elegir.",
+      "note": "Segunda noche en Cafayate, en el mismo alojamiento. Mañana se sale hacia Cachi. La Yesera queda como alternativa a las bodegas, sin sumarla al mismo programa.",
       "source": "cafayate",
-      "practical": "Una visita a El Esteco y un almuerzo largo en Piattelli son suficientes. Reservar por separado visita, mesa y traslados. Los horarios se acomodan a los cupos reales."
+      "practical": "Visita a El Esteco y almuerzo en Piattelli. Dejar el auto estacionado antes de degustar y coordinar los traslados. La mañana exclusiva de La Yesera se elimina al acortar el viaje."
     },
     {
       "n": 5,
-      "title": "Caminar, mirar, quedarse",
-      "subtitle": "Cafayate · naturaleza y tiempo libre",
-      "sleep": "Cafayate",
-      "tag": "Caminata",
-      "scene": "desert",
-      "route": [
-        "cafayate",
-        "yesera",
-        "cafayate"
-      ],
-      "stops": [
-        {
-          "time": "08:30",
-          "place": "cafayate",
-          "title": "Mañana para La Yesera",
-          "body": "Desayunar y salir al punto acordado con el guía. Pedimos un recorrido corto para conocer las formaciones sin convertir el día en una travesía exigente.",
-          "kind": "car",
-          "tag": "Plan base",
-          "budget": "Traslado + preparación",
-          "mode": "Auto o transfer",
-          "priority": "Plan base",
-          "todo": [
-            "Llevar agua, protección solar y calzado con agarre.",
-            "Solicitar un recorrido de duración y desnivel compatibles con ambos."
-          ],
-          "booking": "Confirmar guía, punto de encuentro, acceso y dificultad antes de salir.",
-          "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
-          "refs": [
-            "yesera"
-          ],
-          "query": "",
-          "routeIndex": 0,
-          "uid": "d05-a01"
-        },
-        {
-          "time": "09:30",
-          "place": "yesera",
-          "title": "La Yesera, con guía",
-          "body": "Caminar entre las formaciones de La Yesera en un circuito acordado. Reservamos 2–3 horas como objetivo; el trazado exacto lo define el guía con ustedes.",
-          "kind": "walk",
-          "tag": "Circuito a confirmar",
-          "budget": "Objetivo: 2–3 h",
-          "mode": "Senderismo guiado",
-          "priority": "Circuito a confirmar",
-          "todo": [
-            "Pedir una caminata corta con pausas para fotos y explicaciones del paisaje.",
-            "No confundir esta propuesta con el circuito completo Cañón del Paso–La Yesera, publicado como 8 km y 4 h."
-          ],
-          "booking": "Contratar guía y acordar circuito, esfuerzo, precio y condiciones de cancelación. No hay trekking reservado.",
-          "fallback": "Miradores de la quebrada desde accesos habilitados; si llueve o no hay guía, mañana libre en Cafayate.",
-          "refs": [
-            "yesera",
-            "yeseralargo"
-          ],
-          "query": "La Yesera Quebrada de las Conchas",
-          "routeIndex": 1,
-          "uid": "d05-a02"
-        },
-        {
-          "time": "13:00",
-          "place": "cafayate",
-          "title": "Almuerzo y descanso real",
-          "body": "Volver a Cafayate, almorzar cerca de la plaza y descansar. La tarde queda libre hasta la última vuelta por el centro.",
-          "kind": "food",
-          "tag": "Plan base",
-          "budget": "Comida + tarde libre",
-          "mode": "Descanso",
-          "priority": "Plan base",
-          "todo": [
-            "Priorizar sombra, agua y tiempo sentado después de caminar.",
-            "No sumar otra degustación: la tarde es para descansar."
-          ],
-          "booking": "Restaurante por elegir.",
-          "fallback": "Quedarse en el hotel si están cansados.",
-          "refs": [],
-          "query": "",
-          "routeIndex": 2,
-          "uid": "d05-a03"
-        },
-        {
-          "time": "17:15",
-          "place": "cafayate",
-          "title": "Artesanías y última vuelta",
-          "body": "Tiempo corto para compras y fotografías en el centro. Preferimos terminar con calma en lugar de salir nuevamente a la ruta.",
-          "kind": "walk",
-          "tag": "Opcional",
-          "budget": "30–45 min",
-          "mode": "A pie",
-          "priority": "Opcional",
-          "todo": [
-            "Elegir las compras que quieran llevar sin dejar equipaje a la vista en el auto.",
-            "Consultar la ruta de mañana y cargar combustible antes de cenar."
-          ],
-          "booking": "Sin reserva.",
-          "fallback": "Volver directamente al alojamiento.",
-          "refs": [],
-          "query": "",
-          "routeIndex": 2,
-          "uid": "d05-a05"
-        },
-        {
-          "time": "20:00",
-          "place": "cafayate",
-          "title": "Cena y ruta de mañana",
-          "body": "Cenar temprano y revisar el estado del ripio de la Ruta 40 hacia Cachi. Mañana es un día largo de camino de tierra.",
-          "kind": "moon",
-          "tag": "Plan base",
-          "budget": "60 min",
-          "mode": "Preparativos",
-          "priority": "Plan base",
-          "todo": [
-            "Confirmar el hotel en Cachi.",
-            "Cargar combustible y preparar agua y comida para el ripio."
-          ],
-          "booking": "Noche de Cachi por confirmar.",
-          "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
-          "refs": [
-            "rutas"
-          ],
-          "query": "",
-          "routeIndex": 2,
-          "uid": "d05-a06"
-        }
-      ],
-      "note": "La caminata todavía no está seleccionada. No se representa un track de trekking.",
-      "source": "cafayate",
-      "practical": "La Yesera es la actividad principal de la mañana. El circuito largo de 8 km no se da por aceptado; con mal clima o cansancio, la mañana queda libre."
-    },
-    {
-      "n": 6,
       "title": "Entre flechas de piedra",
       "subtitle": "Cafayate → Quebrada de las Flechas → Cachi",
       "sleep": "Cachi",
@@ -1289,14 +1078,14 @@
             "No desviarse a bodegas apartadas: la prioridad es llegar descansados."
           ],
           "booking": "Noche de Cachi y estado del ripio por confirmar.",
-          "fallback": "Si la Ruta 40 está cortada o hay lluvia fuerte, volver a Salta por la RN 68 y reorganizar los días 6 y 7.",
+          "fallback": "Si la Ruta 40 está cortada o hay lluvia fuerte, revisar la alternativa por RN 68 y RP 33 antes de salir y reorganizar la llegada a Cachi.",
           "refs": [
             "rutas",
             "flechas"
           ],
           "query": "",
           "routeIndex": 0,
-          "uid": "d06-a01"
+          "uid": "d05-a01"
         },
         {
           "time": "09:00",
@@ -1317,7 +1106,7 @@
           "refs": [],
           "query": "",
           "routeIndex": 1,
-          "uid": "d06-a02"
+          "uid": "d05-a02"
         },
         {
           "time": "11:00",
@@ -1340,7 +1129,7 @@
           ],
           "query": "Quebrada de las Flechas Salta",
           "routeIndex": 2,
-          "uid": "d06-a03"
+          "uid": "d05-a03"
         },
         {
           "time": "13:30",
@@ -1361,7 +1150,7 @@
           "refs": [],
           "query": "",
           "routeIndex": 4,
-          "uid": "d06-a04"
+          "uid": "d05-a04"
         },
         {
           "time": "17:00",
@@ -1377,14 +1166,14 @@
             "Confirmar estacionamiento, desayuno y ruta de mañana.",
             "No comprometer una visita con entrada antes de conocer la hora real de llegada."
           ],
-          "booking": "Alojamiento por elegir; Cachi sigue siendo opcional.",
+          "booking": "Alojamiento de Cachi por elegir para la noche del día 5.",
           "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
           "refs": [
             "cachi"
           ],
           "query": "",
           "routeIndex": 5,
-          "uid": "d06-a05"
+          "uid": "d05-a05"
         },
         {
           "time": "17:45",
@@ -1406,7 +1195,7 @@
           ],
           "query": "Iglesia San José Cachi Salta",
           "routeIndex": 5,
-          "uid": "d06-a06"
+          "uid": "d05-a06"
         },
         {
           "time": "20:00",
@@ -1429,7 +1218,7 @@
           ],
           "query": "",
           "routeIndex": 5,
-          "uid": "d06-a07"
+          "uid": "d05-a07"
         }
       ],
       "note": "Día de ripio por la Ruta 40, con paisajes de punta a punta. Revisar el estado del camino la noche anterior.",
@@ -1437,11 +1226,11 @@
       "practical": "No se añade Seclantás ni una bodega apartada: ya es un día de ripio con paisajes."
     },
     {
-      "n": 7,
-      "title": "Un día de grandes vistas",
-      "subtitle": "Cachi → Los Cardones → Salta",
-      "sleep": "Salta",
-      "tag": "Paisajes",
+      "n": 6,
+      "title": "De los valles a Tilcara",
+      "subtitle": "Cachi → Los Cardones → Cuesta del Obispo → Tilcara",
+      "sleep": "Tilcara",
+      "tag": "Nueva base",
       "scene": "cactus",
       "route": [
         "cachi",
@@ -1451,14 +1240,19 @@
         "cuesta",
         "chicoana",
         "carril",
-        "salta"
+        "guemes",
+        "jujuy",
+        "yala",
+        "volcan",
+        "maimara",
+        "tilcara"
       ],
       "stops": [
         {
-          "time": "08:30",
+          "time": "07:30",
           "place": "cachi",
           "title": "Desayuno y salida de Cachi",
-          "body": "Desayunar y preparar una jornada de montaña con paradas breves. El objetivo es llegar a Salta sin manejar de noche.",
+          "body": "Desayunar y salir temprano: hoy seguimos hasta Tilcara sin otra noche en Salta. Llevar agua y una vianda para adaptar la comida al avance.",
           "kind": "coffee",
           "tag": "Plan base",
           "budget": "30 min",
@@ -1468,23 +1262,23 @@
             "Comprobar estado del camino y visibilidad.",
             "Llevar comida de respaldo para no depender de un parador específico."
           ],
-          "booking": "Hotel de Salta por confirmar.",
+          "booking": "Coordinar la llegada a El Cielo en Tilcara para esta tarde.",
           "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
           "refs": [
             "rutas"
           ],
           "query": "",
           "routeIndex": 0,
-          "uid": "d07-a01"
+          "uid": "d06-a01"
         },
         {
-          "time": "10:30",
+          "time": "09:00",
           "place": "tintin",
           "title": "Recta del Tin Tin",
           "body": "Observar el paisaje de la recta y los cardones desde un apartadero habilitado. Las fotografías se hacen fuera de la calzada.",
           "kind": "camera",
           "tag": "Plan base",
-          "budget": "15–20 min",
+          "budget": "10–15 min",
           "mode": "Mirador",
           "priority": "Plan base",
           "todo": [
@@ -1498,16 +1292,16 @@
           ],
           "query": "Recta del Tin Tin Parque Nacional Los Cardones",
           "routeIndex": 2,
-          "uid": "d07-a02"
+          "uid": "d06-a02"
         },
         {
-          "time": "11:00",
+          "time": "09:30",
           "place": "ojodelcondor",
           "title": "Mirador Ojo del Cóndor",
-          "body": "Hacer un recorrido breve por el mirador y su entorno habilitado. Es la parada principal del parque, sin añadir trekking de alta montaña.",
+          "body": "Parada corta en el mirador habilitado de Los Cardones. Hoy priorizamos el paisaje y el traslado a Tilcara; no se agrega una caminata larga.",
           "kind": "walk",
           "tag": "Plan base",
-          "budget": "30–45 min",
+          "budget": "20–30 min",
           "mode": "Paseo corto",
           "priority": "Plan base",
           "todo": [
@@ -1522,10 +1316,10 @@
           ],
           "query": "Mirador Ojo del Cóndor Parque Nacional Los Cardones",
           "routeIndex": 3,
-          "uid": "d07-a03"
+          "uid": "d06-a03"
         },
         {
-          "time": "12:45",
+          "time": "10:30",
           "place": "cuesta",
           "title": "Cuesta del Obispo",
           "body": "Parada panorámica en un sector autorizado y descenso a ritmo tranquilo. La visibilidad decide si conviene detenerse.",
@@ -1546,13 +1340,13 @@
           ],
           "query": "Piedra del Molino Cuesta del Obispo",
           "routeIndex": 4,
-          "uid": "d07-a04"
+          "uid": "d06-a04"
         },
         {
-          "time": "14:15",
+          "time": "12:15",
           "place": "chicoana",
-          "title": "Almuerzo antes de Salta",
-          "body": "Pausa en el corredor de Chicoana para almorzar y descansar. Si el avance es distinto, comer antes en un lugar adecuado.",
+          "title": "Almuerzo en Chicoana",
+          "body": "Pausa para almorzar y descansar antes de continuar hacia Jujuy. No entramos al centro de Salta; seguimos por el corredor hacia General Güemes.",
           "kind": "food",
           "tag": "Plan base",
           "budget": "60 min",
@@ -1567,260 +1361,117 @@
           "refs": [],
           "query": "",
           "routeIndex": 5,
-          "uid": "d07-a05"
+          "uid": "d06-a05"
         },
         {
-          "time": "17:00",
-          "place": "salta",
-          "title": "Salta: descansar otra vez",
-          "body": "Instalarse, ducharse y dejar el auto. La tarde urbana y la cena se deciden con la energía que quede.",
+          "time": "15:30",
+          "place": "jujuy",
+          "title": "Pausa antes de la Quebrada",
+          "body": "Baño, combustible y descanso en un punto práctico del corredor de San Salvador de Jujuy. Después seguimos por RN 9 hacia Tilcara.",
+          "kind": "coffee",
+          "tag": "Plan base",
+          "budget": "20–30 min",
+          "mode": "Descanso",
+          "priority": "Plan base",
+          "todo": [],
+          "booking": "Estación o parador a elegir durante el viaje.",
+          "fallback": "Ajustar el horario al avance real del día.",
+          "refs": [
+            "rutas"
+          ],
+          "query": "",
+          "routeIndex": 8,
+          "uid": "d06-a06"
+        },
+        {
+          "time": "18:00",
+          "place": "tilcara",
+          "title": "El Cielo en Tilcara",
+          "body": "Llegada al alojamiento elegido por ustedes. Dejar el equipaje y descansar: nos quedamos tres noches y hacemos las excursiones desde aquí.",
           "kind": "bed",
           "tag": "Plan base",
           "budget": "60 min",
           "mode": "Descanso",
           "priority": "Plan base",
           "todo": [
-            "Usar un alojamiento con acceso cómodo para salir mañana hacia Jujuy.",
-            "No sumar visitas de horario cerrado si la llegada se retrasa."
+            "Coordinar ingreso y estacionamiento con el alojamiento.",
+            "El mapa marca la localidad; pedir el acceso exacto al anfitrión."
           ],
-          "booking": "Alojamiento por elegir.",
-          "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
-          "refs": [],
-          "query": "",
-          "routeIndex": 7,
-          "uid": "d07-a06"
-        },
-        {
-          "time": "18:15",
-          "place": "salta",
-          "title": "San Francisco y calle Caseros",
-          "body": "Paseo corto por el entorno de San Francisco y calle Caseros. Fotografiar el conjunto y seguir a pie por el centro.",
-          "kind": "walk",
-          "tag": "Opcional",
-          "budget": "40–50 min",
-          "mode": "A pie",
-          "priority": "Opcional",
-          "todo": [
-            "Elegir un circuito corto desde el alojamiento.",
-            "Los interiores dependen de apertura y celebraciones; la visita base es exterior."
-          ],
-          "booking": "Sin guía reservada.",
-          "fallback": "Quedarse descansando después de la montaña.",
+          "booking": "Alojamiento elegido por ustedes para tres noches. Coordinar fechas, ingreso, salida temprana y estacionamiento; no se realizó una reserva desde este itinerario.",
+          "fallback": "Ajustar el horario al avance real del día.",
           "refs": [
-            "saltacentro"
+            "elcielo",
+            "elcielocontacto"
           ],
-          "query": "Basílica San Francisco Salta",
-          "routeIndex": 7,
-          "uid": "d07-a07"
+          "query": "El Cielo en Tilcara Belgrano 56",
+          "routeIndex": 12,
+          "uid": "d06-a07"
         },
         {
           "time": "20:00",
-          "place": "salta",
-          "title": "Cena; peña como alternativa",
-          "body": "Cena cerca del alojamiento. Con energía, sustituirla por La Casona del Molino a partir del horario que confirme el local; no sumar ambas cenas.",
+          "place": "tilcara",
+          "title": "Primera cena en Tilcara",
+          "body": "Cena cerca del alojamiento y descanso después del traslado. Las salidas de los próximos dos días regresan a esta misma base.",
           "kind": "food",
           "tag": "Plan base",
-          "budget": "60–90 min",
-          "mode": "A pie o taxi",
+          "budget": "60 min",
+          "mode": "A pie",
           "priority": "Plan base",
-          "todo": [
-            "Para la peña, consultar mesa, horario y la dinámica de guitarreada; no es un show contratado.",
-            "Ir en taxi si van a tomar vino y terminar sin trasnochar antes de Jujuy."
-          ],
-          "booking": "Peña candidata, sin mesa reservada. Su canal anuncia atención nocturna desde las 21:00; reconfirmar.",
-          "fallback": "Cena temprana y descanso. No es necesario salir a una peña este día.",
-          "refs": [
-            "pena",
-            "penareserva"
-          ],
-          "query": "Peña La Casona del Molino Salta",
-          "routeIndex": 7,
-          "uid": "d07-a08"
+          "todo": [],
+          "booking": "Restaurante a elegir; alojamiento en El Cielo en Tilcara.",
+          "fallback": "Ajustar el horario al avance real del día.",
+          "refs": [],
+          "query": "",
+          "routeIndex": 12,
+          "uid": "d06-a08"
         }
       ],
-      "note": "Consultar rutas y condiciones del parque antes de recorrerlo.",
+      "note": "Traslado largo por RP 33, RN 68 y el corredor RN 9/34 hacia Jujuy. Evitar el desvío al centro de Salta y el camino de cornisa. Llegada a Tilcara orientativa entre las 17:30 y las 18:30.",
       "source": "cardones",
-      "practical": "Los Cardones se resuelve con una parada de paisaje y un paseo corto. La peña reemplaza la cena habitual y solo se considera si no están cansados."
+      "practical": "Salir temprano de Cachi. Los Cardones y la Cuesta del Obispo quedan como paradas breves; continuar hacia Tilcara después del almuerzo. Primera de tres noches en El Cielo en Tilcara.",
+      "sleepArea": "Tilcara",
+      "accommodation": {
+        "name": "El Cielo en Tilcara",
+        "area": "Tilcara",
+        "place": "tilcara",
+        "confirmedBy": "user",
+        "status": "accommodation_selected",
+        "arrivalDay": 6,
+        "departureDay": 9,
+        "nights": 3,
+        "nightCountStatus": "user_requested",
+        "dateStatus": "proposed",
+        "address": "Belgrano 56 · Tilcara",
+        "entryTime": "18:00",
+        "exitTime": "06:00",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=El+Cielo+en+Tilcara+Belgrano+56",
+        "source": "https://ivcaaejujuy.unju.edu.ar/pdf/ALOJAMIENTOS%20de%20Quebrada%202025.pdf",
+        "website": "https://www.instagram.com/elcieloentilcara/",
+        "note": "Alojamiento elegido por ustedes para tres noches. Coordinar fechas, ingreso, salida temprana y estacionamiento; no se realizó una reserva desde este itinerario."
+      }
     },
     {
-      "n": 8,
-      "title": "Jujuy, en primera persona",
-      "subtitle": "Salta → Purmamarca",
-      "sleep": "Purmamarca",
-      "tag": "Nueva base",
-      "scene": "mountain",
-      "route": [
-        "salta",
-        "guemes",
-        "jujuy",
-        "yala",
-        "volcan",
-        "purmamarca"
-      ],
-      "stops": [
-        {
-          "time": "09:00",
-          "place": "salta",
-          "title": "De Salta a Purmamarca",
-          "body": "Salir hacia la nueva base por el corredor confirmado. No agregamos un recorrido completo por San Salvador de Jujuy en esta etapa.",
-          "kind": "car",
-          "tag": "Plan base",
-          "budget": "Traslado con pausa",
-          "mode": "Auto",
-          "priority": "Plan base",
-          "todo": [
-            "Comprobar ruta y alojamiento antes de salir.",
-            "Parar a descansar en el trayecto sin convertir el traslado en una sucesión de visitas."
-          ],
-          "booking": "Cuatro noches propuestas en Purmamarca; alojamiento por elegir.",
-          "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
-          "refs": [
-            "rutas"
-          ],
-          "query": "",
-          "routeIndex": 0,
-          "uid": "d08-a01"
-        },
-        {
-          "time": "13:00",
-          "place": "purmamarca",
-          "title": "Almuerzo y nueva base",
-          "body": "Dejar las valijas, almorzar y descansar antes de caminar. La entrega de la habitación depende del alojamiento.",
-          "kind": "bed",
-          "tag": "Plan base",
-          "budget": "90–120 min",
-          "mode": "Logística + comida",
-          "priority": "Plan base",
-          "todo": [
-            "Consultar guarda de equipaje si el check-in es más tarde.",
-            "Empezar con un paseo suave, sin subir enseguida a los miradores más altos."
-          ],
-          "booking": "Confirmar hotel, estacionamiento y horarios.",
-          "fallback": "Reducir el paseo de la tarde a la plaza.",
-          "refs": [],
-          "query": "",
-          "routeIndex": 5,
-          "uid": "d08-a02"
-        },
-        {
-          "time": "15:00",
-          "place": "purmamarca",
-          "title": "Plaza, iglesia y artesanías",
-          "body": "Conocer el entorno de la plaza y la iglesia Santa Rosa de Lima. Mirar artesanías y tomar contacto con el pueblo antes de salir al paisaje.",
-          "kind": "walk",
-          "tag": "Plan base",
-          "budget": "40–50 min",
-          "mode": "A pie",
-          "priority": "Plan base",
-          "todo": [
-            "Entrar a la iglesia si está abierta y respetar las actividades religiosas.",
-            "Preguntar por materiales y origen de las artesanías en lugar de comprar con apuro."
-          ],
-          "booking": "Apertura de la iglesia a verificar. No hay recorrido guiado reservado.",
-          "fallback": "Paseo exterior breve y regreso al hotel.",
-          "refs": [
-            "purmamarca"
-          ],
-          "query": "Iglesia Santa Rosa de Lima Purmamarca",
-          "routeIndex": 5,
-          "uid": "d08-a03"
-        },
-        {
-          "time": "16:00",
-          "place": "purmamarca",
-          "title": "Paseo de los Colorados",
-          "body": "Caminar el circuito de aproximadamente 3 km detrás del Cerro de los Siete Colores. Reservar tiempo para fotos, pausas y volver sin apuro.",
-          "kind": "walk",
-          "tag": "Plan base",
-          "budget": "75–90 min",
-          "mode": "3 km aprox.",
-          "priority": "Plan base",
-          "todo": [
-            "Pedir indicaciones del recorrido habilitado antes de empezar.",
-            "Ir despacio y acortar la caminata si la altura o el cansancio se hacen notar."
-          ],
-          "booking": "Comprobar acceso y clima. Duración propuesta con fotos, no tiempo oficial de marcha.",
-          "fallback": "Plaza y vistas del cerro desde el pueblo; no es obligatorio completar el circuito.",
-          "refs": [
-            "purmamarca"
-          ],
-          "query": "Paseo de los Colorados Purmamarca",
-          "routeIndex": 5,
-          "uid": "d08-a04"
-        },
-        {
-          "time": "18:00",
-          "place": "purmamarca",
-          "title": "Una tarde sin kilómetros",
-          "body": "Merienda, fotos del pueblo o descanso. No añadimos El Porito después del circuito solamente para completar otro mirador.",
-          "kind": "coffee",
-          "tag": "Opcional",
-          "budget": "30–45 min",
-          "mode": "A pie",
-          "priority": "Opcional",
-          "todo": [
-            "Elegir una mesa o volver al hotel.",
-            "Confirmar con el guía el encuentro de mañana en Uquía."
-          ],
-          "booking": "Guía de Uquía pendiente de coordinar.",
-          "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
-          "refs": [],
-          "query": "",
-          "routeIndex": 5,
-          "uid": "d08-a05"
-        },
-        {
-          "time": "20:00",
-          "place": "purmamarca",
-          "title": "Primera cena jujeña",
-          "body": "Elegir una mesa cerca del hotel y probar humita, tamales o una preparación regional de la carta. Mañana es el día de Uquía.",
-          "kind": "food",
-          "tag": "Plan base",
-          "budget": "60–75 min",
-          "mode": "A pie",
-          "priority": "Plan base",
-          "todo": [
-            "Consultar ingredientes y disponibilidad del día.",
-            "Preparar mochila y resolver el desayuno antes de acostarse."
-          ],
-          "booking": "Restaurante por elegir; no hay menú ni precio confirmado.",
-          "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
-          "refs": [
-            "comidajujuy"
-          ],
-          "query": "",
-          "routeIndex": 5,
-          "uid": "d08-a06"
-        }
-      ],
-      "note": "Las actividades de Jujuy se pueden intercambiar según el clima y cómo se sientan con la altura.",
-      "source": "jujuy",
-      "practical": "Purmamarca no es solo un lugar para dormir: el circuito de Los Colorados tiene su tiempo propio. Se mantiene una alternativa más corta para el primer día en Jujuy."
-    },
-    {
-      "n": 9,
-      "title": "Uquía y las Señoritas",
-      "subtitle": "Una jornada para el lugar que no puede faltar",
-      "sleep": "Purmamarca",
+      "n": 7,
+      "title": "Uquía y Humahuaca desde Tilcara",
+      "subtitle": "Tilcara → Uquía y las Señoritas → Humahuaca → Tilcara",
+      "sleep": "Tilcara",
       "tag": "Imprescindible",
       "scene": "uquia",
       "route": [
-        "purmamarca",
-        "maimara",
         "tilcara",
         "uquia",
         "senoritas",
         "uquia",
-        "tilcara",
-        "maimara",
-        "purmamarca"
+        "humahuaca",
+        "uquia",
+        "tilcara"
       ],
       "stops": [
         {
-          "time": "07:45",
-          "place": "purmamarca",
+          "time": "08:00",
+          "place": "tilcara",
           "title": "Salida hacia Uquía",
-          "body": "Desayunar y salir al encuentro acordado. Llevamos agua, protección solar y calzado con agarre; hoy no se combina la caminata con Hornocal.",
+          "body": "Salir de El Cielo en Tilcara hacia Uquía. Agua, protección solar, calzado con agarre y una vianda de respaldo para la caminata.",
           "kind": "car",
           "tag": "Plan base",
           "budget": "Traslado con margen",
@@ -1837,10 +1488,10 @@
           ],
           "query": "",
           "routeIndex": 0,
-          "uid": "d09-a01"
+          "uid": "d07-a01"
         },
         {
-          "time": "09:00",
+          "time": "08:45",
           "place": "uquia",
           "title": "Encuentro con el guía",
           "body": "Acordar el circuito, esfuerzo y tiempo antes de comenzar. El objetivo es disfrutar la Quebrada de las Señoritas, no alcanzar cualquier punto a toda costa.",
@@ -1859,11 +1510,11 @@
             "uquiaguia"
           ],
           "query": "Uquía Jujuy",
-          "routeIndex": 3,
-          "uid": "d09-a02"
+          "routeIndex": 1,
+          "uid": "d07-a02"
         },
         {
-          "time": "09:30",
+          "time": "09:15",
           "place": "senoritas",
           "title": "Quebrada de las Señoritas",
           "body": "Recorrer los cañones y miradores habilitados con guía, con paradas para fotos y descanso. Es la actividad prioritaria del viaje y tiene toda la mañana.",
@@ -1883,11 +1534,11 @@
             "uquia"
           ],
           "query": "Quebrada de las Señoritas Uquía",
-          "routeIndex": 4,
-          "uid": "d09-a03"
+          "routeIndex": 2,
+          "uid": "d07-a03"
         },
         {
-          "time": "13:30",
+          "time": "13:15",
           "place": "uquia",
           "title": "Almuerzo en Uquía",
           "body": "Comer sin apuro después de caminar. Elegir un comedor abierto cerca del pueblo y probar un plato regional según la oferta del día.",
@@ -1906,17 +1557,17 @@
             "uquiaguia"
           ],
           "query": "",
-          "routeIndex": 5,
-          "uid": "d09-a04"
+          "routeIndex": 3,
+          "uid": "d07-a04"
         },
         {
-          "time": "14:45",
+          "time": "14:15",
           "place": "uquia",
           "title": "La iglesia de Uquía",
           "body": "Visitar Santa Cruz y San Francisco de Paula si está abierta. Mirar su arquitectura y las pinturas de ángeles arcabuceros, siguiendo las indicaciones del templo.",
           "kind": "walk",
           "tag": "Plan base",
-          "budget": "25–40 min",
+          "budget": "25–30 min",
           "mode": "Interior + pueblo",
           "priority": "Plan base",
           "todo": [
@@ -1930,76 +1581,141 @@
             "uquiaguia"
           ],
           "query": "Iglesia Santa Cruz San Francisco de Paula Uquía",
-          "routeIndex": 5,
-          "uid": "d09-a05"
+          "routeIndex": 3,
+          "uid": "d07-a05"
         },
         {
-          "time": "17:00",
-          "place": "purmamarca",
-          "title": "Regreso y descanso",
-          "body": "Volver a la base y dejar libres las últimas horas de la tarde. No añadimos otro sendero después de la caminata principal.",
+          "time": "15:15",
+          "place": "humahuaca",
+          "title": "Centro de Humahuaca",
+          "body": "Recorrer el centro histórico y la plaza de Humahuaca después de Uquía. Es una visita al pueblo; no se suma el ascenso a Hornocal.",
+          "kind": "walk",
+          "tag": "Plan base",
+          "budget": "45–60 min",
+          "mode": "A pie",
+          "priority": "Plan base",
+          "todo": [
+            "Hacer un recorrido compacto por el centro.",
+            "Reservar tiempo para volver a Tilcara y descansar."
+          ],
+          "booking": "Interiores sujetos a apertura; paseo base exterior.",
+          "fallback": "Recorrido más breve si el cansancio o el clima lo aconsejan.",
+          "refs": [
+            "quebradapueblos"
+          ],
+          "query": "Centro Humahuaca Jujuy",
+          "routeIndex": 4,
+          "uid": "d07-a06"
+        },
+        {
+          "time": "16:15",
+          "place": "humahuaca",
+          "title": "Monumento a la Independencia",
+          "body": "Acercarse al monumento y su entorno. Las escaleras son opcionales: también se puede apreciar el conjunto desde abajo.",
+          "kind": "camera",
+          "tag": "Opcional",
+          "budget": "20–30 min",
+          "mode": "Paseo corto",
+          "priority": "Opcional",
+          "todo": [
+            "Subir solo si están cómodos después de la caminata de Uquía.",
+            "Contemplar el monumento desde abajo si prefieren evitar más escalones."
+          ],
+          "booking": "Acceso a verificar.",
+          "fallback": "Vista desde el sector inferior y paseo por el centro.",
+          "refs": [
+            "quebradapueblos"
+          ],
+          "query": "Monumento a los Héroes de la Independencia Humahuaca",
+          "routeIndex": 4,
+          "uid": "d07-a07"
+        },
+        {
+          "time": "17:45",
+          "place": "tilcara",
+          "title": "Volver a El Cielo en Tilcara",
+          "body": "Regresar a la misma base y descansar. Preparar agua y abrigo para la salida a Salinas y Purmamarca de mañana.",
           "kind": "bed",
           "tag": "Plan base",
           "budget": "Tarde libre",
           "mode": "Descanso",
           "priority": "Plan base",
-          "todo": [
-            "Reponer agua y preparar lo necesario para mañana.",
-            "Decidir la salida de altura según cómo se sientan."
+          "todo": [],
+          "booking": "Segunda de tres noches en El Cielo en Tilcara.",
+          "fallback": "Ajustar el horario al avance real del día.",
+          "refs": [
+            "elcielocontacto"
           ],
-          "booking": "Misma base de Purmamarca.",
-          "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
-          "refs": [],
           "query": "",
-          "routeIndex": 8,
-          "uid": "d09-a06"
+          "routeIndex": 6,
+          "uid": "d07-a08"
         },
         {
           "time": "20:00",
-          "place": "purmamarca",
-          "title": "Cena sin otra agenda",
-          "body": "Cena tranquila cerca del hotel. Revisar el pronóstico y confirmar si mañana se mantiene Salinas Grandes.",
+          "place": "tilcara",
+          "title": "Cena en Tilcara",
+          "body": "Cena tranquila cerca del alojamiento. Revisar el pronóstico y cómo se sienten antes de mantener la salida de altura.",
           "kind": "food",
           "tag": "Plan base",
           "budget": "60 min",
           "mode": "A pie",
           "priority": "Plan base",
-          "todo": [
-            "No prolongar la noche por completar actividades.",
-            "El orden de las excursiones de altura se mantiene flexible."
-          ],
+          "todo": [],
           "booking": "Restaurante por elegir.",
-          "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
+          "fallback": "Ajustar el horario al avance real del día.",
           "refs": [],
           "query": "",
-          "routeIndex": 8,
-          "uid": "d09-a07"
+          "routeIndex": 6,
+          "uid": "d07-a09"
         }
       ],
-      "note": "Uquía y la Quebrada de las Señoritas son obligatorias en el plan. El pin de la quebrada indica el área general, no un acceso verificado ni un sendero.",
+      "note": "Segunda noche en El Cielo en Tilcara. La caminata se acuerda con guía. Si se prolonga, acortar el paseo urbano por Humahuaca; las pausas se mantienen.",
       "source": "uquia",
-      "practical": "Jornada prioritaria: trekking + almuerzo + iglesia. Uquía no se comparte con Hornocal. El circuito de las Señoritas se acuerda con guía y puede cambiar por condiciones."
+      "practical": "Caminata en las Señoritas por la mañana, almuerzo e iglesia en Uquía, y paseo por Humahuaca por la tarde. Hornocal queda fuera del programa para conservar la caminata y volver a descansar.",
+      "accommodation": {
+        "name": "El Cielo en Tilcara",
+        "area": "Tilcara",
+        "place": "tilcara",
+        "confirmedBy": "user",
+        "status": "accommodation_selected",
+        "arrivalDay": 6,
+        "departureDay": 9,
+        "nights": 3,
+        "nightCountStatus": "user_requested",
+        "dateStatus": "proposed",
+        "address": "Belgrano 56 · Tilcara",
+        "entryTime": "18:00",
+        "exitTime": "06:00",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=El+Cielo+en+Tilcara+Belgrano+56",
+        "source": "https://ivcaaejujuy.unju.edu.ar/pdf/ALOJAMIENTOS%20de%20Quebrada%202025.pdf",
+        "website": "https://www.instagram.com/elcieloentilcara/",
+        "note": "Alojamiento elegido por ustedes para tres noches. Coordinar fechas, ingreso, salida temprana y estacionamiento; no se realizó una reserva desde este itinerario."
+      }
     },
     {
-      "n": 10,
-      "title": "Un horizonte de sal",
-      "subtitle": "Purmamarca → Salinas Grandes → Purmamarca",
-      "sleep": "Purmamarca",
+      "n": 8,
+      "title": "Salinas y Purmamarca desde Tilcara",
+      "subtitle": "Tilcara → Salinas Grandes → Purmamarca → Tilcara",
+      "sleep": "Tilcara",
       "tag": "Paisajes de altura",
       "scene": "salt",
       "route": [
+        "tilcara",
+        "maimara",
         "purmamarca",
         "lipan",
         "salinas",
         "lipan",
-        "purmamarca"
+        "purmamarca",
+        "maimara",
+        "tilcara"
       ],
       "stops": [
         {
-          "time": "08:30",
-          "place": "purmamarca",
+          "time": "08:00",
+          "place": "tilcara",
           "title": "Hacia Salinas Grandes",
-          "body": "Salir después de desayunar, con agua, gafas de sol y abrigo. Es una jornada de altura que puede cambiar según las condiciones y cómo se sientan.",
+          "body": "Desayunar en Tilcara y salir por Maimará y Purmamarca hacia la Cuesta de Lipán. Llevar agua, gafas de sol, abrigo y comida de respaldo.",
           "kind": "car",
           "tag": "Plan base",
           "budget": "Excursión de día",
@@ -2016,10 +1732,10 @@
           ],
           "query": "",
           "routeIndex": 0,
-          "uid": "d10-a01"
+          "uid": "d08-a01"
         },
         {
-          "time": "10:00",
+          "time": "09:30",
           "place": "lipan",
           "title": "Cuesta de Lipán",
           "body": "Una parada breve en un mirador habilitado, si hay visibilidad. No es un lugar para sumar esfuerzo físico ni caminar junto al tránsito.",
@@ -2038,11 +1754,11 @@
             "salinasdetalle"
           ],
           "query": "Cuesta de Lipán Jujuy",
-          "routeIndex": 1,
-          "uid": "d10-a02"
+          "routeIndex": 3,
+          "uid": "d08-a02"
         },
         {
-          "time": "11:30",
+          "time": "10:45",
           "place": "salinas",
           "title": "Salinas Grandes",
           "body": "Consultar el circuito habilitado con los prestadores locales. Dedicar tiempo al paisaje y a fotos de perspectiva, sin conducir por la sal fuera de los accesos autorizados.",
@@ -2061,11 +1777,11 @@
             "salinasdetalle"
           ],
           "query": "Salinas Grandes acceso Ruta 52 Jujuy",
-          "routeIndex": 2,
-          "uid": "d10-a03"
+          "routeIndex": 4,
+          "uid": "d08-a03"
         },
         {
-          "time": "13:00",
+          "time": "12:15",
           "place": "salinas",
           "title": "Almuerzo sencillo",
           "body": "Comer en un lugar habilitado o usar la vianda. Mantener el descanso sin añadir Susques u otro destino alejado.",
@@ -2082,478 +1798,127 @@
           "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
           "refs": [],
           "query": "",
-          "routeIndex": 2,
-          "uid": "d10-a04"
+          "routeIndex": 4,
+          "uid": "d08-a04"
+        },
+        {
+          "time": "15:00",
+          "place": "purmamarca",
+          "title": "Plaza, iglesia y artesanías",
+          "body": "Al bajar del salar, recorrer la plaza, la iglesia y los puestos de artesanías de Purmamarca, con vistas al Cerro de los Siete Colores. Hoy volvemos a dormir en Tilcara.",
+          "kind": "walk",
+          "tag": "Plan base",
+          "budget": "60 min",
+          "mode": "A pie",
+          "priority": "Plan base",
+          "todo": [
+            "Entrar a la iglesia si está abierta y respetar las actividades religiosas.",
+            "Preguntar por materiales y origen de las artesanías en lugar de comprar con apuro."
+          ],
+          "booking": "Apertura de la iglesia a verificar. No hay recorrido guiado reservado.",
+          "fallback": "Paseo exterior breve y regreso al hotel.",
+          "refs": [
+            "purmamarca"
+          ],
+          "query": "Iglesia Santa Rosa de Lima Purmamarca",
+          "routeIndex": 6,
+          "uid": "d08-a05"
         },
         {
           "time": "16:00",
           "place": "purmamarca",
-          "title": "Bajar y descansar",
-          "body": "Regresar a Purmamarca y dejar la tarde libre. El paseo por el pueblo es opcional, no otra actividad de altura.",
-          "kind": "bed",
+          "title": "Merienda frente a los cerros",
+          "body": "Descansar antes de volver a Tilcara. Con energía, cambiar este rato por un tramo corto habilitado de Los Colorados, sin agregar otra caminata larga.",
+          "kind": "coffee",
           "tag": "Plan base",
-          "budget": "Descanso libre",
-          "mode": "En la base",
-          "priority": "Plan base",
-          "todo": [
-            "No añadir una caminata exigente al regreso.",
-            "Revisar cómo se sintieron antes de confirmar Hornocal."
-          ],
-          "booking": "Mismo alojamiento de Purmamarca.",
-          "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
-          "refs": [],
-          "query": "",
-          "routeIndex": 4,
-          "uid": "d10-a05"
-        },
-        {
-          "time": "18:00",
-          "place": "purmamarca",
-          "title": "Artesanías o merienda",
-          "body": "Un rato en la plaza para artesanías y una merienda. Es un bloque opcional que se puede cambiar directamente por descanso.",
-          "kind": "walk",
-          "tag": "Opcional",
           "budget": "30–45 min",
           "mode": "A pie",
-          "priority": "Opcional",
-          "todo": [
-            "Resolver compras pendientes sin volver a la ruta.",
-            "Elegir una mesa o un paseo corto, no ambas cosas si están cansados."
-          ],
-          "booking": "Sin reserva.",
-          "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
+          "priority": "Plan base",
+          "todo": [],
+          "booking": "Lugar de merienda por elegir.",
+          "fallback": "Ajustar el horario al avance real del día.",
           "refs": [
             "purmamarca"
           ],
-          "query": "Plaza Purmamarca",
-          "routeIndex": 4,
-          "uid": "d10-a06"
-        },
-        {
-          "time": "20:00",
-          "place": "purmamarca",
-          "title": "Cena y plan de mañana",
-          "body": "Cena tranquila. Confirmar el traslado a Hornocal o decidir una alternativa de pueblos si no conviene volver a subir.",
-          "kind": "food",
-          "tag": "Plan base",
-          "budget": "60 min",
-          "mode": "A pie",
-          "priority": "Plan base",
-          "todo": [
-            "Pedir confirmación de ruta y condiciones al prestador.",
-            "Priorizar cómo se encuentran sobre la lista de visitas."
-          ],
-          "booking": "Traslado a Hornocal aún por reservar.",
-          "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
-          "refs": [],
           "query": "",
-          "routeIndex": 4,
-          "uid": "d10-a07"
-        }
-      ],
-      "note": "Salida de altura, condicionada al clima y al bienestar de ambos. Tarifas, accesos y servicios pendientes de confirmar.",
-      "source": "jujuy",
-      "practical": "Sin excursiones añadidas al volver de Salinas. La visita del salar se acuerda localmente y la apariencia del paisaje no se promete a partir de imágenes IA."
-    },
-    {
-      "n": 11,
-      "title": "La paleta del norte",
-      "subtitle": "Humahuaca y Hornocal",
-      "sleep": "Purmamarca",
-      "tag": "Paisajes de altura",
-      "scene": "mountain",
-      "route": [
-        "purmamarca",
-        "maimara",
-        "tilcara",
-        "uquia",
-        "humahuaca",
-        "hornocal",
-        "humahuaca",
-        "uquia",
-        "tilcara",
-        "maimara",
-        "purmamarca"
-      ],
-      "stops": [
-        {
-          "time": "08:30",
-          "place": "purmamarca",
-          "title": "Rumbo a Humahuaca",
-          "body": "Salir con margen para conocer el pueblo y evaluar la excursión al mirador. No se fuerza el ascenso a Hornocal si no es un buen día.",
-          "kind": "car",
-          "tag": "Plan base",
-          "budget": "Traslado con pausa",
-          "mode": "Auto",
-          "priority": "Plan base",
-          "todo": [
-            "Consultar condiciones con un prestador antes de subir.",
-            "El traslado local es una opción para que el único conductor descanse."
-          ],
-          "booking": "Excursión local por confirmar.",
-          "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
-          "refs": [
-            "hornocal"
-          ],
-          "query": "",
-          "routeIndex": 0,
-          "uid": "d11-a01"
-        },
-        {
-          "time": "10:00",
-          "place": "humahuaca",
-          "title": "Centro de Humahuaca",
-          "body": "Caminar por el centro y sus calles, mirar la iglesia y el entorno del Cabildo. Dedicar tiempo al pueblo antes de pensar en el mirador.",
-          "kind": "walk",
-          "tag": "Plan base",
-          "budget": "45–60 min",
-          "mode": "A pie",
-          "priority": "Plan base",
-          "todo": [
-            "Hacer un recorrido compacto por el centro.",
-            "Consultar el punto de salida del transporte a Hornocal."
-          ],
-          "booking": "Interiores sujetos a apertura; paseo base exterior.",
-          "fallback": "Recorrido más breve si el cansancio o el clima lo aconsejan.",
-          "refs": [
-            "quebradapueblos"
-          ],
-          "query": "Centro Humahuaca Jujuy",
-          "routeIndex": 4,
-          "uid": "d11-a02"
-        },
-        {
-          "time": "11:00",
-          "place": "humahuaca",
-          "title": "Monumento a la Independencia",
-          "body": "Acercarse al monumento y su entorno. Las escaleras son opcionales: también se puede apreciar el conjunto desde abajo.",
-          "kind": "camera",
-          "tag": "Opcional",
-          "budget": "20–30 min",
-          "mode": "Paseo corto",
-          "priority": "Opcional",
-          "todo": [
-            "Subir solo si están cómodos; guardar energía para la tarde.",
-            "No añadir otra caminata de desnivel antes del mirador."
-          ],
-          "booking": "Acceso a verificar.",
-          "fallback": "Vista desde el sector inferior y paseo por el centro.",
-          "refs": [
-            "quebradapueblos"
-          ],
-          "query": "Monumento a los Héroes de la Independencia Humahuaca",
-          "routeIndex": 4,
-          "uid": "d11-a03"
-        },
-        {
-          "time": "12:00",
-          "place": "humahuaca",
-          "title": "Almuerzo antes del mirador",
-          "body": "Almorzar en el centro y confirmar la logística de Hornocal. Elegir algo que les resulte cómodo antes de la ruta de altura.",
-          "kind": "food",
-          "tag": "Plan base",
-          "budget": "60 min",
-          "mode": "Comida + pausa",
-          "priority": "Plan base",
-          "todo": [
-            "Consultar tiempo de cocina antes de elegir la mesa.",
-            "No fijar la salida del traslado demasiado cerca del almuerzo."
-          ],
-          "booking": "Restaurante y traslado por confirmar.",
-          "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
-          "refs": [],
-          "query": "",
-          "routeIndex": 4,
-          "uid": "d11-a04"
-        },
-        {
-          "time": "13:00",
-          "place": "humahuaca",
-          "title": "Traslado a Hornocal",
-          "body": "Proponemos contratar el ascenso desde Humahuaca para descansar de manejar. Ruta, horario y regreso quedan sujetos a confirmación.",
-          "kind": "car",
-          "tag": "Condicionado",
-          "budget": "Unas 3 h ida, visita y vuelta",
-          "mode": "Con traslado",
-          "priority": "Condicionado",
-          "todo": [
-            "Acordar qué incluye el servicio, esperas, tarifa y lugar de regreso.",
-            "El transporte no elimina el efecto de la altura; mantener la opción de no subir.",
-            "Contratar una salida de 3 h como máximo, así la vuelta a Purmamarca es a las 17:30 y con luz."
-          ],
-          "booking": "No hay traslado contratado. La alternativa en RAV4 requiere revisar ripio y comodidad al volante.",
-          "fallback": "Quedarse en Humahuaca y regresar a Purmamarca sin ascenso.",
-          "refs": [
-            "hornocal"
-          ],
-          "query": "",
-          "routeIndex": 4,
-          "uid": "d11-a05"
-        },
-        {
-          "time": "14:00",
-          "place": "hornocal",
-          "title": "Mirador del Hornocal",
-          "body": "Contemplar el paisaje y hacer fotos desde el sector habilitado. Una visita breve; no planificamos bajar por laderas ni hacer trekking en altura.",
-          "kind": "camera",
-          "tag": "Condicionado",
-          "budget": "30–45 min en el mirador",
-          "mode": "Mirador de altura",
-          "priority": "Condicionado",
-          "todo": [
-            "Caminar poco y no alejarse del acceso habilitado.",
-            "Volver antes si hay malestar, poca visibilidad o indicación del prestador."
-          ],
-          "booking": "Acceso, estado del camino y tiempo de permanencia a confirmar.",
-          "fallback": "Omitir Hornocal. Un día de pueblos es una alternativa válida, no un fracaso del viaje.",
-          "refs": [
-            "hornocal"
-          ],
-          "query": "Mirador del Hornocal Humahuaca",
-          "routeIndex": 5,
-          "uid": "d11-a06"
+          "routeIndex": 6,
+          "uid": "d08-a06"
         },
         {
           "time": "17:30",
-          "place": "purmamarca",
-          "title": "Última tarde en Purmamarca",
-          "body": "Regreso a la base, descanso y equipaje listo. Mañana hay Pucará, una parada en Maimará y traslado a Salta.",
+          "place": "tilcara",
+          "title": "Última tarde en la base",
+          "body": "Volver a El Cielo en Tilcara, cargar combustible y preparar el equipaje. Coordinar la salida a las 06:00 y el desayuno o vianda de mañana.",
           "kind": "bed",
           "tag": "Plan base",
-          "budget": "Tarde libre",
-          "mode": "Descanso",
+          "budget": "Descanso y preparativos",
+          "mode": "En la base",
           "priority": "Plan base",
-          "todo": [
-            "Confirmar el horario del Pucará y el hotel de Salta.",
-            "Preparar una salida práctica sin compras pendientes."
-          ],
-          "booking": "Revisar apertura del Pucará para el día 12.",
-          "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
+          "todo": [],
+          "booking": "Tercera noche en El Cielo en Tilcara; salida temprana a coordinar.",
+          "fallback": "Ajustar el horario al avance real del día.",
           "refs": [
-            "pucara"
+            "elcielocontacto"
           ],
           "query": "",
-          "routeIndex": 10,
-          "uid": "d11-a07"
+          "routeIndex": 8,
+          "uid": "d08-a07"
         },
         {
-          "time": "20:00",
-          "place": "purmamarca",
-          "title": "Despedida de la quebrada",
-          "body": "Cena final en Purmamarca. Elegir uno de los platos regionales que les haya quedado pendiente, sin alargar demasiado la noche.",
+          "time": "19:30",
+          "place": "tilcara",
+          "title": "Cena temprana en Tilcara",
+          "body": "Cenar cerca del alojamiento y acostarse temprano. El regreso a Sáenz Peña será una jornada completa de ruta.",
           "kind": "food",
           "tag": "Plan base",
-          "budget": "60–75 min",
+          "budget": "60 min",
           "mode": "A pie",
           "priority": "Plan base",
-          "todo": [
-            "Resolver desayuno y guardar las valijas.",
-            "Si hay apetito, buscar quesillo con cayote como opción de postre, sujeto a la carta."
-          ],
+          "todo": [],
           "booking": "Restaurante por elegir.",
-          "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
-          "refs": [
-            "comidajujuy"
-          ],
+          "fallback": "Ajustar el horario al avance real del día.",
+          "refs": [],
           "query": "",
-          "routeIndex": 10,
-          "uid": "d11-a08"
+          "routeIndex": 8,
+          "uid": "d08-a08"
         }
       ],
-      "note": "No es obligatorio alcanzar el mirador. Se puede sustituir por un día tranquilo en los pueblos.",
+      "note": "Excursión de altura después de dos noches en Tilcara, sujeta a clima y bienestar. Regreso a El Cielo en Tilcara y preparación de la salida temprana hacia Sáenz Peña.",
       "source": "jujuy",
-      "practical": "Humahuaca tiene su paseo propio. Hornocal es condicionado y el traslado local es una propuesta, no una contratación. Regreso a la misma base."
+      "practical": "Subir al salar por la mañana y visitar Purmamarca al bajar. El paseo largo de Los Colorados queda como alternativa al paseo por el pueblo, según energía y tiempo. Tercera noche en Tilcara.",
+      "accommodation": {
+        "name": "El Cielo en Tilcara",
+        "area": "Tilcara",
+        "place": "tilcara",
+        "confirmedBy": "user",
+        "status": "accommodation_selected",
+        "arrivalDay": 6,
+        "departureDay": 9,
+        "nights": 3,
+        "nightCountStatus": "user_requested",
+        "dateStatus": "proposed",
+        "address": "Belgrano 56 · Tilcara",
+        "entryTime": "18:00",
+        "exitTime": "06:00",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=El+Cielo+en+Tilcara+Belgrano+56",
+        "source": "https://ivcaaejujuy.unju.edu.ar/pdf/ALOJAMIENTOS%20de%20Quebrada%202025.pdf",
+        "website": "https://www.instagram.com/elcieloentilcara/",
+        "note": "Alojamiento elegido por ustedes para tres noches. Coordinar fechas, ingreso, salida temprana y estacionamiento; no se realizó una reserva desde este itinerario."
+      }
     },
     {
-      "n": 12,
-      "title": "Pucará, Maimará y Salta",
-      "subtitle": "Tilcara → Maimará → Salta",
-      "sleep": "Salta",
-      "tag": "Pueblos y regreso",
-      "scene": "mountain",
+      "n": 9,
+      "title": "El camino de regreso",
+      "subtitle": "Tilcara → Sáenz Peña",
+      "sleep": "Sáenz Peña",
+      "tag": "Traslado de vuelta",
+      "scene": "road",
       "route": [
-        "purmamarca",
-        "maimara",
         "tilcara",
         "maimara",
         "volcan",
         "yala",
         "jujuy",
-        "guemes",
-        "salta"
-      ],
-      "stops": [
-        {
-          "time": "08:00",
-          "place": "purmamarca",
-          "title": "Salida con el equipaje",
-          "body": "Desayunar y salir rumbo a Tilcara. Concentramos las visitas en la mañana para llegar a Salta con la tarde libre.",
-          "kind": "car",
-          "tag": "Plan base",
-          "budget": "Traslado corto",
-          "mode": "Auto",
-          "priority": "Plan base",
-          "todo": [
-            "No dejar el equipaje a la vista durante las paradas.",
-            "Si el día se retrasa, se acorta el centro de Tilcara, no los descansos."
-          ],
-          "booking": "Check-out del hotel y estacionamiento para la visita a confirmar.",
-          "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
-          "refs": [],
-          "query": "",
-          "routeIndex": 0,
-          "uid": "d12-a01"
-        },
-        {
-          "time": "09:00",
-          "place": "tilcara",
-          "title": "Pucará de Tilcara",
-          "body": "Recorrer el sitio arqueológico y sus puntos interpretativos. Se propone hacerlo con guía si consiguen turno; el recorrido autoguiado es la alternativa.",
-          "kind": "walk",
-          "tag": "Plan base",
-          "budget": "90 min",
-          "mode": "Sendero arqueológico",
-          "priority": "Plan base",
-          "todo": [
-            "Reservar una guiada oficial o usar el recorrido señalizado por cuenta propia.",
-            "Pausas en las pendientes; no subir a muros ni estructuras fuera del recorrido."
-          ],
-          "booking": "UBA publica martes–domingo 09:00–18:30, último ingreso 17:15; lunes cerrado. Reconfirmar para el día 12. Guiadas según formulario semanal.",
-          "fallback": "Recorrer el centro de Tilcara.",
-          "refs": [
-            "pucara",
-            "pucaraguia"
-          ],
-          "query": "Pucará de Tilcara",
-          "routeIndex": 2,
-          "uid": "d12-a02"
-        },
-        {
-          "time": "10:45",
-          "place": "tilcara",
-          "title": "Café en el centro de Tilcara",
-          "body": "Paseo breve por el centro y una pausa. No añadimos Garganta del Diablo de Tilcara ni otra caminata larga antes del regreso a Salta.",
-          "kind": "coffee",
-          "tag": "Opcional",
-          "budget": "30 min",
-          "mode": "A pie",
-          "priority": "Opcional",
-          "todo": [
-            "Elegir un café práctico y comprar algo para el camino.",
-            "Salir a tiempo para mantener la parada corta en Maimará."
-          ],
-          "booking": "Comercio por elegir.",
-          "fallback": "Salir directamente hacia Maimará.",
-          "refs": [
-            "quebradapueblos"
-          ],
-          "query": "Plaza central Tilcara",
-          "routeIndex": 2,
-          "uid": "d12-a03"
-        },
-        {
-          "time": "11:30",
-          "place": "maimara",
-          "title": "La Paleta del Pintor",
-          "body": "Parada en el mirador habilitado de Maimará para fotografiar los cerros y el pueblo. No se programa subir a la sierra ni cruzar el río.",
-          "kind": "camera",
-          "tag": "Plan base",
-          "budget": "20–30 min",
-          "mode": "Mirador",
-          "priority": "Plan base",
-          "todo": [
-            "Usar el mirador sobre la ruta indicado por Turismo de Jujuy.",
-            "Mantener la parada corta; el viaje a Salta sigue por la tarde."
-          ],
-          "booking": "Sin reserva; acceso a verificar.",
-          "fallback": "Omitir si no hay estacionamiento seguro o visibilidad.",
-          "refs": [
-            "maimara"
-          ],
-          "query": "Mirador Paleta del Pintor Maimará",
-          "routeIndex": 3,
-          "uid": "d12-a04"
-        },
-        {
-          "time": "12:15",
-          "place": "maimara",
-          "title": "Almuerzo y rumbo a Salta",
-          "body": "Resolver un almuerzo práctico en el corredor y continuar, con una pausa adicional si hace falta.",
-          "kind": "car",
-          "tag": "Plan base",
-          "budget": "Traslado con comida",
-          "mode": "Auto",
-          "priority": "Plan base",
-          "todo": [
-            "No conducir con apuro: la tarde en Salta no tiene horario.",
-            "Llevar una alternativa de comida si no hay servicio rápido."
-          ],
-          "booking": "Hotel de Salta por confirmar.",
-          "fallback": "Si se demoran, comer algo rápido y seguir sin apuro.",
-          "refs": [
-            "rutas"
-          ],
-          "query": "",
-          "routeIndex": 3,
-          "uid": "d12-a05"
-        },
-        {
-          "time": "15:45",
-          "place": "salta",
-          "title": "Dejar valijas en Salta",
-          "body": "Instalarse y tener la tarde libre para descansar o caminar el centro sin agenda antes de las dos jornadas de regreso.",
-          "kind": "bed",
-          "tag": "Plan base",
-          "budget": "Tarde libre",
-          "mode": "Logística",
-          "priority": "Plan base",
-          "todo": [
-            "Asegurar el auto y bajar el equipaje."
-          ],
-          "booking": "Alojamiento por elegir; llegada orientativa.",
-          "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
-          "refs": [],
-          "query": "",
-          "routeIndex": 8,
-          "uid": "d12-a06"
-        },
-        {
-          "time": "20:00",
-          "place": "salta",
-          "title": "Cena y todo listo para volver",
-          "body": "Cena cerca del hotel, combustible y equipaje resueltos. Mañana comienza la primera etapa larga de regreso.",
-          "kind": "food",
-          "tag": "Plan base",
-          "budget": "60 min",
-          "mode": "Descanso",
-          "priority": "Plan base",
-          "todo": [
-            "Pedir desayuno temprano o llevar una vianda.",
-            "Revisar estado de la RN 16 y confirmar el hotel de Sáenz Peña."
-          ],
-          "booking": "Noche de tránsito del día 13 por confirmar.",
-          "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
-          "refs": [
-            "rutas"
-          ],
-          "query": "",
-          "routeIndex": 8,
-          "uid": "d12-a08"
-        }
-      ],
-      "note": "Se va primero al norte hasta Tilcara y luego hacia el sur. Si quieren menos traslado, eliminar Tilcara o Maimará, no las pausas.",
-      "source": "jujuy",
-      "practical": "Pucará a primera hora; Maimará como parada corta. La tarde en Salta queda libre para descansar antes del regreso."
-    },
-    {
-      "n": 13,
-      "title": "El camino de regreso",
-      "subtitle": "Salta → Sáenz Peña",
-      "sleep": "Sáenz Peña",
-      "tag": "Traslado de vuelta",
-      "scene": "road",
-      "route": [
-        "salta",
         "guemes",
         "galpon",
         "joaquin",
@@ -2566,31 +1931,50 @@
       "stops": [
         {
           "time": "06:00",
-          "place": "salta",
+          "place": "tilcara",
           "title": "Comienza el regreso",
-          "body": "Salida temprana hacia Sáenz Peña. No se añaden visitas turísticas: el objetivo es repartir bien el esfuerzo del único conductor.",
+          "body": "Salir de El Cielo en Tilcara con desayuno o vianda listos. Hoy vamos directamente a Sáenz Peña por el corredor de Jujuy, General Güemes y la RN 16.",
           "kind": "car",
           "tag": "Plan base",
-          "budget": "Jornada de 11–12 h",
+          "budget": "Jornada de 12–13 h con pausas",
           "mode": "Auto",
           "priority": "Plan base",
           "todo": [
             "Confirmar estado de ruta y la noche de tránsito antes de salir.",
             "Si no descansaron bien, reducir la etapa y usar el día extra como margen."
           ],
-          "booking": "Hotel de Sáenz Peña por confirmar.",
+          "booking": "Coordinar la salida a las 06:00 con El Cielo en Tilcara.",
           "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
           "refs": [
-            "rutas"
+            "rutas",
+            "regresotilcara"
           ],
           "query": "",
           "routeIndex": 0,
-          "uid": "d13-a01"
+          "uid": "d09-a01"
         },
         {
           "time": "08:00",
+          "place": "jujuy",
+          "title": "Primera pausa del regreso",
+          "body": "Descansar en un punto práctico del corredor de Jujuy antes de continuar hacia General Güemes.",
+          "kind": "coffee",
+          "tag": "Plan base",
+          "budget": "20–30 min",
+          "mode": "Descanso",
+          "priority": "Plan base",
+          "todo": [],
+          "booking": "Parador por elegir.",
+          "fallback": "Ajustar el horario al avance real del día.",
+          "refs": [],
+          "query": "",
+          "routeIndex": 4,
+          "uid": "d09-a02"
+        },
+        {
+          "time": "10:15",
           "place": "galpon",
-          "title": "Primera pausa de la mañana",
+          "title": "El Galpón: descansar",
           "body": "Pausa en el corredor de El Galpón para caminar, usar el baño y revisar cómo viene la jornada. El lugar exacto se adapta al avance.",
           "kind": "coffee",
           "tag": "Plan base",
@@ -2605,11 +1989,32 @@
           "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
           "refs": [],
           "query": "",
-          "routeIndex": 2,
-          "uid": "d13-a02"
+          "routeIndex": 6,
+          "uid": "d09-a03"
         },
         {
-          "time": "10:55",
+          "time": "12:00",
+          "place": "joaquin",
+          "title": "Almuerzo en el corredor de la RN 16",
+          "body": "Comer y descansar cerca de Joaquín V. González, según el avance real. No esperar a Monte Quemado si ya necesitan una pausa.",
+          "kind": "food",
+          "tag": "Plan base",
+          "budget": "45–60 min",
+          "mode": "Comida + pausa",
+          "priority": "Plan base",
+          "todo": [
+            "Elegir comida y un tiempo de servicio razonables.",
+            "Reponer agua y combustible si corresponde."
+          ],
+          "booking": "Restaurante o parador por elegir.",
+          "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
+          "refs": [],
+          "query": "",
+          "routeIndex": 7,
+          "uid": "d09-a04"
+        },
+        {
+          "time": "14:30",
           "place": "tacopozo",
           "title": "Taco Pozo: pausa",
           "body": "Café, baño y unos minutos fuera del auto antes de Monte Quemado.",
@@ -2625,32 +2030,11 @@
           "fallback": "Si ya pararon cerca, acortar la pausa, pero no eliminarla.",
           "refs": [],
           "query": "",
-          "routeIndex": 5,
-          "uid": "d13-a07"
+          "routeIndex": 9,
+          "uid": "d09-a05"
         },
         {
-          "time": "12:00",
-          "place": "monte",
-          "title": "Monte Quemado: almuerzo",
-          "body": "Tomarse tiempo para almorzar y descansar antes de continuar por Chaco. Una parada funcional, no una visita al centro.",
-          "kind": "food",
-          "tag": "Plan base",
-          "budget": "45–60 min",
-          "mode": "Comida + pausa",
-          "priority": "Plan base",
-          "todo": [
-            "Elegir comida y un tiempo de servicio razonables.",
-            "Reponer agua y combustible si corresponde."
-          ],
-          "booking": "Restaurante o parador por elegir.",
-          "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
-          "refs": [],
-          "query": "",
-          "routeIndex": 6,
-          "uid": "d13-a03"
-        },
-        {
-          "time": "15:20",
+          "time": "17:00",
           "place": "pampa",
           "title": "Última pausa antes del hotel",
           "body": "Pausa breve en el corredor de Pampa del Infierno. Llegar algo más tarde es preferible a eliminar el descanso.",
@@ -2666,11 +2050,11 @@
           "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
           "refs": [],
           "query": "",
-          "routeIndex": 7,
-          "uid": "d13-a04"
+          "routeIndex": 11,
+          "uid": "d09-a06"
         },
         {
-          "time": "17:00",
+          "time": "18:30",
           "place": "saenz",
           "title": "Noche de tránsito en Sáenz Peña",
           "body": "Instalarse, ducharse y descansar. Es una noche de tránsito, sin paseos.",
@@ -2687,8 +2071,8 @@
           "fallback": "Ducha, cena y descanso.",
           "refs": [],
           "query": "",
-          "routeIndex": 8,
-          "uid": "d13-a05"
+          "routeIndex": 12,
+          "uid": "d09-a07"
         },
         {
           "time": "20:00",
@@ -2708,16 +2092,16 @@
           "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
           "refs": [],
           "query": "",
-          "routeIndex": 8,
-          "uid": "d13-a06"
+          "routeIndex": 12,
+          "uid": "d09-a08"
         }
       ],
-      "note": "Jornada larga, sujeta a las condiciones de la RN 16. Usar el día extra como margen si hace falta acortar etapas.",
+      "note": "Etapa de aproximadamente 760 km y 10 h de conducción como referencia, más descansos. Reservar una jornada de 12–13 h; llegada orientativa 18:00–19:00, sujeta a la RN 16.",
       "source": "rutas",
-      "practical": "En el regreso no se repiten excursiones por obligación. Los horarios de las pausas se adaptan a los tramos reales de conducción."
+      "practical": "Salir directamente de Tilcara hacia Sáenz Peña por RN 9/34 y RN 16, sin entrar a Salta. Mantener las pausas y usar el día extra si hace falta acortar la etapa."
     },
     {
-      "n": 14,
+      "n": 10,
       "title": "Volvemos con historias",
       "subtitle": "Sáenz Peña → Hohenau",
       "sleep": "Hohenau · en casa",
@@ -2757,7 +2141,7 @@
           ],
           "query": "",
           "routeIndex": 0,
-          "uid": "d14-a01"
+          "uid": "d10-a01"
         },
         {
           "time": "08:40",
@@ -2778,7 +2162,7 @@
           "refs": [],
           "query": "",
           "routeIndex": 3,
-          "uid": "d14-a02"
+          "uid": "d10-a02"
         },
         {
           "time": "11:45",
@@ -2799,7 +2183,7 @@
           "refs": [],
           "query": "",
           "routeIndex": 4,
-          "uid": "d14-a03"
+          "uid": "d10-a03"
         },
         {
           "time": "15:10",
@@ -2822,7 +2206,7 @@
           ],
           "query": "",
           "routeIndex": 6,
-          "uid": "d14-a04"
+          "uid": "d10-a04"
         },
         {
           "time": "17:30",
@@ -2843,12 +2227,12 @@
           "refs": [],
           "query": "",
           "routeIndex": 8,
-          "uid": "d14-a05"
+          "uid": "d10-a05"
         },
         {
           "time": "20:00",
           "place": "hohenau",
-          "title": "Catorce días para recordar",
+          "title": "Diez días para recordar",
           "body": "Cena tranquila, revisar las fotos y descansar. El viaje termina sin más kilómetros por completar.",
           "kind": "moon",
           "tag": "Plan base",
@@ -2863,12 +2247,12 @@
           "refs": [],
           "query": "",
           "routeIndex": 8,
-          "uid": "d14-a06"
+          "uid": "d10-a06"
         }
       ],
-      "note": "Regreso planificado para el día 14. Día extra: margen, no una jornada turística ni una reserva confirmada.",
+      "note": "Regreso planificado para el día 10. Día extra: margen, no una jornada turística ni una reserva confirmada.",
       "source": "rutas",
-      "practical": "El regreso mantiene el día 14 como objetivo y un día extra como colchón. La frontera no tiene una duración garantizada."
+      "practical": "El regreso mantiene el día 10 como objetivo y un día extra como colchón. La frontera no tiene una duración garantizada."
     }
   ],
   "activityGroups": [
@@ -2902,7 +2286,7 @@
       "places": [
         "salta"
       ],
-      "note": "Centro histórico en visitas cortas y peña como alternativa."
+      "note": "Una noche: llegada, paseo corto por el centro y cena antes de seguir hacia Cafayate."
     },
     {
       "id": "conchas",
@@ -2914,15 +2298,7 @@
         "puentemorales",
         "yesera"
       ],
-      "note": "Garganta, Anfiteatro, Tres Cruces, Los Castillos y Puente Morales por separado. La Yesera tiene otra mañana."
-    },
-    {
-      "id": "domos",
-      "title": "Domos del Viento",
-      "places": [
-        "domos"
-      ],
-      "note": "Alojamiento elegido por ustedes. Una noche propuesta, del día 3 al día 4, para coordinar con los anfitriones."
+      "note": "Garganta, Anfiteatro, Tres Cruces, Los Castillos y Puente Morales camino a Cafayate. La Yesera queda como alternativa a las bodegas del día 4."
     },
     {
       "id": "cafayate",
@@ -2930,7 +2306,7 @@
       "places": [
         "cafayate"
       ],
-      "note": "El Esteco, almuerzo en Piattelli y paseos. Auto estacionado desde que empieza la degustación."
+      "note": "Dos noches en la ciudad. Una jornada de bodegas y gastronomía; auto estacionado desde que empieza la degustación."
     },
     {
       "id": "valles",
@@ -2952,7 +2328,7 @@
         "cuesta",
         "chicoana"
       ],
-      "note": "Un mirador, un paseo breve y almuerzo. La visibilidad decide las paradas."
+      "note": "Paradas breves de paisaje durante el traslado de Cachi a Tilcara, sin otra noche en Salta."
     },
     {
       "id": "purmamarca",
@@ -2960,16 +2336,23 @@
       "places": [
         "purmamarca"
       ],
-      "note": "Base de cuatro noches, con tiempo propio para el pueblo y Los Colorados."
+      "note": "Visita desde Tilcara, combinada con Salinas Grandes. Plaza, artesanías y vistas al Cerro de los Siete Colores."
     },
     {
       "id": "uquia",
-      "title": "Uquía y Quebrada de las Señoritas",
+      "title": "Uquía",
       "places": [
-        "uquia",
+        "uquia"
+      ],
+      "note": "Encuentro con el guía, almuerzo e iglesia en Uquía. La caminata de las Señoritas tiene su propia ficha como punto de interés."
+    },
+    {
+      "id": "senoritas",
+      "title": "Quebrada de las Señoritas",
+      "places": [
         "senoritas"
       ],
-      "note": "La prioridad de Jujuy: mañana de trekking, almuerzo y visita al pueblo. Sin Hornocal ese día."
+      "note": "Punto de interés del día 7: senderismo guiado entre cañadones y paredes rojizas. Salida desde Tilcara, con toda la mañana destinada a la caminata."
     },
     {
       "id": "salinas",
@@ -2978,51 +2361,41 @@
         "lipan",
         "salinas"
       ],
-      "note": "Visita de altura condicionada. Circuito local y descanso al regreso."
+      "note": "Salida desde Tilcara por Purmamarca y Lipán. Visita al salar por la mañana y al pueblo al regreso."
     },
     {
       "id": "humahuaca",
-      "title": "Humahuaca y Hornocal",
+      "title": "Humahuaca",
       "places": [
-        "humahuaca",
-        "hornocal"
+        "humahuaca"
       ],
-      "note": "El pueblo y el mirador tienen momentos distintos. El ascenso no es obligatorio."
+      "note": "Paseo por el centro y el monumento después de Uquía. Hornocal queda fuera del programa de diez días."
     },
     {
       "id": "tilcara",
-      "title": "Tilcara y Maimará",
+      "title": "Tilcara · El Cielo en Tilcara",
       "places": [
         "tilcara",
         "maimara"
       ],
-      "note": "Pucará temprano, Paleta del Pintor breve y tiempo de traslado hacia Salta."
+      "note": "Base de tres noches, del día 6 al día 9, en El Cielo en Tilcara. Excursiones de ida y vuelta a Uquía, Humahuaca, Salinas y Purmamarca."
     }
   ],
   "checklist": [
-    "Elegir los alojamientos restantes con estacionamiento y confirmar las noches de tránsito.",
+    "Elegir alojamientos con estacionamiento: dos noches de tránsito en Sáenz Peña (días 1 y 9), una en Salta (día 2), dos en Cafayate (días 3 y 4) y una en Cachi (día 5).",
     "Revisar documentación personal y del vehículo, seguro y asistencia.",
-    "Comprobar el estado de la RN 16 y las rutas del circuito.",
-    "Confirmar guía, circuito, acceso y punto de encuentro en Uquía.",
-    "Reservar visitas a bodegas y los traslados para las degustaciones.",
-    "Definir caminatas acordes al nivel y comodidad de ambos.",
+    "Comprobar el estado de la RN 16, la Ruta 40, la RP 33 y las rutas del circuito.",
+    "Confirmar guía, circuito, acceso y punto de encuentro en Uquía para el día 7.",
+    "Reservar visitas a bodegas y los traslados para las degustaciones en Cafayate.",
+    "Definir la caminata de las Señoritas según el nivel y comodidad de ambos.",
     "Confirmar el hotel en Cachi y revisar el ripio de la Ruta 40.",
     "Revisar clima y accesos antes de cada salida de montaña.",
-    "Dejar libre un día extra, después del día 14, como margen para el regreso.",
-    "Coordinar Domos del Viento: una noche, propuesta del día 3 al 4; acceso exacto, horarios, cena y desayuno.",
+    "Dejar libre un día extra después del día 10 como margen para el regreso.",
+    "Coordinar las tres noches en El Cielo en Tilcara: entrada el día 6, salida el día 9, fechas, acceso, estacionamiento y salida a las 06:00 con desayuno o vianda.",
     "Coordinar El Esteco, la mesa para almorzar en Piattelli y traslados sin conducir después de degustar.",
-    "Acordar el circuito y la dificultad de La Yesera y Quebrada de las Señoritas con el guía.",
-    "Reconfirmar horarios del Pucará de Tilcara."
+    "Preparar el traslado Cachi–Tilcara y el regreso Tilcara–Sáenz Peña con combustible, comida y descansos."
   ],
   "sources": {
-    "domos": {
-      "label": "Visit Salta · registro de Domos del Viento (RN 68, km 14)",
-      "url": "https://visitsalta.ar/alojamientos/"
-    },
-    "domosanuncio": {
-      "label": "Anfitrión de Domos del Viento · ubicación y condiciones orientativas",
-      "url": "https://www.airbnb.com.sv/rooms/1290703576731958706"
-    },
     "rutas": {
       "label": "Vialidad Nacional · estado de rutas",
       "url": "https://www.argentina.gob.ar/transporte/vialidad-nacional/estado-de-rutas"
@@ -3154,6 +2527,18 @@
     "puentemorales": {
       "label": "Noticias Argentinas · el puente de Relatos salvajes",
       "url": "https://noticiasargentinas.com/sociedad/el-iconico-puente-del-norte-argentino-en-el-que-se-filmo-una-recordada-escena-de-relatos-salvajes"
+    },
+    "elcielo": {
+      "label": "Registro de alojamientos de la Quebrada 2025 · El Cielo en Tilcara",
+      "url": "https://ivcaaejujuy.unju.edu.ar/pdf/ALOJAMIENTOS%20de%20Quebrada%202025.pdf"
+    },
+    "elcielocontacto": {
+      "label": "El Cielo en Tilcara · contacto del alojamiento",
+      "url": "https://www.instagram.com/elcieloentilcara/"
+    },
+    "regresotilcara": {
+      "label": "Rome2Rio · referencia de distancia y manejo Tilcara–Sáenz Peña",
+      "url": "https://www.rome2rio.com/es/s/Presidencia-Roque-S%C3%A1enz-Pe%C3%B1a/Tilcara"
     }
   },
   "images": {
@@ -3176,10 +2561,6 @@
     "cafayate": {
       "label": "Cafayate y su entorno vitivinícola · interpretación visual",
       "position": "60% 62%"
-    },
-    "domos": {
-      "label": "Domos del Viento · recreación de ambiente, no foto del alojamiento",
-      "position": "78% 58%"
     },
     "valles": {
       "label": "Valles Calchaquíes · interpretación regional",
@@ -3244,6 +2625,11 @@
     "yesera": {
       "label": "La Yesera y Los Estratos · interpretación visual",
       "position": "55% 45%"
+    },
+    "senoritas-v2": {
+      "label": "Quebrada de las Señoritas · cañadones y paredes rojizas · interpretación visual",
+      "position": "50% 45%"
     }
-  }
+  },
+  "checklistVersion": 2
 }

@@ -1,6 +1,20 @@
 # Norte, sin apuro
 
-Sitio del itinerario Hohenau–Salta–Jujuy: 14 días en un solo scroll, con mapa, paradas, fichas de actividades y preparativos.
+Sitio del itinerario Hohenau–Salta–Jujuy: 10 días en un solo scroll, con mapa, paradas, fichas de actividades y preparativos.
+
+## Distribución del viaje
+
+10 días y 9 noches: Sáenz Peña, 2 noches (ida y vuelta); Salta, 1; Cafayate, 2; Cachi, 1; Tilcara, 3 en El Cielo en Tilcara. Regreso a Hohenau el día 10, con un día extra de margen.
+
+- Días 1–2: Hohenau → Sáenz Peña → Salta.
+- Días 3–4: Quebrada de las Conchas y Cafayate, sin Domos del Viento.
+- Día 5: Ruta 40, Quebrada de las Flechas y Cachi.
+- Día 6: Cachi → Los Cardones → Cuesta del Obispo → Tilcara.
+- Día 7: Uquía, Quebrada de las Señoritas y Humahuaca desde Tilcara.
+- Día 8: Salinas Grandes y Purmamarca desde Tilcara.
+- Días 9–10: Tilcara → Sáenz Peña → Hohenau.
+
+Hornocal y la mañana exclusiva de La Yesera salen del programa base. La Yesera queda como alternativa a las bodegas. El traslado Cachi–Tilcara y el regreso Tilcara–Sáenz Peña requieren jornadas largas, con pausas.
 
 ## Archivos
 
@@ -34,10 +48,11 @@ Todo el contenido está en `itinerario.json`. Guardá el archivo y recargá la p
   En el mapa, un lugar con paradas se muestra como parada. Con `"passThrough": true` se muestra como punto de paso aunque tenga paradas. El criterio:
   - **Parada:** lugares turísticos, miradores y vistas, hoteles y almuerzos en un lugar con atractivo.
   - **De paso:** ciudades y pueblos de ruta, lugares sin atractivos, almuerzos de ruta y lugares solo para desayunar o descansar. Por ejemplo, Hohenau, Posadas, Corrientes, Molinos o Chicoana.
-- `days`: los 14 días en orden. Cada día tiene `route`, la lista de lugares que dibuja el trayecto, y `stops`, las paradas.
+- `days`: los 10 días en orden. Cada día tiene `route`, la lista de lugares que dibuja el trayecto, y `stops`, las paradas.
 - Cada parada usa `time` (`"HH:MM"`, el reloj se calcula a partir de ahí), `place`, `title`, `body` y `kind` (el ícono: `car`, `border`, `food`, `coffee`, `walk`, `wine`, `camera`, `bed`, `moon`, `pin`, `home`, `domo`). `routeIndex` es la posición de la parada dentro de `route` y `uid` identifica su ficha: tiene que ser único.
+- `accommodation`: alojamiento elegido para una jornada. Las noches de Tilcara comparten El Cielo en Tilcara, con entrada el día 6 y salida el día 9. El mapa usa el punto de la localidad; no representa el acceso del alojamiento.
 - `activityGroups`: las secciones de "Actividades por ciudad" y qué lugares entran en cada una.
-- `checklist`: la lista de "Por confirmar". Cada navegador guarda las tildes por posición, así que conviene agregar ítems al final.
+- `checklist`: la lista de "Por confirmar". Cada navegador guarda las tildes por posición y por `checklistVersion`. Al reordenar o reemplazar ítems, incrementar esa versión para evitar que una tilde vieja marque una tarea distinta.
 - `sources`: las referencias que citan las paradas en `refs`.
 
 ### Imágenes
@@ -64,7 +79,7 @@ Cada `git push` a `main` vuelve a publicar el sitio.
 
 ## Privacidad y alcance
 
-El itinerario no muestra fechas: los días se nombran de "Día 1" a "Día 14" y el margen para el regreso es un "día extra". Sí incluye el punto de partida, el alojamiento confirmado y los horarios propuestos. Revisá el contenido antes de compartir el enlace.
+El itinerario no muestra fechas: los días se nombran de "Día 1" a "Día 10" y el margen para el regreso es un "día extra". Sí incluye el punto de partida, el alojamiento elegido en Tilcara y los horarios propuestos. Revisá el contenido antes de compartir el enlace.
 
 La página les pide a los buscadores que no la indexen (`noindex`), pero eso no la vuelve privada.
 
