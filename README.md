@@ -9,7 +9,7 @@ Sitio del itinerario Hohenau–Salta–Jujuy: 10 días en un solo scroll, con ma
 - Días 1–2: Hohenau → Sáenz Peña → Salta.
 - Días 3–4: Quebrada de las Conchas y Cafayate, sin Domos del Viento.
 - Día 5: Ruta 40, Quebrada de las Flechas y Cachi.
-- Día 6: Cachi → Los Cardones → Cuesta del Obispo → Tilcara.
+- Día 6: Cachi → Los Cardones → Cuesta del Obispo → El Carril → Cerrillos → Circunvalación Sureste de Salta → General Güemes → Tilcara.
 - Día 7: sendero largo de las Señoritas, Humahuaca y Hornocal en la RAV4 desde Tilcara (07:30–19:00).
 - Día 8: Salinas Grandes y Purmamarca desde Tilcara.
 - Días 9–10: Tilcara → Sáenz Peña → Hohenau.
@@ -56,6 +56,8 @@ Todo el contenido está en `itinerario.json`. Guardá el archivo y recargá la p
 - `activityGroups`: las secciones de "Actividades por ciudad" y qué lugares entran en cada una.
 - `checklist`: la lista de "Por confirmar". Cada navegador guarda las tildes por posición y por `checklistVersion`. Al reordenar o reemplazar ítems, incrementar esa versión para evitar que una tilde vieja marque una tarea distinta.
 - `sources`: las referencias que citan las paradas en `refs`.
+
+El mapa conecta los puntos de `route` con segmentos rectos: es un esquema del recorrido, no navegación vial. En el día 6, los puntos de Cerrillos, Circunvalación Sur/Sureste, acceso este y empalme RN 9/RN 34 representan el corredor comprobado en OpenStreetMap/OSRM. Evita el centro de Salta, pero pasa por su periferia sur y este; los enlaces no son paradas ni atractivos.
 
 ### Imágenes
 

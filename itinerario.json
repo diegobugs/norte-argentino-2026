@@ -124,6 +124,41 @@
       "lon": -65.48,
       "image": "cafayate"
     },
+    "cerrillos": {
+      "name": "Cerrillos",
+      "lat": -24.900502,
+      "lon": -65.486392,
+      "image": "salta",
+      "passThrough": true
+    },
+    "circunvalacionsur": {
+      "name": "Enlace RN 68 · Circunvalación Sur",
+      "lat": -24.883728,
+      "lon": -65.463841,
+      "image": "salta",
+      "passThrough": true
+    },
+    "circunvalacionsureste": {
+      "name": "Circunvalación Sureste",
+      "lat": -24.842863,
+      "lon": -65.384855,
+      "image": "salta",
+      "passThrough": true
+    },
+    "accesosalta": {
+      "name": "Acceso este de Salta · RN 9",
+      "lat": -24.795245,
+      "lon": -65.366961,
+      "image": "salta",
+      "passThrough": true
+    },
+    "empalme9y34": {
+      "name": "Empalme RN 9 / RN 34",
+      "lat": -24.739845,
+      "lon": -65.030279,
+      "image": "chaco",
+      "passThrough": true
+    },
     "vina": {
       "name": "La Viña",
       "lat": -25.468,
@@ -1291,6 +1326,11 @@
         "cuesta",
         "chicoana",
         "carril",
+        "cerrillos",
+        "circunvalacionsur",
+        "circunvalacionsureste",
+        "accesosalta",
+        "empalme9y34",
         "guemes",
         "jujuy",
         "yala",
@@ -1397,7 +1437,7 @@
           "time": "12:15",
           "place": "chicoana",
           "title": "Almuerzo en Chicoana",
-          "body": "Pausa para almorzar y descansar antes de continuar hacia Jujuy. No entramos al centro de Salta; seguimos por el corredor hacia General Güemes.",
+          "body": "Pausa para almorzar y descansar antes de continuar hacia Jujuy. Desde El Carril, seguir por RN 68 y Cerrillos, enlazar con la Circunvalación Sureste y tomar RN 9 / RN 34 hacia General Güemes. Se atraviesa la periferia sur y este de Salta, evitando el centro.",
           "kind": "food",
           "tag": "Plan base",
           "budget": "60 min",
@@ -1405,11 +1445,15 @@
           "priority": "Plan base",
           "todo": [
             "Elegir un sitio abierto con estacionamiento.",
-            "Evitar un nuevo circuito por pueblos después de la comida."
+            "Evitar un nuevo circuito por pueblos después de la comida.",
+            "Confirmar el recorrido por Circunvalación Sureste en el navegador; el mapa del itinerario une puntos y no reproduce cada curva."
           ],
           "booking": "Restaurante por elegir; no hay mesa confirmada.",
           "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
-          "refs": [],
+          "refs": [
+            "circunvalacionsalta",
+            "rutacarrilguemes"
+          ],
           "query": "",
           "routeIndex": 5,
           "uid": "d06-a05"
@@ -1431,7 +1475,7 @@
             "rutas"
           ],
           "query": "",
-          "routeIndex": 8,
+          "routeIndex": 13,
           "uid": "d06-a06"
         },
         {
@@ -1455,7 +1499,7 @@
             "elcielocontacto"
           ],
           "query": "El Cielo en Tilcara Belgrano 56",
-          "routeIndex": 12,
+          "routeIndex": 17,
           "uid": "d06-a07"
         },
         {
@@ -1475,13 +1519,13 @@
           "fallback": "Ajustar el horario al avance real del día.",
           "refs": [],
           "query": "",
-          "routeIndex": 12,
+          "routeIndex": 17,
           "uid": "d06-a08"
         }
       ],
-      "note": "Traslado largo por RP 33, RN 68 y el corredor RN 9/34 hacia Jujuy. Evitar el desvío al centro de Salta y el camino de cornisa. Llegada a Tilcara orientativa entre las 17:30 y las 18:30.",
+      "note": "Traslado largo por RP 33 y RN 68 hasta Cerrillos; Circunvalación Sureste de Salta, RN 9 y RN 34 hacia General Güemes y continuación a Jujuy. Este corredor pasa por la periferia sur y este de Salta, sin entrar al centro ni tomar el camino de cornisa. Llegada a Tilcara orientativa entre las 17:30 y las 18:30.",
       "source": "cardones",
-      "practical": "Salir temprano de Cachi. Los Cardones y la Cuesta del Obispo quedan como paradas breves; continuar hacia Tilcara después del almuerzo. Primera de tres noches en El Cielo en Tilcara.",
+      "practical": "Salir temprano de Cachi y continuar hacia Tilcara después del almuerzo. Entre El Carril y Güemes, usar RN 68 → Cerrillos → Circunvalación Sureste → RN 9 → RN 34. Los enlaces del mapa son puntos de paso, sin visitas programadas. El trazado es esquemático; verificar navegación y estado de ruta antes de salir. Primera de tres noches en El Cielo en Tilcara.",
       "sleepArea": "Tilcara",
       "accommodation": {
         "name": "El Cielo en Tilcara",
@@ -2714,6 +2758,14 @@
     "senoritasregistro": {
       "label": "Wikiloc · registro del circuito largo de mayo de 2026 (4 h 21 min totales)",
       "url": "https://es.wikiloc.com/rutas-senderismo/la-quebrada-de-las-senoritas-circuito-corto-mediano-y-largo-264248913"
+    },
+    "circunvalacionsalta": {
+      "label": "Gobierno de Salta · trazado de la Circunvalación Sureste y enlace con RN 68",
+      "url": "https://www.salta.gob.ar/prensa/noticias/el-gobernador-verifico-el-avance-de-la-obra-publica-en-la-zona-este-de-la-ciudad-10137"
+    },
+    "rutacarrilguemes": {
+      "label": "OpenStreetMap · recorrido El Carril–General Güemes por Circunvalación Sureste",
+      "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=-25.073%2C-65.48%3B-24.674%2C-65.047"
     }
   },
   "images": {
