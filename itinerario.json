@@ -1248,7 +1248,7 @@
           "time": "17:00",
           "place": "cachi",
           "title": "Llegada a Cachi",
-          "body": "Instalarse y dejar la RAV4. El resto del día es para recorrer el pueblo a pie, sin conducir otra vez por montaña.",
+          "body": "Instalarse y dejar el auto. El resto del día es para recorrer el pueblo a pie, sin conducir otra vez por montaña.",
           "kind": "bed",
           "tag": "Plan base",
           "budget": "30–45 min",
@@ -1576,11 +1576,11 @@
           "time": "07:30",
           "place": "tilcara",
           "title": "Salida hacia Uquía",
-          "body": "Salir de El Cielo en Tilcara con desayuno resuelto, combustible, agua y una vianda. Ir en la RAV4 hasta el punto de encuentro acordado en Uquía para comenzar el sendero largo a las 08:30.",
+          "body": "Salir de El Cielo en Tilcara con desayuno resuelto, combustible, agua y una vianda. Ir en auto hasta el punto de encuentro acordado en Uquía para comenzar el sendero largo a las 08:30.",
           "kind": "car",
           "tag": "Plan base",
           "budget": "45 min estimados",
-          "mode": "RAV4 · RN 9",
+          "mode": "Auto · RN 9",
           "priority": "Plan base",
           "todo": [
             "Coordinar desayuno temprano o para llevar con el alojamiento.",
@@ -1654,7 +1654,7 @@
           "kind": "car",
           "tag": "Plan base",
           "budget": "30 min estimados",
-          "mode": "RAV4 · acceso y RN 9",
+          "mode": "Auto · acceso y RN 9",
           "priority": "Plan base",
           "todo": [
             "Salir del acceso con el almuerzo resuelto: mesa coordinada o vianda."
@@ -1716,16 +1716,16 @@
         {
           "time": "14:30",
           "place": "humahuaca",
-          "title": "Ascenso a Hornocal en la RAV4",
+          "title": "Ascenso a Hornocal",
           "body": "Salir de Humahuaca hacia el mirador de Hornocal por la RP 73 y el desvío señalizado. La referencia provincial indica alrededor de una hora de ascenso; el plan reserva 1 h 15 min para el ripio, curvas e ingreso.",
           "kind": "car",
           "tag": "Plan base",
           "budget": "1–1:15 h estimadas",
-          "mode": "RAV4 · camino de ripio",
+          "mode": "Auto · camino de ripio",
           "priority": "Plan base",
           "todo": [
             "Confirmar transitabilidad, visibilidad y horario de ingreso antes de subir.",
-            "Mantener un ritmo tranquilo y el margen de descenso; la RAV4 no garantiza acceso si el camino está cerrado o deteriorado."
+            "Mantener un ritmo tranquilo y el margen de descenso; no ascender si el camino está cerrado o deteriorado."
           ],
           "booking": "Acceso comunitario y tarifa por reconfirmar; no se ha contratado traslado.",
           "fallback": "Si hay cierre, mala visibilidad o demora importante, reprogramar Hornocal y mantener el regreso a Tilcara.",
@@ -1768,7 +1768,7 @@
           "kind": "car",
           "tag": "Plan base",
           "budget": "1–1:15 h estimadas",
-          "mode": "RAV4 · camino de ripio",
+          "mode": "Auto · camino de ripio",
           "priority": "Plan base",
           "todo": [
             "Mantener el margen de conducción aunque la llegada a Tilcara se demore."
@@ -1808,7 +1808,7 @@
           "kind": "car",
           "tag": "Plan base",
           "budget": "45–60 min estimados",
-          "mode": "RAV4 · RN 9",
+          "mode": "Auto · RN 9",
           "priority": "Plan base",
           "todo": [
             "Al conocer el mes del viaje, revisar las horas de luz para este tramo."
@@ -1861,7 +1861,7 @@
           "uid": "d07-a09"
         }
       ],
-      "note": "Segunda noche en El Cielo en Tilcara. Jornada larga: sendero largo de las Señoritas por la mañana y Hornocal por la tarde en la RAV4. La iglesia de Uquía queda para un final temprano del trekking; el paseo urbano de Humahuaca es breve y opcional.",
+      "note": "Segunda noche en El Cielo en Tilcara. Jornada larga: sendero largo de las Señoritas por la mañana y Hornocal por la tarde. La iglesia de Uquía queda para un final temprano del trekking; el paseo urbano de Humahuaca es breve y opcional.",
       "source": "uquia",
       "practical": "Salida 07:30; guía 08:15 e inicio del sendero largo 08:30, ambos por confirmar. Estimar cuatro horas de recorrido completo, hasta 12:30, y dejar margen hasta 13:00 para volver al auto; almuerzo en Humahuaca 13:30, ascenso 14:30, Hornocal 15:45–16:30, descenso hasta 17:45, pausa y salida a Tilcara 18:00 para llegar alrededor de las 19:00. Confirmar clima, acceso y horarios al conocer el mes; no se garantiza volver con luz. Si la caminata o el camino exceden el margen, revisar Hornocal sin apurar el regreso.",
       "accommodation": {
@@ -2599,7 +2599,7 @@
       "places": [
         "hornocal"
       ],
-      "note": "Día 7: ascenso en la RAV4 desde Humahuaca a las 14:30, mirador de 15:45 a 16:30 y descenso con margen. Reconfirmar horarios de temporada y estado del acceso."
+      "note": "Día 7: ascenso desde Humahuaca a las 14:30, mirador de 15:45 a 16:30 y descenso con margen. Reconfirmar horarios de temporada y estado del acceso."
     },
     {
       "id": "paleta",
@@ -2640,7 +2640,7 @@
     "Reservar la mesa para almorzar en Piattelli; consultar visita o degustación si les interesa.",
     "Preparar el traslado Cachi–Tilcara y el regreso Tilcara–Sáenz Peña con combustible, comida y descansos.",
     "Confirmar el circuito corto de La Yesera / Los Estratos para el día 4, con guía, acceso y regreso al auto alrededor de las 11:15; coordinar mesa a las 13:30, visita y horario de cierre en Piattelli.",
-    "Reconfirmar el acceso a Hornocal en la RAV4: estado del ripio, clima, tarifa y horario de temporada. Plan: ascenso desde Humahuaca 14:30, mirador 15:45–16:30 y regreso a Tilcara alrededor de las 19:00.",
+    "Reconfirmar el acceso a Hornocal: estado del ripio, clima, tarifa y horario de temporada. Plan: ascenso desde Humahuaca 14:30, mirador 15:45–16:30 y regreso a Tilcara alrededor de las 19:00.",
     "Confirmar apertura y tarifa del Pucará para el día 8: lunes cerrado, visita propuesta 15:30–17:00 y último ingreso publicado a las 17:15. Consultar turno si desean guía."
   ],
   "sources": {
