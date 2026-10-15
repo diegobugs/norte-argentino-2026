@@ -336,14 +336,20 @@
       "lat": -23.58641,
       "lon": -65.40183,
       "image": "pucara"
+    },
+    "sanbernardo": {
+      "name": "Cerro San Bernardo",
+      "lat": -24.789,
+      "lon": -65.396,
+      "image": "salta"
     }
   },
   "days": [
     {
       "n": 1,
       "title": "El viaje empieza",
-      "subtitle": "Hohenau → Sáenz Peña",
-      "sleep": "Sáenz Peña",
+      "subtitle": "Hohenau → Sáenz Peña → Salta",
+      "sleep": "Salta",
       "tag": "Traslado de ida",
       "scene": "road",
       "route": [
@@ -355,22 +361,30 @@
         "corrientes",
         "resistencia",
         "makalle",
-        "saenz"
+        "saenz",
+        "pampa",
+        "monte",
+        "tacopozo",
+        "quebrachal",
+        "joaquin",
+        "galpon",
+        "guemes",
+        "salta"
       ],
       "stops": [
         {
-          "time": "06:00",
+          "time": "05:00",
           "place": "hohenau",
           "title": "Hohenau: empieza el viaje",
-          "body": "Salir desayunados, con combustible y agua. Hoy buscamos llegar a Sáenz Peña entre las 17:00 y las 18:00, sin sacrificar las pausas.",
+          "body": "Salir desayunados, con combustible y agua. Hoy hacemos el viaje completo hasta Salta: unos 1.200 km, con la frontera y las pausas de por medio. La llegada se espera pasada la medianoche.",
           "kind": "car",
           "tag": "Plan base",
-          "budget": "Jornada de 11–12 h",
+          "budget": "Jornada de 19–20 h",
           "mode": "Auto",
           "priority": "Plan base",
           "todo": [
             "Dejar equipaje y documentación listos la noche anterior; cargar el mapa sin conexión.",
-            "Prever pausas antes de cansarse: comida, baño y descanso no se recortan."
+            "Si es posible, turnarse al volante; comida, baño y descanso no se recortan."
           ],
           "booking": "Hotel de tránsito con estacionamiento por confirmar.",
           "fallback": "Si la frontera o el cansancio consumen el margen, acortar la etapa y avisar al alojamiento.",
@@ -383,7 +397,7 @@
           "uid": "d01-a01"
         },
         {
-          "time": "06:45",
+          "time": "05:45",
           "place": "posadas",
           "title": "Encarnación → Posadas",
           "body": "Cruce de frontera. El reloj es orientativo: la espera real marca el ritmo del resto de la jornada.",
@@ -406,7 +420,7 @@
           "uid": "d01-a02"
         },
         {
-          "time": "10:15",
+          "time": "08:45",
           "place": "itaibate",
           "title": "Itá Ibaté: pausa",
           "body": "Café, baño y estirar las piernas a mitad de camino entre Posadas y Corrientes.",
@@ -427,7 +441,7 @@
           "uid": "d01-a03"
         },
         {
-          "time": "13:15",
+          "time": "11:30",
           "place": "corrientes",
           "title": "Almuerzo en el camino",
           "body": "Parar a comer en un lugar práctico entre Corrientes y Resistencia, estirar las piernas y seguir. Es una pausa de ruta, no un paseo.",
@@ -448,117 +462,30 @@
           "uid": "d01-a04"
         },
         {
-          "time": "17:30",
+          "time": "14:45",
           "place": "saenz",
-          "title": "Llegada a Sáenz Peña",
-          "body": "Dejar el auto y el equipaje, ducharse y descansar. Esta es una noche de tránsito; no hace falta aprovecharla con un programa largo.",
-          "kind": "bed",
+          "title": "Sáenz Peña: pausa y punto de decisión",
+          "body": "Cargar combustible, estirar las piernas y evaluar cómo viene el cansancio. Desde aquí quedan unos 650 km por la RN 16 hasta Salta.",
+          "kind": "coffee",
           "tag": "Plan base",
-          "budget": "45–60 min",
+          "budget": "30 min",
           "mode": "Descanso",
           "priority": "Plan base",
           "todo": [
-            "Confirmar el estacionamiento y la salida temprana de mañana.",
-            "Resolver desayuno o vianda y cargar combustible hoy, si hace falta."
+            "Revisar el estado de la RN 16 antes de seguir.",
+            "Decidir con honestidad si se sigue: si hay cansancio, dormir aquí."
           ],
-          "booking": "Alojamiento todavía por seleccionar.",
-          "fallback": "Si se llega tarde, ir directamente a cenar y descansar.",
-          "refs": [],
+          "booking": "Sin alojamiento previsto; tener identificado un hotel de tránsito por si hace falta.",
+          "fallback": "Si la frontera demoró o hay cansancio, hacer noche en Sáenz Peña, avisar al alojamiento de Salta y seguir mañana temprano.",
+          "refs": [
+            "rutas"
+          ],
           "query": "",
           "routeIndex": 8,
           "uid": "d01-a05"
         },
         {
-          "time": "20:00",
-          "place": "saenz",
-          "title": "Cena cerca del hotel",
-          "body": "Elegir una cena sencilla, comprar lo necesario para la ruta y acostarse temprano. Mañana hay otra etapa larga.",
-          "kind": "food",
-          "tag": "Plan base",
-          "budget": "45–60 min",
-          "mode": "A pie",
-          "priority": "Plan base",
-          "todo": [
-            "Evitar cruzar la ciudad buscando un restaurante concreto.",
-            "Preparar agua, tentempiés y el equipaje antes de dormir."
-          ],
-          "booking": "Restaurante por elegir; priorizar cercanía y horario de atención.",
-          "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
-          "refs": [],
-          "query": "",
-          "routeIndex": 8,
-          "uid": "d01-a06"
-        }
-      ],
-      "note": "Ventana prevista: 06:00–17:00/18:00, incluidas las pausas. La frontera y el estado de la RN 16 pueden alterar la etapa.",
-      "source": "rutas",
-      "practical": "Día de traslado, sin paseos. Si hay demora, se ajustan los horarios; las pausas de conducción, la comida y el descanso se mantienen."
-    },
-    {
-      "n": 2,
-      "title": "Ya estamos en el norte",
-      "subtitle": "Sáenz Peña → Salta",
-      "sleep": "Salta",
-      "tag": "Traslado de ida",
-      "scene": "road",
-      "route": [
-        "saenz",
-        "pampa",
-        "monte",
-        "tacopozo",
-        "quebrachal",
-        "joaquin",
-        "galpon",
-        "guemes",
-        "salta"
-      ],
-      "stops": [
-        {
-          "time": "06:00",
-          "place": "saenz",
-          "title": "Rumbo a Salta",
-          "body": "Desayunar antes de salir. Repartimos los descansos en el corredor de la RN 16; hoy no hacemos desvíos turísticos.",
-          "kind": "car",
-          "tag": "Plan base",
-          "budget": "Jornada de 11–12 h",
-          "mode": "Auto",
-          "priority": "Plan base",
-          "todo": [
-            "Revisar el estado de la RN 16 antes de salir.",
-            "Las paradas marcadas son referencias; detenerse antes si hace falta."
-          ],
-          "booking": "Confirmar la noche de Salta y avisar si cambia la llegada.",
-          "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
-          "refs": [
-            "rutas"
-          ],
-          "query": "",
-          "routeIndex": 0,
-          "uid": "d02-a01"
-        },
-        {
-          "time": "07:10",
-          "place": "pampa",
-          "title": "Pampa del Infierno: pausa",
-          "body": "Baño, café y unos minutos caminando fuera del auto. El punto concreto se elige por seguridad y servicios disponibles.",
-          "kind": "coffee",
-          "tag": "Plan base",
-          "budget": "15–20 min",
-          "mode": "Descanso",
-          "priority": "Plan base",
-          "todo": [
-            "Parar en un establecimiento abierto con estacionamiento seguro.",
-            "Volver a evaluar el cansancio antes de seguir."
-          ],
-          "booking": "Sin establecimiento elegido; no se garantiza servicio en un punto concreto.",
-          "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
-          "refs": [],
-          "query": "",
-          "routeIndex": 1,
-          "uid": "d02-a02"
-        },
-        {
-          "time": "10:00",
+          "time": "18:15",
           "place": "monte",
           "title": "Monte Quemado: descansar",
           "body": "Hacer otra pausa de descanso y comprobar combustible. No es una visita al pueblo ni una carrera contra el horario.",
@@ -575,38 +502,38 @@
           "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
           "refs": [],
           "query": "",
-          "routeIndex": 2,
-          "uid": "d02-a03"
+          "routeIndex": 10,
+          "uid": "d01-a06"
         },
         {
-          "time": "12:40",
+          "time": "20:30",
           "place": "joaquin",
-          "title": "Almuerzo en el corredor",
-          "body": "Parar a comer en el corredor de J. V. González, a mitad del tramo más largo de la RN 16. Elegir un lugar práctico y reservar tiempo para caminar un poco.",
+          "title": "Cena en el corredor",
+          "body": "Parar a cenar en el corredor de J. V. González, a mitad del tramo más largo de la RN 16. Elegir un lugar práctico y reservar tiempo para caminar un poco.",
           "kind": "food",
           "tag": "Plan base",
           "budget": "45–60 min",
           "mode": "Comida + pausa",
           "priority": "Plan base",
           "todo": [
-            "Elegir un lugar con servicio ágil sobre la ruta.",
-            "Cargar combustible antes de seguir hacia Salta."
+            "Elegir un lugar con servicio ágil sobre la ruta y comprobar su horario de cierre.",
+            "Cargar combustible antes de seguir hacia Salta: de noche hay menos servicios abiertos."
           ],
           "booking": "Comercio por definir; llevar una alternativa de comida.",
           "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
           "refs": [],
           "query": "",
-          "routeIndex": 5,
-          "uid": "d02-a04"
+          "routeIndex": 13,
+          "uid": "d01-a07"
         },
         {
-          "time": "14:25",
+          "time": "22:15",
           "place": "galpon",
           "title": "El Galpón: pausa",
-          "body": "Café, baño y unos minutos fuera del auto antes del último tramo hacia Salta.",
+          "body": "Café, baño y unos minutos fuera del auto antes del último tramo nocturno hacia Salta.",
           "kind": "coffee",
           "tag": "Plan base",
-          "budget": "20 min",
+          "budget": "15–20 min",
           "mode": "Descanso",
           "priority": "Plan base",
           "todo": [
@@ -616,80 +543,185 @@
           "fallback": "Si ya pararon cerca, acortar la pausa, pero no eliminarla.",
           "refs": [],
           "query": "",
-          "routeIndex": 6,
-          "uid": "d02-a05"
+          "routeIndex": 14,
+          "uid": "d01-a08"
         },
         {
-          "time": "17:00",
+          "time": "00:30",
           "place": "salta",
-          "title": "Salta: instalarse primero",
-          "body": "Dejar el auto en el alojamiento. La primera visita será a pie y solo si quedan ganas después de la ruta.",
+          "title": "Salta: llegar y dormir",
+          "body": "Llegada estimada entre las 23:30 y la 01:30, según la frontera y las pausas. Dejar el auto en el alojamiento y descansar; hoy no hay paseo por la ciudad.",
           "kind": "bed",
           "tag": "Plan base",
           "budget": "45–60 min",
           "mode": "Descanso",
           "priority": "Plan base",
           "todo": [
-            "Resolver estacionamiento y desayuno de mañana.",
-            "Dejar el paseo urbano para después de ducharse y descansar."
+            "Avisar al alojamiento que la llegada es de madrugada y confirmar el ingreso nocturno.",
+            "Resolver estacionamiento y desayuno de mañana."
           ],
-          "booking": "Alojamiento por elegir; avisar la llegada aproximada.",
-          "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
+          "booking": "Alojamiento por elegir, con recepción o ingreso nocturno; avisar la llegada aproximada.",
+          "fallback": "Si el cansancio aparece antes, parar a dormir en el camino: Sáenz Peña es el punto natural.",
           "refs": [],
           "query": "",
-          "routeIndex": 8,
-          "uid": "d02-a06"
+          "routeIndex": 16,
+          "uid": "d01-a09",
+          "nextDay": true
+        }
+      ],
+      "note": "Jornada única de unos 1.200 km y 16–17 h de manejo, más la frontera y las pausas. Salida a las 05:00 y llegada orientativa a Salta pasada la medianoche, sujeta a la frontera y al estado de la RN 16.",
+      "source": "rutas",
+      "practical": "Día de traslado, sin paseos. Sáenz Peña queda como pausa y punto de decisión: si hay demora o cansancio, dormir ahí y seguir a Salta al día siguiente. Primera de dos noches en Salta; mañana es día libre, sin manejo."
+    },
+    {
+      "n": 2,
+      "title": "Salta, sin apuro",
+      "subtitle": "Día libre en la ciudad · Plaza 9 de Julio → Cerro San Bernardo → peña",
+      "sleep": "Salta",
+      "tag": "Ciudad y descanso",
+      "scene": "road",
+      "route": [
+        "salta",
+        "sanbernardo",
+        "salta"
+      ],
+      "stops": [
+        {
+          "time": "09:30",
+          "place": "salta",
+          "title": "Desayuno sin despertador",
+          "body": "Después de llegar de madrugada, dormir sin alarma y desayunar tranquilos. Hoy no se maneja: el auto queda en el alojamiento.",
+          "kind": "coffee",
+          "tag": "Plan base",
+          "budget": "60 min",
+          "mode": "Hotel",
+          "priority": "Plan base",
+          "todo": [
+            "Confirmar hasta qué hora sirven el desayuno.",
+            "Dejar el auto guardado todo el día."
+          ],
+          "booking": "Segunda noche en el mismo alojamiento de Salta.",
+          "fallback": "Si el desayuno del hotel termina temprano, desayunar en un café del centro.",
+          "refs": [],
+          "query": "",
+          "routeIndex": 0,
+          "uid": "d02-a01"
         },
         {
-          "time": "18:30",
+          "time": "11:00",
           "place": "salta",
           "title": "Plaza 9 de Julio y Catedral",
-          "body": "Recorrer la plaza, mirar la fachada de la Catedral y los arcos del Cabildo. Una primera vuelta corta por el centro.",
+          "body": "Recorrer la plaza, mirar la fachada de la Catedral y los arcos del Cabildo. Con el día libre, el centro se camina sin apuro.",
           "kind": "walk",
-          "tag": "Opcional",
-          "budget": "45–60 min",
+          "tag": "Plan base",
+          "budget": "90 min",
           "mode": "A pie",
-          "priority": "Opcional",
+          "priority": "Plan base",
           "todo": [
-            "Empezar por la plaza y hacer un circuito corto por sus cuatro lados.",
+            "Empezar por la plaza y hacer un circuito por sus cuatro lados.",
             "Visitar el interior de la Catedral solo si está abierto y sin interrumpir celebraciones."
           ],
           "booking": "No hay visita guiada reservada.",
-          "fallback": "Cena cerca del hotel; el centro se retoma en otra noche de Salta.",
+          "fallback": "Acortar el paseo si hace calor y seguir directo al almuerzo.",
           "refs": [
             "saltacentro"
           ],
           "query": "Plaza 9 de Julio Salta",
-          "routeIndex": 8,
-          "uid": "d02-a07"
+          "routeIndex": 0,
+          "uid": "d02-a02"
         },
         {
-          "time": "20:00",
+          "time": "13:30",
           "place": "salta",
           "title": "Empanadas en Doña Salta",
-          "body": "Doña Salta queda como opción concreta para la primera cena: probar empanadas y elegir otro plato según apetito. La mesa sigue por confirmar.",
+          "body": "Doña Salta queda como opción concreta para el almuerzo: probar empanadas y elegir otro plato según apetito. La mesa sigue por confirmar.",
           "kind": "food",
           "tag": "Plan base",
           "budget": "60–75 min",
-          "mode": "A pie o taxi",
+          "mode": "A pie",
           "priority": "Plan base",
           "todo": [
             "Consultar apertura y espera antes de ir.",
-            "Volver temprano: mañana empieza la Quebrada de las Conchas."
+            "Volver caminando al alojamiento para la siesta."
           ],
           "booking": "Restaurante candidato, no reservado. Revisar su canal oficial.",
-          "fallback": "Cenar en un lugar cercano al alojamiento si hay cola o cansancio.",
+          "fallback": "Almorzar en un lugar cercano a la plaza si hay cola.",
           "refs": [
             "donasalta"
           ],
           "query": "Doña Salta restaurante Córdoba 46 Salta",
-          "routeIndex": 8,
-          "uid": "d02-a08"
+          "routeIndex": 0,
+          "uid": "d02-a03"
+        },
+        {
+          "time": "15:00",
+          "place": "salta",
+          "title": "Siesta en el hotel",
+          "body": "Recuperar el sueño de la jornada larga de ayer. La tarde calurosa se pasa a la sombra.",
+          "kind": "coffee",
+          "tag": "Plan base",
+          "budget": "2 h",
+          "mode": "Descanso",
+          "priority": "Plan base",
+          "todo": [
+            "Preparar agua y abrigo liviano para el cerro."
+          ],
+          "booking": "Mismo alojamiento de Salta.",
+          "fallback": "Si hay cansancio, quedarse descansando y saltear el cerro.",
+          "refs": [],
+          "query": "",
+          "routeIndex": 0,
+          "uid": "d02-a04"
+        },
+        {
+          "time": "17:30",
+          "place": "sanbernardo",
+          "title": "Cerro San Bernardo",
+          "body": "Subir al cerro San Bernardo para ver la ciudad y el valle desde arriba al caer la tarde. Se puede subir en teleférico desde el Parque San Martín o en auto o taxi.",
+          "kind": "camera",
+          "tag": "Opcional",
+          "budget": "2 h",
+          "mode": "Teleférico o taxi",
+          "priority": "Opcional",
+          "todo": [
+            "Confirmar el horario y el funcionamiento del teleférico ese día.",
+            "Bajar antes de que oscurezca o en el último turno disponible."
+          ],
+          "booking": "Sin entradas compradas; consultar el día anterior.",
+          "fallback": "Si el teleférico no funciona, subir en taxi o reemplazar por un paseo por el Parque San Martín.",
+          "refs": [],
+          "query": "Teleférico San Bernardo Salta",
+          "routeIndex": 1,
+          "uid": "d02-a05"
+        },
+        {
+          "time": "21:00",
+          "place": "salta",
+          "title": "Peña en La Casona del Molino",
+          "body": "Cena con empanadas, locro y música folclórica en una de las peñas clásicas de Salta. Es la noche para quedarse un rato más.",
+          "kind": "food",
+          "tag": "Plan base",
+          "budget": "2 h",
+          "mode": "Taxi",
+          "priority": "Plan base",
+          "todo": [
+            "Consultar horarios y si hay música esa noche.",
+            "No volver tarde: mañana se sale hacia la Quebrada de las Conchas a las 08:00."
+          ],
+          "booking": "Mesa por reservar; consultar en su canal oficial.",
+          "fallback": "Cena cerca del hotel y acostarse temprano.",
+          "refs": [
+            "pena",
+            "penareserva"
+          ],
+          "query": "La Casona del Molino Salta",
+          "routeIndex": 2,
+          "uid": "d02-a06"
         }
       ],
-      "note": "Etapa larga: unas 8 h 30 min de manejo real (656 km), más las pausas. Confirmar el estado de la RN 16 antes de salir; 17:00 es una meta flexible.",
-      "source": "rutas",
-      "practical": "Única noche en Salta. La tarde de llegada se dedica a instalarse, conocer la plaza y cenar; al día siguiente se sale hacia Cafayate."
+      "note": "Segunda noche en Salta, en el mismo alojamiento. Día sin manejo para descansar de la jornada larga y conocer la ciudad.",
+      "source": "saltacentro",
+      "practical": "Mañana tranquila después de llegar de madrugada; siesta obligatoria. El cerro y la peña son opcionales según el cansancio. Mañana se sale hacia Cafayate a las 08:00."
     },
     {
       "n": 3,
@@ -1015,7 +1047,7 @@
           ],
           "query": "La Yesera Los Estratos Cafayate Ruta 68",
           "routeIndex": 0,
-          "uid": "d04-salida-yesera"
+          "uid": "d04-a02"
         },
         {
           "time": "09:00",
@@ -1039,7 +1071,7 @@
           ],
           "query": "La Yesera Los Estratos Cafayate",
           "routeIndex": 1,
-          "uid": "d04-yesera"
+          "uid": "d04-a03"
         },
         {
           "time": "12:00",
@@ -1059,7 +1091,7 @@
           "refs": [],
           "query": "",
           "routeIndex": 2,
-          "uid": "d04-pausa-cafayate"
+          "uid": "d04-a04"
         },
         {
           "time": "13:00",
@@ -1082,7 +1114,7 @@
           ],
           "query": "Piattelli Vineyards Cafayate",
           "routeIndex": 2,
-          "uid": "d04-traslado-piattelli",
+          "uid": "d04-a05",
           "image": "piatelli"
         },
         {
@@ -1107,7 +1139,7 @@
           ],
           "query": "Piattelli Vineyards Cafayate",
           "routeIndex": 2,
-          "uid": "d04-a03",
+          "uid": "d04-a06",
           "image": "piatelli"
         },
         {
@@ -1131,7 +1163,7 @@
           ],
           "query": "Piattelli Vineyards Cafayate",
           "routeIndex": 2,
-          "uid": "d04-piattelli-tarde",
+          "uid": "d04-a07",
           "image": "piatelli"
         },
         {
@@ -1153,7 +1185,7 @@
           "refs": [],
           "query": "",
           "routeIndex": 2,
-          "uid": "d04-a05"
+          "uid": "d04-a08"
         }
       ],
       "note": "Segunda noche en Cafayate, en el mismo alojamiento. La Yesera tiene su caminata fija por la mañana y Piattelli es la última visita del día. Mañana se sale hacia Cachi.",
@@ -1221,7 +1253,7 @@
           ],
           "query": "Quebrada de las Flechas Salta",
           "routeIndex": 2,
-          "uid": "d05-a03"
+          "uid": "d05-a02"
         },
         {
           "time": "13:30",
@@ -1242,7 +1274,7 @@
           "refs": [],
           "query": "",
           "routeIndex": 4,
-          "uid": "d05-a04"
+          "uid": "d05-a03"
         },
         {
           "time": "17:00",
@@ -1265,7 +1297,7 @@
           ],
           "query": "",
           "routeIndex": 5,
-          "uid": "d05-a05"
+          "uid": "d05-a04"
         },
         {
           "time": "17:45",
@@ -1287,7 +1319,7 @@
           ],
           "query": "Iglesia San José Cachi Salta",
           "routeIndex": 5,
-          "uid": "d05-a06"
+          "uid": "d05-a05"
         },
         {
           "time": "20:00",
@@ -1310,7 +1342,7 @@
           ],
           "query": "",
           "routeIndex": 5,
-          "uid": "d05-a07"
+          "uid": "d05-a06"
         }
       ],
       "note": "Día de ripio por la Ruta 40, con paisajes de punta a punta. Revisar el estado del camino la noche anterior.",
@@ -1666,7 +1698,7 @@
           ],
           "query": "Humahuaca Jujuy",
           "routeIndex": 2,
-          "uid": "d07-traslado-humahuaca"
+          "uid": "d07-a04"
         },
         {
           "time": "13:30",
@@ -1689,7 +1721,7 @@
           ],
           "query": "Humahuaca Jujuy",
           "routeIndex": 4,
-          "uid": "d07-a04"
+          "uid": "d07-a05"
         },
         {
           "time": "14:15",
@@ -1734,7 +1766,7 @@
           ],
           "query": "Mirador Hornocal acceso Humahuaca",
           "routeIndex": 4,
-          "uid": "d07-ascenso-hornocal"
+          "uid": "d07-a07"
         },
         {
           "time": "15:45",
@@ -1758,7 +1790,7 @@
           ],
           "query": "Mirador Serranía del Hornocal Humahuaca",
           "routeIndex": 5,
-          "uid": "d07-hornocal"
+          "uid": "d07-a08"
         },
         {
           "time": "16:30",
@@ -1780,7 +1812,7 @@
           ],
           "query": "Humahuaca Jujuy",
           "routeIndex": 5,
-          "uid": "d07-descenso-hornocal"
+          "uid": "d07-a09"
         },
         {
           "time": "17:45",
@@ -1798,7 +1830,7 @@
           "refs": [],
           "query": "",
           "routeIndex": 6,
-          "uid": "d07-pausa-humahuaca"
+          "uid": "d07-a10"
         },
         {
           "time": "18:00",
@@ -1820,7 +1852,7 @@
           ],
           "query": "El Cielo en Tilcara Belgrano 56",
           "routeIndex": 6,
-          "uid": "d07-regreso-tilcara"
+          "uid": "d07-a11"
         },
         {
           "time": "19:00",
@@ -1840,7 +1872,7 @@
           ],
           "query": "",
           "routeIndex": 8,
-          "uid": "d07-a08"
+          "uid": "d07-a12"
         },
         {
           "time": "20:00",
@@ -1858,7 +1890,7 @@
           "refs": [],
           "query": "",
           "routeIndex": 8,
-          "uid": "d07-a09"
+          "uid": "d07-a13"
         }
       ],
       "note": "Segunda noche en El Cielo en Tilcara. Jornada larga: sendero largo de las Señoritas por la mañana y Hornocal por la tarde. La iglesia de Uquía queda para un final temprano del trekking; el paseo urbano de Humahuaca es breve y opcional.",
@@ -1994,7 +2026,7 @@
           ],
           "query": "Iglesia Santa Rosa de Lima Purmamarca",
           "routeIndex": 6,
-          "uid": "d08-a05"
+          "uid": "d08-a04"
         },
         {
           "time": "13:30",
@@ -2018,7 +2050,7 @@
           ],
           "query": "Mirador Paleta del Pintor Maimará Jujuy",
           "routeIndex": 7,
-          "uid": "d08-paleta"
+          "uid": "d08-a05"
         },
         {
           "time": "14:00",
@@ -2039,7 +2071,7 @@
           "refs": [],
           "query": "",
           "routeIndex": 7,
-          "uid": "d08-a04"
+          "uid": "d08-a06"
         },
         {
           "time": "15:30",
@@ -2065,7 +2097,7 @@
           ],
           "query": "Pucará de Tilcara Jujuy",
           "routeIndex": 8,
-          "uid": "d08-pucara"
+          "uid": "d08-a07"
         },
         {
           "time": "17:30",
@@ -2085,7 +2117,7 @@
           ],
           "query": "",
           "routeIndex": 9,
-          "uid": "d08-a07"
+          "uid": "d08-a08"
         },
         {
           "time": "19:30",
@@ -2103,7 +2135,7 @@
           "refs": [],
           "query": "",
           "routeIndex": 9,
-          "uid": "d08-a08"
+          "uid": "d08-a09"
         }
       ],
       "note": "Salida a las 07:00: Salinas por la mañana, Purmamarca al bajar, Paleta del Pintor a las 13:30, almuerzo en Maimará y Pucará a las 15:30. Los tiempos de manejo son estimaciones de planificación; ajustar al clima y al avance. Regreso a la base a las 17:30.",
@@ -2164,7 +2196,7 @@
           "priority": "Plan base",
           "todo": [
             "Confirmar estado de ruta y la noche de tránsito antes de salir.",
-            "Si no descansaron bien, reducir la etapa y usar el día extra como margen."
+            "Si no descansaron bien, reducir la etapa aunque se llegue un día después."
           ],
           "booking": "Coordinar la salida a las 06:00 con El Cielo en Tilcara.",
           "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
@@ -2321,7 +2353,7 @@
       ],
       "note": "Etapa de aproximadamente 760 km y 10 h de conducción como referencia, más descansos. Reservar una jornada de 12–13 h; llegada orientativa 18:00–19:00, sujeta a la RN 16.",
       "source": "rutas",
-      "practical": "Salir directamente de Tilcara hacia Sáenz Peña por RN 9/34 y RN 16, sin entrar a Salta. Mantener las pausas y usar el día extra si hace falta acortar la etapa."
+      "practical": "Salir directamente de Tilcara hacia Sáenz Peña por RN 9/34 y RN 16, sin entrar a Salta. Mantener las pausas; si hace falta acortar la etapa, partirla en dos aunque se llegue un día después."
     },
     {
       "n": 10,
@@ -2423,7 +2455,7 @@
             "Descansar antes del último tramo si la espera fue larga."
           ],
           "booking": "Consultar el paso oficial y los requisitos antes del viaje.",
-          "fallback": "Usar el día extra como margen si no es prudente completar el regreso.",
+          "fallback": "Si no es prudente completar el regreso, hacer otra noche y llegar un día después.",
           "refs": [
             "migraciones"
           ],
@@ -2443,7 +2475,7 @@
           "priority": "Plan base",
           "todo": [
             "No prolongar la conducción si están cansados solo por llegar el día previsto.",
-            "El día extra permanece libre para contingencias."
+            "Si hubo demoras, avisar en casa y no forzar el horario."
           ],
           "booking": "No hay reservas ni planes adicionales.",
           "fallback": "Acortar o prescindir de esta parada si consume el margen de descanso.",
@@ -2473,9 +2505,9 @@
           "uid": "d10-a06"
         }
       ],
-      "note": "Regreso planificado para el día 10. Día extra: margen, no una jornada turística ni una reserva confirmada.",
+      "note": "Regreso planificado para el día 10. Ya no queda margen: ese día se usó para conocer Salta.",
       "source": "rutas",
-      "practical": "El regreso mantiene el día 10 como objetivo y un día extra como colchón. La frontera no tiene una duración garantizada."
+      "practical": "El regreso es el día 10, sin colchón. La frontera no tiene una duración garantizada; si hace falta, llegar un día después antes que forzar la etapa."
     }
   ],
   "activityGroups": [
@@ -2491,13 +2523,12 @@
         "resistencia",
         "saenz"
       ],
-      "note": "Tramo de viaje, de ida y de vuelta: salida, frontera, comidas, descansos y noches de tránsito. Sin paseos."
+      "note": "Tramo de viaje, de ida y de vuelta: salida, frontera, comidas, descansos y la noche de tránsito del regreso. Sin paseos."
     },
     {
       "id": "ruta",
       "title": "Las pausas de la RN 16",
       "places": [
-        "pampa",
         "monte",
         "galpon"
       ],
@@ -2507,9 +2538,10 @@
       "id": "salta",
       "title": "Salta capital",
       "places": [
-        "salta"
+        "salta",
+        "sanbernardo"
       ],
-      "note": "Una noche: llegada, paseo corto por el centro y cena antes de seguir hacia Cafayate."
+      "note": "Dos noches: llegada pasada la medianoche del día 1 y el día 2 libre en la ciudad, con el centro, el cerro San Bernardo y una peña."
     },
     {
       "id": "conchas",
@@ -2627,7 +2659,8 @@
     }
   ],
   "checklist": [
-    "Elegir alojamientos con estacionamiento: dos noches de tránsito en Sáenz Peña (días 1 y 9), una en Salta (día 2), dos en Cafayate (días 3 y 4) y una en Cachi (día 5).",
+    "Elegir alojamientos con estacionamiento: dos noches en Salta (días 1 y 2, con ingreso de madrugada el día 1), dos en Cafayate (días 3 y 4), una en Cachi (día 5) y una de tránsito en Sáenz Peña (día 9).",
+    "Reservar la mesa en La Casona del Molino para el día 2 y confirmar el horario del teleférico al cerro San Bernardo.",
     "Revisar documentación personal y del vehículo, seguro y asistencia.",
     "Comprobar el estado de la RN 16, la Ruta 40, la RP 33 y las rutas del circuito.",
     "Reservar guía en Uquía para el día 7: encuentro a las 08:15, inicio a las 08:30 y regreso al auto estimado a las 12:30, con margen hasta las 13:00.",
@@ -2635,7 +2668,6 @@
     "Confirmar con el guía el sendero largo de las Señoritas elegido: circuito habilitado, dificultad y estimación de cuatro horas en total (ida, vuelta y pausas), más 30 minutos de margen.",
     "Confirmar el hotel en Cachi y revisar el ripio de la Ruta 40.",
     "Revisar clima y accesos antes de cada salida de montaña.",
-    "Dejar libre un día extra después del día 10 como margen para el regreso.",
     "Coordinar las tres noches en El Cielo en Tilcara: entrada el día 6, salida el día 9, fechas, acceso, estacionamiento y salida a las 06:00 con desayuno o vianda.",
     "Reservar la mesa para almorzar en Piattelli; consultar visita o degustación si les interesa.",
     "Preparar el traslado Cachi–Tilcara y el regreso Tilcara–Sáenz Peña con combustible, comida y descansos.",
@@ -2915,5 +2947,5 @@
       "position": "50% 50%"
     }
   },
-  "checklistVersion": 3
+  "checklistVersion": 5
 }

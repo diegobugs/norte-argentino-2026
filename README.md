@@ -4,9 +4,10 @@ Sitio del itinerario Hohenau–Salta–Jujuy: 10 días en un solo scroll, con ma
 
 ## Distribución del viaje
 
-10 días y 9 noches: Sáenz Peña, 2 noches (ida y vuelta); Salta, 1; Cafayate, 2; Cachi, 1; Tilcara, 3 en El Cielo en Tilcara. Regreso a Hohenau el día 10, con un día extra de margen.
+10 días y 9 noches: Salta, 2 (llegada de madrugada, directo desde Hohenau, y un día libre); Cafayate, 2; Cachi, 1; Tilcara, 3 en El Cielo en Tilcara; Sáenz Peña, 1 a la vuelta. Regreso a Hohenau el día 10, sin día de margen.
 
-- Días 1–2: Hohenau → Sáenz Peña → Salta.
+- Día 1: Hohenau → Sáenz Peña → Salta en una sola jornada, con salida a las 05:00 y Sáenz Peña como pausa y punto de decisión.
+- Día 2: día libre en Salta, sin manejo: Plaza 9 de Julio, Doña Salta, siesta, cerro San Bernardo y peña en La Casona del Molino.
 - Días 3–4: Quebrada de las Conchas y Cafayate, sin Domos del Viento.
 - Día 5: Ruta 40, Quebrada de las Flechas y Cachi.
 - Día 6: Cachi → Los Cardones → Cuesta del Obispo → El Carril → Cerrillos → Circunvalación Sureste de Salta → General Güemes → Tilcara.
@@ -40,7 +41,7 @@ python3 -m http.server
 
 Después entrá a `http://localhost:8000`. No hace falta compilar nada. En GitHub Pages funciona tal cual.
 
-El botón con el ícono de mapa, arriba a la izquierda, abre el mapa a pantalla completa: se puede mover, acercar y tocar cada lugar para ver sus actividades. Para compartirlo abierto, agregá `#mapa` al final del enlace.
+El botón con el ícono de mapa, arriba a la izquierda, abre el mapa a pantalla completa: se puede mover, acercar y tocar cada lugar para ver sus actividades. Los lugares donde se pasa la noche llevan un ícono de cama, en este mapa y en el del recorrido; salen del último lugar de cada día, menos el regreso a casa. Para compartirlo abierto, agregá `#mapa` al final del enlace.
 
 El botón de reproducir, primero en la tarjeta de pasos de abajo, recorre el viaje solo: se queda en cada momento el tiempo justo para leerlo y pasa al siguiente. Arranca en pausa y se detiene al llegar al final, al tocar pausa o al desplazarse a mano.
 
@@ -53,7 +54,7 @@ Todo el contenido está en `itinerario.json`. Guardá el archivo y recargá la p
   - **Parada:** lugares turísticos, miradores y vistas, hoteles y almuerzos en un lugar con atractivo.
   - **De paso:** ciudades y pueblos de ruta, lugares sin atractivos, almuerzos de ruta y lugares solo para desayunar o descansar. Por ejemplo, Hohenau, Posadas, Corrientes, Molinos o Chicoana.
 - `days`: los 10 días en orden. Cada día tiene `route`, la lista de lugares que dibuja el trayecto, y `stops`, las paradas.
-- Cada parada usa `time` (`"HH:MM"`, el reloj se calcula a partir de ahí), `place`, `title`, `body` y `kind` (el ícono: `car`, `border`, `food`, `coffee`, `walk`, `wine`, `camera`, `bed`, `moon`, `pin`, `home`, `domo`). `routeIndex` es la posición de la parada dentro de `route` y `uid` identifica su ficha: tiene que ser único.
+- Cada parada usa `time` (`"HH:MM"`, el reloj se calcula a partir de ahí; con `"nextDay": true` la hora es de la madrugada siguiente, como la llegada a Salta del día 1), `place`, `title`, `body` y `kind` (el ícono: `car`, `border`, `food`, `coffee`, `walk`, `wine`, `camera`, `bed`, `moon`, `pin`, `home`, `domo`). `routeIndex` es la posición de la parada dentro de `route` y `uid` identifica su ficha: tiene que ser único.
 - `accommodation`: alojamiento elegido para una jornada. Las noches de Tilcara comparten El Cielo en Tilcara, con entrada el día 6 y salida el día 9. El mapa usa el punto de la localidad; no representa el acceso del alojamiento.
 - `activityGroups`: las secciones de "Actividades por ciudad" y qué lugares entran en cada una.
 - `checklist`: la lista de "Por confirmar". Cada navegador guarda las tildes por posición y por `checklistVersion`. Al reordenar o reemplazar ítems, incrementar esa versión para evitar que una tilde vieja marque una tarea distinta.
@@ -85,7 +86,7 @@ Cada `git push` a `main` vuelve a publicar el sitio.
 
 ## Privacidad y alcance
 
-El itinerario no muestra fechas: los días se nombran de "Día 1" a "Día 10" y el margen para el regreso es un "día extra". Sí incluye el punto de partida, el alojamiento elegido en Tilcara y los horarios propuestos. Revisá el contenido antes de compartir el enlace.
+El itinerario no muestra fechas: los días se nombran de "Día 1" a "Día 10", sin fechas de calendario. Sí incluye el punto de partida, el alojamiento elegido en Tilcara y los horarios propuestos. Revisá el contenido antes de compartir el enlace.
 
 La página les pide a los buscadores que no la indexen (`noindex`), pero eso no la vuelve privada.
 

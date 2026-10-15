@@ -467,6 +467,12 @@ html.explorer-open{overflow:hidden}
 .explorer-poi.is-pass .poi-label{font-size:11px;font-weight:550}
 .explorer-poi.is-selected .poi-label-bg{stroke:var(--route-color);stroke-width:2}
 .explorer-poi.no-label .poi-label,.explorer-poi.no-label .poi-label-bg{display:none}
+.sleep-badge{display:none;pointer-events:none}.sleep-badge circle{fill:var(--label-bg);stroke:var(--route-color);stroke-width:2}.sleep-badge .icon{color:var(--route-color);stroke-width:2}
+.is-sleep>.sleep-badge{display:inline}.is-sleep>.city-dot,.is-sleep>.poi-dot{display:none}
+.explorer-poi.is-current .sleep-badge circle{stroke:var(--accent);stroke-width:3}.explorer-poi.is-current .sleep-badge .icon{color:var(--accent)}
+.explorer-poi.is-selected .sleep-badge circle{fill:var(--route-color);stroke:var(--label-bg);stroke-width:3}.explorer-poi.is-selected .sleep-badge .icon{color:var(--label-bg)}
+.explorer-poi:focus-visible .sleep-badge circle{stroke:var(--accent);stroke-width:3}
+.legend-sleep{display:inline-flex;align-items:center;gap:5px;min-height:24px;padding:2px 9px 2px 6px}.legend-sleep .icon{width:15px;height:15px;color:var(--route-color);stroke-width:2}
 .explorer-poi:focus-visible .poi-dot,.explorer-poi:focus-visible .poi-label-bg{stroke:var(--accent);stroke-width:3}
 .explorer-panel{position:absolute;z-index:2;background:var(--overlay-bg);color:var(--text);border:1px solid var(--line);box-shadow:0 8px 26px rgba(12,25,39,.14);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
 .explorer-header{top:var(--hud-top);left:var(--hud-edge);display:flex;align-items:center;gap:12px;max-width:calc(100% - 2 * var(--hud-edge) - 62px);padding:7px 18px 7px 7px;border-radius:20px}
@@ -657,7 +663,7 @@ html.explorer-open{overflow:hidden}
    <h3>Por confirmar</h3><div id="checklist" class="checklist"></div><p class="storage-note" id="storageNote">Los cambios se guardan solo en este navegador.</p>
    <div class="prep-actions"><button class="outline-button" id="downloadPlan"><svg class="icon"><use href="#i-download"/></svg>Guardar plan detallado</button><button class="outline-button" id="printPlan"><svg class="icon"><use href="#i-print"/></svg>Imprimir itinerario</button></div>
   </div>
-  <aside class="plan-notes"><span class="eyebrow">PARA LEER EL PLAN</span><h3>Con margen, siempre.</h3><p><b>Horarios propuestos.</b> No son reservas, horarios de apertura ni predicciones de llegada. Los traslados y la frontera pueden requerir más tiempo.</p><p><b>Un solo conductor.</b> Las etapas largas pueden superar 8 h al volante. Los descansos no se eliminan para cumplir el programa.</p><p id="lodgingPlanNote"></p><p><b>Luz ilustrativa.</b> Los colores acompañan la hora del relato: no son un pronóstico ni una simulación del sol real.</p><p><b>Cartografía orientativa.</b> La base es Natural Earth; puntos y líneas son aproximados. No representan carreteras verificadas ni tracks de senderos. Las curvas de fondo son decorativas. El alojamiento de Tilcara se muestra en el punto de la localidad; pedir el acceso exacto al establecimiento.</p><p><b>Un día extra como margen.</b> El regreso previsto es el día <span id="returnPlanDay">10</span>. El día siguiente queda disponible por demoras o cansancio.</p></aside>
+  <aside class="plan-notes"><span class="eyebrow">PARA LEER EL PLAN</span><h3>Con margen, siempre.</h3><p><b>Horarios propuestos.</b> No son reservas, horarios de apertura ni predicciones de llegada. Los traslados y la frontera pueden requerir más tiempo.</p><p><b>Un solo conductor.</b> Las etapas largas pueden superar 8 h al volante. Los descansos no se eliminan para cumplir el programa.</p><p id="lodgingPlanNote"></p><p><b>Luz ilustrativa.</b> Los colores acompañan la hora del relato: no son un pronóstico ni una simulación del sol real.</p><p><b>Cartografía orientativa.</b> La base es Natural Earth; puntos y líneas son aproximados. No representan carreteras verificadas ni tracks de senderos. Las curvas de fondo son decorativas. El alojamiento de Tilcara se muestra en el punto de la localidad; pedir el acceso exacto al establecimiento.</p><p><b>Sin día de margen.</b> El regreso previsto es el día <span id="returnPlanDay">10</span>. Si hay demoras o cansancio, se parte la etapa y se llega un día después.</p></aside>
  </div>
  <section class="route-summary" aria-labelledby="summaryTitle"><div class="eyebrow" id="summaryEyebrow">10 DÍAS, DE PRINCIPIO A FIN</div><h3 id="summaryTitle">Volvé a cualquier momento del viaje.</h3><div class="summary-grid" id="summaryGrid"></div></section>
  <p class="image-disclaimer"><b>Fondos generados con IA.</b> Las ilustraciones se eligen por localidad o región. Las paradas cercanas pueden compartir una imagen. Son interpretaciones artísticas: no fotografías documentales ni referencias exactas de monumentos, caminos o alojamientos.</p>
@@ -790,6 +796,9 @@ let W=innerWidth,H=innerHeight,unit=H*.92,framePending=false,currentCamera={cx:0
 let lastThemeMinute=-1,lastRouteDay=-1,lastMapLabel='',lastPhase='',lastUIIndex=-1;
 let markerNodes=[],countryNodes=[],scrollPosition=0;
 // Stops carry only their "HH:MM" time; the narrated clock works in minutes since day 1.
+// Where each night of the trip is spent: the last stop of every day but the final one.
+const sleepPlaces=()=>new Set(DAYS.slice(0,-1).map(d=>d.stops[d.stops.length-1].place));
+const sleepBadge=()=>{const g=svg('g',{class:'sleep-badge'}),i=svg('svg',{x:-8,y:-8,width:16,height:16,class:'icon'}),u=svg('use',{href:'#i-bed'});i.append(u);g.append(svg('circle',{r:11}),i);return g;};
 const minutesOf=time=>{const[h,m]=time.split(':').map(Number);return h*60+m;};
 const displayPlace=id=>xy(id).name;
 function save(){try{localStorage.setItem(CHECKLIST_KEY,JSON.stringify({checks}));}catch{storageOK=false;}$('storageNote').textContent=storageOK?'Los cambios y la lista se guardan solo en este navegador. No se envían datos.':'Este navegador no permite guardar cambios localmente. Se mantienen durante esta sesión.';}
@@ -801,18 +810,19 @@ function renderModel(){
  $('tripDuration').textContent=`${DAYS.length} días · ${DAYS.length-1} noches`;
  $('returnPlanDay').textContent=DAYS.length;
 
- scenes=[{intro:true,di:0,si:-1,time:'06:00',hour:6,absolute:360,place:DAYS[0].stops[0].place,kind:'car',routeIndex:0,title:'El norte, sin apuro.'}];
+ scenes=[{intro:true,di:0,si:-1,time:DAYS[0].stops[0].time,hour:minutesOf(DAYS[0].stops[0].time)/60,absolute:minutesOf(DAYS[0].stops[0].time),place:DAYS[0].stops[0].place,kind:'car',routeIndex:0,title:'El norte, sin apuro.'}];
  dayStarts=[];dayEnds=[];
  DAYS.forEach((d,di)=>{
   dayStarts[di]=scenes.length;
-  d.stops.forEach((s,si)=>scenes.push({...s,di,si,absolute:di*1440+minutesOf(s.time)}));
+  d.stops.forEach((s,si)=>scenes.push({...s,di,si,absolute:di*1440+minutesOf(s.time)+(s.nextDay?1440:0)}));
   if(di<DAYS.length-1){
    const last=d.stops[d.stops.length-1],stay=getStay(di);
    const nextStart=DAYS[di+1].stops[0].time;
    const returnBase=stay.total>1?`Noche ${stay.number} de ${stay.total} en esta base.`:'Una noche para descansar antes de continuar.';
    const lodging=d.accommodation;
    const overnightBody=lodging?`${returnBase} ${lodging.name}, elegido por ustedes del día ${lodging.arrivalDay} al ${lodging.departureDay}. Fechas y horarios a coordinar. Mañana retomamos el plan a las ${nextStart}.`:`${returnBase} Alojamiento por elegir, sin reserva confirmada. Mañana retomamos el plan a las ${nextStart}.`;
-   scenes.push({di,si:d.stops.length,place:last.place,routeIndex:d.route.length-1,time:'22:00',hour:22,absolute:di*1440+1320,kind:'overnight',title:`Noche en ${lodging?.name||d.sleep}`,body:overnightBody,tag:`NOCHE ${di+1} DE ${DAYS.length-1}`,stay,accommodation:lodging||null});
+   const nightAt=Math.max(di*1440+1320,scenes[scenes.length-1].absolute+15),nightMin=nightAt%1440;
+   scenes.push({di,si:d.stops.length,place:last.place,routeIndex:d.route.length-1,time:`${String(Math.floor(nightMin/60)).padStart(2,'0')}:${String(nightMin%60).padStart(2,'0')}`,hour:nightMin/60,absolute:nightAt,kind:'overnight',title:`Noche en ${lodging?.name||d.sleep}`,body:overnightBody,tag:`NOCHE ${di+1} DE ${DAYS.length-1}`,stay,accommodation:lodging||null});
   }
   dayEnds[di]=scenes.length-1;
  });
@@ -874,7 +884,7 @@ function activityDetailsText(s){
 }
 
 function renderTranscript(){
- $('transcript').innerHTML='<h1>Norte, sin apuro · Actividades detalladas</h1><p>Los horarios y duraciones son propuestas; no reservas ni tiempos de ruta garantizados. El Cielo en Tilcara elegido por ustedes: tres noches, del día 6 al día 9. Fechas y horarios a coordinar. Resto de alojamientos y actividades por confirmar. Un día extra como margen para el regreso.</p>'+DAYS.map((d,di)=>`<section><h2>Día ${d.n} · ${esc(d.title)}</h2><p>${esc(d.subtitle)} · ${d.n===DAYS.length?'En casa':'Noche en '+esc(d.sleep)}</p>${d.practical?`<p><b>Criterio del día:</b> ${esc(d.practical)}</p>`:''}${scenes.filter(s=>!s.intro&&s.di===di).map(s=>`<div class="transcript-activity"><h3>${s.time} · ${esc(s.title)}</h3><p>${esc(s.body)}</p>${s.budget?`<p><b>Tiempo propuesto:</b> ${esc(s.budget)} · ${esc(s.mode)} · ${esc(s.priority||'Plan base')}</p>`:''}${s.todo?.length?`<ul>${s.todo.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>`:''}${s.booking?`<p><b>Antes de ir:</b> ${esc(s.booking)}</p>`:''}${s.fallback?`<p><b>Si cambia el día:</b> ${esc(s.fallback)}</p>`:''}${(s.refs||[]).filter(k=>SOURCES[k]).map(k=>`<p class="source-print">Referencia: ${esc(SOURCES[k].label)} — <a href="${esc(SOURCES[k].url)}">${esc(SOURCES[k].url)}</a></p>`).join('')}</div>`).join('')}<p><b>Nota:</b> ${esc(d.note)}</p></section>`).join('');
+ $('transcript').innerHTML='<h1>Norte, sin apuro · Actividades detalladas</h1><p>Los horarios y duraciones son propuestas; no reservas ni tiempos de ruta garantizados. El Cielo en Tilcara elegido por ustedes: tres noches, del día 6 al día 9. Fechas y horarios a coordinar. Resto de alojamientos y actividades por confirmar. Sin día de margen para el regreso.</p>'+DAYS.map((d,di)=>`<section><h2>Día ${d.n} · ${esc(d.title)}</h2><p>${esc(d.subtitle)} · ${d.n===DAYS.length?'En casa':'Noche en '+esc(d.sleep)}</p>${d.practical?`<p><b>Criterio del día:</b> ${esc(d.practical)}</p>`:''}${scenes.filter(s=>!s.intro&&s.di===di).map(s=>`<div class="transcript-activity"><h3>${s.time} · ${esc(s.title)}</h3><p>${esc(s.body)}</p>${s.budget?`<p><b>Tiempo propuesto:</b> ${esc(s.budget)} · ${esc(s.mode)} · ${esc(s.priority||'Plan base')}</p>`:''}${s.todo?.length?`<ul>${s.todo.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>`:''}${s.booking?`<p><b>Antes de ir:</b> ${esc(s.booking)}</p>`:''}${s.fallback?`<p><b>Si cambia el día:</b> ${esc(s.fallback)}</p>`:''}${(s.refs||[]).filter(k=>SOURCES[k]).map(k=>`<p class="source-print">Referencia: ${esc(SOURCES[k].label)} — <a href="${esc(SOURCES[k].url)}">${esc(SOURCES[k].url)}</a></p>`).join('')}</div>`).join('')}<p><b>Nota:</b> ${esc(d.note)}</p></section>`).join('');
 }
 
 function makeSegment(a,b){
@@ -910,7 +920,7 @@ function buildMap(){
  }
  markerNodes=Object.values(POINTS).map(p=>{
   const g=svg('g',{'data-place':p.id}),dot=svg('circle',{r:4,class:'city-dot'}),bg=svg('rect',{x:9,y:-15,height:30,rx:8,class:'city-label-bg'}),text=svg('text',{x:18,y:4.5,class:'city-label'});
-  text.textContent=p.name;g.append(dot,bg,text);$('cityMarkers').appendChild(g);
+  text.textContent=p.name;g.append(dot,sleepBadge(),bg,text);$('cityMarkers').appendChild(g);
   return{p,g,text,bg,labelWidth:0};
  });
  countryNodes=COUNTRY_LABELS.map(([name,lat,lon])=>{const el=svg('text',{class:'country-label'});el.textContent=name;$('countryLabels').appendChild(el);return{el,p:projection(lat,lon)};});
@@ -944,7 +954,8 @@ function measure(preserveUnit=false){
  $('mapSvg').setAttribute('viewBox',`0 0 ${W} ${H}`);
  document.querySelectorAll('[data-scene]').forEach(el=>el.style.top=`${Number(el.dataset.scene)*unit}px`);
  // Measure the actual rendered font, not a per-character width estimate.
- markerNodes.forEach(n=>{n.g.style.display='';n.labelWidth=Math.ceil(n.text.getComputedTextLength());n.bg.setAttribute('width',n.labelWidth+18);});
+ const sleeps=sleepPlaces();
+ markerNodes.forEach(n=>{const sleep=sleeps.has(n.p.id);n.g.classList.toggle('is-sleep',sleep);if(sleep)n.g.parentNode.appendChild(n.g);n.bg.setAttribute('x',sleep?15:9);n.text.setAttribute('x',sleep?24:18);n.g.style.display='';n.labelWidth=Math.ceil(n.text.getComputedTextLength())+(sleep?6:0);n.bg.setAttribute('width',n.labelWidth+18-(sleep?6:0));});
  lastMapLabel='';
  cameras=scenes.map(sceneCamera);lastUIIndex=-1;
 }
@@ -1005,7 +1016,7 @@ function drawMap(point,path,a,b,t){
   const q=screen(n.p),nameWidth=n.labelWidth+27;
   let visible=n.p.id!==active.place&&q.x>12&&q.x+nameWidth<W-12&&q.y>20&&q.y<H-20;
   if(a.intro&&!major.has(n.p.id))visible=false;
-  const bb={x:q.x-5,y:q.y-17,w:nameWidth+7,h:34};
+  const bb={x:q.x-(n.g.classList.contains('is-sleep')?12:5),y:q.y-17,w:nameWidth+(n.g.classList.contains('is-sleep')?14:7),h:34};
   if(visible&&occupied.some(r=>bb.x<r.x+r.w&&bb.x+bb.w>r.x&&bb.y<r.y+r.h&&bb.y+bb.h>r.y))visible=false;
   n.g.style.display=visible?'':'none';
   if(visible){n.g.setAttribute('transform',`translate(${q.x.toFixed(2)} ${q.y.toFixed(2)})`);occupied.push(bb);}
@@ -1259,7 +1270,7 @@ document.addEventListener('click',e=>{if(e.target.closest('a[href^="#"]'))reader
 const explorer={open:false,pushed:false,built:false,hiddenTiers:new Set(),cam:null,fit:null,limits:null,bounds:null,info:null,nodes:[],routes:[],labels:[],selected:'',pointers:new Map(),gesture:null,tap:null,lastTap:null,frame:false,anim:0,W:0,H:0,returnFocus:null,hinted:false};
 const EXPLORER_MAX_SCALE=140;
 const overlaps=(a,b)=>a.x<b.x+b.w&&a.x+a.w>b.x&&a.y<b.y+b.h&&a.y+a.h>b.y;
-const labelBox=(n,q,side)=>({x:side==='left'?q.x-n.width-28:q.x+8,y:q.y-15,w:n.width+20,h:30});
+const labelBox=(n,q,side)=>{const o=n.sleep?6:0;return{x:side==='left'?q.x-n.width-28-o:q.x+8+o,y:q.y-15,w:n.width+20,h:30};};
 const joinDays=days=>{const u=[...new Set(days)].sort((a,b)=>a-b);return u.length>1?`${u.slice(0,-1).join(', ')} y ${u[u.length-1]}`:String(u[0]);};
 const explorerScreen=p=>({x:explorer.W/2+(p.x-explorer.cam.cx)*explorer.cam.scale,y:explorer.H/2+(p.y-explorer.cam.cy)*explorer.cam.scale});
 const clampExplorerCam=c=>{
@@ -1283,7 +1294,7 @@ function buildExplorer(){
  explorer.labels=COUNTRY_LABELS.map(([name,lat,lon])=>{const el=svg('text',{class:'country-label'});el.textContent=name;$('explorerCountryLabels').appendChild(el);return{el,p:projection(lat,lon)};});
  explorer.nodes=Object.values(POINTS).map(p=>{
   const g=svg('g',{class:'explorer-poi','data-place':p.id,role:'button'}),bg=svg('rect',{x:9,y:-14,height:28,rx:8,class:'poi-label-bg'}),text=svg('text',{x:17,y:4.5,class:'poi-label'}),dot=svg('circle',{class:'poi-dot'});
-  text.textContent=displayPlace(p.id);g.append(svg('circle',{r:16,class:'poi-hit'}),bg,text,dot);$('explorerPoints').appendChild(g);
+  text.textContent=displayPlace(p.id);g.append(svg('circle',{r:16,class:'poi-hit'}),bg,text,dot,sleepBadge());$('explorerPoints').appendChild(g);
   return{p,g,bg,text,dot,width:0,tier:'off'};
  });
 }
@@ -1303,16 +1314,19 @@ function refreshExplorer(){
   // Places marked passThrough in the itinerary stay "de paso" even with moments there.
   n.tier=!list&&!routeDays.has(id)?'off':list&&!DATA.places[id]?.passThrough?'stop':'pass';
   n.g.classList.remove('no-label');
+  n.sleep=nights.has(id);n.g.classList.toggle('is-sleep',n.sleep);
+  // Nearby points (Pucará, San Bernardo) must not cover the bed icon.
+  if(n.sleep)n.g.parentNode.appendChild(n.g);
   n.g.classList.toggle('is-pass',n.tier==='pass');
   n.g.classList.toggle('is-current',!!active&&!active.intro&&active.place===id);
   n.g.style.display=n.tier==='off'?'none':'';
   n.g.setAttribute('tabindex',n.tier==='stop'?'0':'-1');
-  n.g.setAttribute('aria-label',`${displayPlace(id)}: ${placeSummary(n.tier,list)}`);
-  if(n.tier!=='off'){n.width=Math.ceil(n.text.getComputedTextLength());n.bg.setAttribute('width',n.width+16);n.side='right';n.bg.setAttribute('x',9);n.text.setAttribute('x',17);}
+  n.g.setAttribute('aria-label',`${displayPlace(id)}: ${placeSummary(n.tier,list)}${n.sleep?', se hace noche acá':''}`);
+  if(n.tier!=='off'){n.width=Math.ceil(n.text.getComputedTextLength());n.bg.setAttribute('width',n.width+16);n.side='right';n.bg.setAttribute('x',n.sleep?15:9);n.text.setAttribute('x',n.sleep?23:17);}
  });
  const count=tier=>explorer.nodes.filter(n=>n.tier===tier).length;
  // Each legend entry is also a filter: pressing it hides or shows that kind of point.
- $('explorerSummary').innerHTML=[['stop','paradas'],['pass','de paso']].map(([tier,label])=>`<button class="legend-filter" type="button" data-tier="${tier}" aria-pressed="${!explorer.hiddenTiers.has(tier)}" title="Mostrar u ocultar en el mapa"><i class="legend-dot${tier==='pass'?' is-pass':''}"></i>${count(tier)} ${label}</button>`).join('');
+ $('explorerSummary').innerHTML=[['stop','paradas'],['pass','de paso']].map(([tier,label])=>`<button class="legend-filter" type="button" data-tier="${tier}" aria-pressed="${!explorer.hiddenTiers.has(tier)}" title="Mostrar u ocultar en el mapa"><i class="legend-dot${tier==='pass'?' is-pass':''}"></i>${count(tier)} ${label}</button>`).join('')+`<span class="legend-sleep">${icon('bed')}${explorer.nodes.filter(n=>n.sleep&&n.tier!=='off').length} para dormir</span>`;
  selectPlace('',{announce:false});
 }
 const TIER_NAMES={stop:['Paradas','ocultas','visibles'],pass:['Puntos de paso','ocultos','visibles']};
@@ -1358,14 +1372,14 @@ function drawExplorer(){
   n.g.setAttribute('transform',`translate(${q.x.toFixed(1)} ${q.y.toFixed(1)})`);
   placed.push({n,q});
  });
- const taken=[...panels,...placed.map(({q})=>({x:q.x-7,y:q.y-7,w:14,h:14}))];
+ const taken=[...panels,...placed.map(({n,q})=>{const r=n.sleep?12:7;return{x:q.x-r,y:q.y-r,w:2*r,h:2*r};})];
  placed.sort((a,b)=>rank(a.n)-rank(b.n)).forEach(({n,q})=>{
   // Try the label on the right of the dot, then on the left.
   const first=rank(n)===0,blockers=first?panels:taken;
   const side=n.tier==='stop'||c.scale>=26||first?['right','left'].find(s=>{const b=labelBox(n,q,s);return b.x>4&&b.x+b.w<EW-4&&b.y>4&&b.y+b.h<EH-4&&!blockers.some(r=>overlaps(b,r));}):undefined;
   n.g.classList.toggle('no-label',!side);
   if(!side)return;
-  if(n.side!==side){n.side=side;n.bg.setAttribute('x',side==='left'?-n.width-25:9);n.text.setAttribute('x',side==='left'?-n.width-17:17);}
+  if(n.side!==side){const o=n.sleep?6:0;n.side=side;n.bg.setAttribute('x',side==='left'?-n.width-25-o:9+o);n.text.setAttribute('x',side==='left'?-n.width-17-o:17+o);}
   taken.push(labelBox(n,q,side));
  });
  explorer.labels.forEach(l=>{
