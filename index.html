@@ -440,10 +440,10 @@
 
 <style id="map-explorer">
 /* The map button on the scroll view and the full-screen explorer it opens. */
-.map-open{position:absolute;top:var(--hud-top);left:var(--hud-edge);z-index:3;display:grid;place-items:center;width:58px;height:58px;border-radius:18px;background:var(--overlay-bg);color:var(--accent);border:1px solid var(--line);box-shadow:0 8px 26px rgba(12,25,39,.12);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);transition:background .15s,transform .15s}
-.map-open .icon{width:27px;height:27px;stroke-width:1.9}
-.map-open:hover{background:var(--accent-soft)}
-.map-open:active{transform:scale(.95)}
+.map-open,.list-open{position:absolute;top:var(--hud-top);left:var(--hud-edge);z-index:3;display:grid;place-items:center;width:58px;height:58px;border-radius:18px;background:var(--overlay-bg);color:var(--accent);border:1px solid var(--line);box-shadow:0 8px 26px rgba(12,25,39,.12);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);transition:background .15s,transform .15s}
+.map-open .icon,.list-open .icon{width:27px;height:27px;stroke-width:1.9}
+.map-open:hover,.list-open:hover{background:var(--accent-soft)}
+.map-open:active,.list-open:active{transform:scale(.95)}
 html.explorer-open{overflow:hidden}
 .explorer{position:fixed;inset:0;z-index:60;overflow:hidden;background:var(--map-bg);color:var(--text);overscroll-behavior:contain;animation:explorer-in .2s ease-out}
 .explorer[hidden],.explorer [hidden]{display:none!important}
@@ -524,8 +524,8 @@ html.explorer-open{overflow:hidden}
 .explorer-actions a:hover{background:var(--accent-soft);color:var(--accent)}
 .explorer-actions .icon{width:14px;height:14px}
 @media(max-width:760px){
- .map-open{width:50px;height:50px;border-radius:16px}
- .map-open .icon{width:24px;height:24px}
+ .map-open,.list-open{width:50px;height:50px;border-radius:16px}
+ .map-open .icon,.list-open .icon{width:24px;height:24px}
  .explorer-header{gap:10px;padding:6px 14px 6px 6px;border-radius:17px}
  .explorer-close{width:40px;height:40px;border-radius:12px}
  .explorer-header h2{font-size:14px}
@@ -537,8 +537,8 @@ html.explorer-open{overflow:hidden}
  .explorer.has-card .explorer-foot{display:none}
 }
 @media(orientation:landscape) and (max-height:520px){
- .map-open{width:44px;height:44px;border-radius:13px}
- .map-open .icon{width:21px;height:21px}
+ .map-open,.list-open{width:44px;height:44px;border-radius:13px}
+ .map-open .icon,.list-open .icon{width:21px;height:21px}
  .explorer-header{padding:5px 12px 5px 5px;border-radius:14px}
  .explorer-close{width:36px;height:36px;border-radius:11px}
  .explorer-header h2{font-size:13px}
@@ -568,6 +568,42 @@ html.explorer-open{overflow:hidden}
 @media(max-width:760px){.autoplay-toggle{width:26px;height:26px}.autoplay-toggle .icon{width:12px;height:12px}}
 @media(orientation:landscape) and (max-height:520px){.autoplay-toggle{width:24px;height:24px}.autoplay-toggle .icon{width:11px;height:11px}}
 @media print{.autoplay-toggle{display:none}}
+</style>
+<style id="day-list">
+/* The list button beside the map button and the compact list it opens: every stop by day and time, one color band per day. */
+.list-open{left:calc(var(--hud-edge) + 68px)}
+html.day-list-open{overflow:hidden}
+.day-list{--list-pad:max(16px,calc((100% - 720px) / 2));--day-tint:color-mix(in srgb,var(--accent) 12%,var(--surface));--list-accent:color-mix(in srgb,var(--accent) 85%,var(--text));position:fixed;inset:0;z-index:60;overflow-y:auto;overscroll-behavior:contain;background:var(--bg);color:var(--text);animation:explorer-in .2s ease-out}
+.day-list[hidden]{display:none!important}
+.day-list-header{position:sticky;top:0;z-index:1;display:flex;align-items:center;gap:12px;padding:max(12px,env(safe-area-inset-top,0px)) var(--list-pad) 12px;background:var(--overlay-bg);border-bottom:1px solid var(--line);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+.day-list-close{flex:none;display:grid;place-items:center;width:44px;height:44px;border-radius:14px;background:var(--accent-soft);color:var(--accent)}
+.day-list-close .icon{width:22px;height:22px;stroke-width:2}
+.day-list-header h2{margin:0;font-size:16px;font-weight:800;line-height:1.2}
+.day-list-header p{margin:3px 0 0;font-size:11px;font-weight:600;color:var(--muted)}
+.day-list-days{padding-bottom:env(safe-area-inset-bottom,0px)}
+.list-day{padding:16px var(--list-pad) 14px;background:var(--bg)}
+.list-day:nth-child(even){background:var(--day-tint)}
+.list-day h3{display:flex;align-items:baseline;gap:10px;margin:0 0 6px;font-size:16px;font-weight:750;letter-spacing:-.2px;line-height:1.3}
+.list-day h3 span{flex:none;font-size:10px;font-weight:800;letter-spacing:1.2px;color:var(--list-accent)}
+.list-day ol{margin:0;padding:0;list-style:none}
+.list-day li+li{border-top:1px solid color-mix(in srgb,var(--line) 60%,transparent)}
+.list-day a{display:grid;grid-template-columns:54px 1fr;gap:10px;align-items:baseline;padding:6px 8px;margin:0 -8px;border-radius:8px;font-size:14px;line-height:1.35}
+.list-day a:hover{background:color-mix(in srgb,var(--accent) 6%,transparent)}
+.list-day a[aria-current]{background:color-mix(in srgb,var(--accent) 14%,transparent);box-shadow:inset 3px 0 var(--accent);font-weight:700}
+.list-day a[aria-current] time{color:var(--text)}
+.list-day time{font-weight:750;font-variant-numeric:tabular-nums;color:var(--list-accent)}
+.list-day sup{margin-left:2px;font-size:9px;color:var(--muted)}
+@media(max-width:760px){
+ .list-open{left:calc(var(--hud-edge) + 58px)}
+ .day-list-header{gap:10px}
+ .day-list-close{width:40px;height:40px;border-radius:12px}
+ .day-list-header h2{font-size:14px}
+ .list-day{padding:14px var(--list-pad) 12px}
+ .list-day h3{font-size:15px}
+ .list-day a{grid-template-columns:50px 1fr;font-size:13px}
+}
+@media(orientation:landscape) and (max-height:520px){.list-open{left:calc(var(--hud-edge) + 52px)}}
+@media print{.list-open,.day-list{display:none!important}}
 </style>
 </head>
 <body>
@@ -619,6 +655,7 @@ html.explorer-open{overflow:hidden}
    <div class="map-wash"></div><div class="light-halo"></div><div class="grain"></div><div id="stars" class="stars"></div>
   </div>
   <button class="map-open" id="mapOpen" type="button" aria-label="Abrir el mapa completo" title="Explorar el mapa" aria-haspopup="dialog" aria-controls="mapExplorer"><svg class="icon" aria-hidden="true"><use href="#i-map"/></svg></button>
+  <button class="list-open" id="listOpen" type="button" aria-label="Ver el viaje en lista" title="Ver en lista" aria-haspopup="dialog" aria-controls="dayList"><svg class="icon" aria-hidden="true"><use href="#i-list"/></svg></button>
   <aside class="clock" aria-label="Horario narrado del itinerario">
    <div class="clock-phase"><svg class="icon"><use id="phaseIcon" href="#i-sunrise"/></svg><span id="phaseText">AMANECER</span></div>
    <time id="clockValue" datetime="06:00">06:00</time>
@@ -681,6 +718,10 @@ html.explorer-open{overflow:hidden}
  <aside class="explorer-card explorer-panel" id="explorerCard" aria-label="Lugar seleccionado" hidden></aside>
  <p class="explorer-hint explorer-panel" id="explorerHint">Arrastrá para moverte, acercá con dos dedos o con la rueda y tocá un punto para ver qué hay.</p>
  <div class="explorer-foot explorer-panel" id="explorerFoot"><span class="explorer-scale"><i id="explorerScaleBar"></i><span id="explorerScaleText"></span></span><a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener noreferrer">Natural Earth</a><span>Mapa orientativo · no es navegación</span></div>
+</section>
+<section class="day-list" id="dayList" role="dialog" aria-modal="true" aria-labelledby="dayListTitle" hidden>
+ <header class="day-list-header" id="dayListHeader"><button class="day-list-close" id="dayListClose" type="button" aria-label="Cerrar la lista"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button><div><h2 id="dayListTitle">El viaje en lista</h2><p id="dayListSummary"></p></div></header>
+ <div class="day-list-days" id="dayListDays"></div>
 </section>
 <div class="sr-only" id="status" role="status" aria-live="polite"></div>
 <noscript><p>El itinerario y el mapa requieren JavaScript.</p></noscript>
@@ -839,7 +880,7 @@ function renderModel(){
    if(arrival)$('sceneAnchors').insertAdjacentHTML('beforeend',`<span class="scene-anchor" id="alojamiento-${esc(d.accommodation.place)}" data-scene="${arrival.index}"></span>`);
   }
  });
- renderTranscript();renderActivityGuide();renderRoutes();measure();queueUpdate();
+ renderTranscript();renderActivityGuide();renderDayList();renderRoutes();measure();queueUpdate();
 }
 
 // Activity sheets live in the native document flow. Cards stay short;
@@ -1006,7 +1047,7 @@ function drawMap(point,path,a,b,t){
  $('mapContextText').textContent=active.intro?'VISTA DEL VIAJE':moving?'EN CAMINO':active.kind==='overnight'?'HACEMOS NOCHE':'ESTAMOS ACÁ';
  // Avoid labels behind overlays and one another. The map itself stays full-screen.
  const occupied=[{x:p.x-48,y:p.y-44,w:96,h:84},{x:p.x+lx-6,y:p.y+labelY-22,w:lw+12,h:44}];
- ['.map-open','.clock','.scene-content','.journey-footer','.map-context'].forEach(selector=>{
+ ['.map-open','.list-open','.clock','.scene-content','.journey-footer','.map-context'].forEach(selector=>{
   const el=document.querySelector(selector);if(!el)return;const r=el.getBoundingClientRect();
   if(getComputedStyle(el).display!=='none'&&r.width&&r.height)occupied.push({x:r.left-9,y:r.top-9,w:r.width+18,h:r.height+18});
  });
@@ -1192,7 +1233,7 @@ window.addEventListener('hashchange',openActivityFromHash);
 document.addEventListener('click',e=>{
  const a=e.target.closest('a[href^="#ficha-"]');
  if(a){e.preventDefault();const hash=a.getAttribute('href'),el=document.getElementById(hash.slice(1));if(el){el.open=true;history.pushState(null,'',hash);requestAnimationFrame(()=>el.scrollIntoView({behavior:'instant',block:'start'}));}return;}
- const back=e.target.closest('.activity-guide a[href^="#etapa-"]');
+ const back=e.target.closest('.activity-guide a[href^="#etapa-"],.day-list a[href^="#etapa-"]');
  if(back){e.preventDefault();const hash=back.getAttribute('href'),el=document.getElementById(hash.slice(1));if(el){history.pushState(null,'',hash);el.scrollIntoView({behavior:'instant'});queueUpdate();}}
 });
 $('downloadPlan').addEventListener('click',download);
@@ -1567,15 +1608,68 @@ $('mapExplorer').addEventListener('keydown',e=>{
  else if(e.key==='-'||e.key==='_'){e.preventDefault();zoomExplorer(1/1.6);}
  else if(e.key==='0'){e.preventDefault();animateExplorer(explorer.fit);}
 });
-window.addEventListener('popstate',()=>{if(location.hash==='#mapa')openExplorer(false);else hideExplorer();});
 window.addEventListener('resize',()=>{
  if(!explorer.open)return;
  explorer.W=innerWidth;explorer.H=innerHeight;$('explorerSvg').setAttribute('viewBox',`0 0 ${explorer.W} ${explorer.H}`);
  fitExplorer();setExplorerCam(explorer.cam);
 },{passive:true});
+// Compact list: every stop by day and time, one color band per day. Like the map,
+// it opens over the scroll view, and each row goes back to its scene.
+const dayList={open:false,pushed:false,returnFocus:null};
+function renderDayList(){
+ const stops=scenes.filter(s=>!s.intro&&s.kind!=='overnight');
+ $('dayListSummary').textContent=`${DAYS.length} días · ${stops.length} actividades · horarios propuestos`;
+ $('dayListDays').innerHTML=DAYS.map((d,di)=>`<section class="list-day" aria-labelledby="list-day-${d.n}"><h3 id="list-day-${d.n}"><span>DÍA ${String(d.n).padStart(2,'0')}</span>${esc(d.title)}</h3><ol>${stops.filter(s=>s.di===di).map(s=>`<li><a href="#etapa-${s.index}" data-index="${s.index}"><time datetime="${esc(s.time)}">${esc(s.time)}${s.nextDay?'<sup aria-hidden="true" title="Madrugada del día siguiente">+1</sup><span class="sr-only">, madrugada del día siguiente</span>':''}</time><span>${esc(s.title)}</span></a></li>`).join('')}</ol></section>`).join('');
+}
+function openDayList(push=true){
+ if(dayList.open)return;
+ pauseAutoplay();
+ dayList.returnFocus=document.activeElement;
+ dayList.open=true;
+ $('dayList').hidden=false;
+ document.documentElement.classList.add('day-list-open');
+ document.querySelectorAll('body>.skip,body>main').forEach(el=>el.inert=true);
+ // Mark the scene on screen and start the list at its day.
+ const active=scenes[sceneIndex],days=$('dayListDays');
+ days.querySelectorAll('[aria-current]').forEach(a=>a.removeAttribute('aria-current'));
+ days.querySelector(`[data-index="${active?.index}"]`)?.setAttribute('aria-current','step');
+ const day=active&&!active.intro?days.children[active.di]:null;
+ $('dayList').scrollTop=day?day.offsetTop-$('dayListHeader').offsetHeight:0;
+ // A history entry lets the phone's back button close the list.
+ if(push&&location.hash!=='#lista'){history.pushState({dayList:true},'','#lista');dayList.pushed=true;}
+ $('dayListClose').focus({preventScroll:true});
+}
+function hideDayList(restoreFocus=true){
+ if(!dayList.open)return;
+ dayList.open=dayList.pushed=false;
+ $('dayList').hidden=true;
+ document.documentElement.classList.remove('day-list-open');
+ document.querySelectorAll('body>.skip,body>main').forEach(el=>el.inert=false);
+ const back=dayList.returnFocus;dayList.returnFocus=null;
+ if(restoreFocus)(back&&back.isConnected&&back!==document.body?back:$('listOpen')).focus({preventScroll:true});
+}
+function closeDayList(){
+ if(!dayList.open)return;
+ if(dayList.pushed&&location.hash==='#lista'&&history.state?.dayList){history.back();return;}
+ hideDayList();
+ if(location.hash==='#lista')history.replaceState(history.state,'',location.pathname+location.search);
+}
+$('listOpen').addEventListener('click',()=>openDayList());
+$('dayListClose').addEventListener('click',closeDayList);
+// Rows leave the list; the document handler then moves to their scene.
+$('dayList').addEventListener('click',e=>{if(e.target.closest('a[href^="#"]'))hideDayList(false);});
+$('dayList').addEventListener('keydown',e=>{if(e.key==='Escape'){e.preventDefault();closeDayList();}});
+window.addEventListener('popstate',()=>{
+ // Close the overlay the new entry does not name before opening the one it does.
+ if(location.hash!=='#mapa')hideExplorer();
+ if(location.hash!=='#lista')hideDayList();
+ if(location.hash==='#mapa')openExplorer(false);
+ else if(location.hash==='#lista')openDayList(false);
+});
 buildMap();renderModel();renderPrep();update();openActivityFromHash();
 if(location.hash){requestAnimationFrame(()=>{const el=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(el){el.scrollIntoView({behavior:'instant'});queueUpdate();}});}
 if(location.hash==='#mapa')openExplorer(false);
+else if(location.hash==='#lista')openDayList(false);
 // Small read-only diagnostics for verifying scene, viewport and scroll behavior.
 window.norteDebug=()=>({sceneIndex,totalScenes:scenes.length,scene:scenes[sceneIndex],unit,position:scrollPosition,days:DAYS.map(d=>({n:d.n,title:d.title,sleep:d.sleep})),scenes:scenes.map(s=>({index:s.index,title:s.title,time:s.time,kind:s.kind,di:s.di,place:s.place})),camera:currentCamera,photo:{requested:requestedPhoto,shown:shownPhoto,images:Object.keys(DATA.images).length,placesWithImage:Object.values(DATA.places).filter(p=>p.image).length},explorer:{open:explorer.open,selected:explorer.selected,camera:explorer.cam}});
 </script>

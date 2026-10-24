@@ -43,6 +43,8 @@ Después entrá a `http://localhost:8000`. No hace falta compilar nada. En GitHu
 
 El botón con el ícono de mapa, arriba a la izquierda, abre el mapa a pantalla completa: se puede mover, acercar y tocar cada lugar para ver sus actividades. Los lugares donde se pasa la noche llevan un ícono de cama, en este mapa y en el del recorrido; salen del último lugar de cada día, menos el regreso a casa. Para compartirlo abierto, agregá `#mapa` al final del enlace.
 
+El botón con el ícono de lista, al lado del mapa, muestra el viaje en una lista compacta: día, horario y actividad, con los días separados por colores de fondo alternados. Abre en el día que se está viendo y marca ese momento; tocar una fila lleva a ese momento del recorrido. Para compartirla abierta, agregá `#lista` al final del enlace.
+
 El botón de reproducir, primero en la tarjeta de pasos de abajo, recorre el viaje solo: se queda en cada momento el tiempo justo para leerlo y pasa al siguiente. Arranca en pausa y se detiene al llegar al final, al tocar pausa o al desplazarse a mano.
 
 ## Editar el itinerario
